@@ -7,9 +7,10 @@ Cada cambio de contenido queda en el [historial del repositorio](https://github.
 
 | Versión | Fecha | Qué cambia | Versión de BC |
 |---|---|---|---|
-| 0.1 (borrador) | 24 de octubre de 2026 | Estructura del sitio, capítulo 1 en borrador, ejercicio 0 en borrador, diez fichas de fuentes y cinco conceptos. | 2026 release wave 2 (versión 29) |
+| Borrador previo a 2026.2 | 24 de octubre de 2026 | Estructura del sitio, capítulo 1 en borrador, ejercicio 0 en borrador, once fichas de fuentes y cinco conceptos. | 2026 release wave 2 (versión 29) |
 
 ## Cómo se numeran
 
-- La versión del libro sube el primer número cuando cambia la estructura y el segundo con cada revisión de contenido.
-- Cada página lleva `ola-bc`, la versión de Business Central con la que se escribió, porque lo que vale para la versión 29 puede no valer para la 30. La siguiente ola, 2027 release wave 1, llega en abril de 2027.
+- Las versiones del libro siguen a las de Business Central: 2026.2 (prevista el 1 de diciembre de 2026), 2027.1 (11 de mayo de 2027) y 2027.2 (23 de noviembre de 2027). Las revisiones intermedias añaden un tercer número (2026.2.1) cuando cambia una versión mayor de las herramientas, algo pasa de vista previa a producción o se corrige una errata. Fechas pendientes de aprobación.
+- Cada página lleva `ola-bc`, la versión de Business Central con la que se escribió, y `fecha-revision`. Una página escrita para una versión anterior a la actual se marca como pendiente de revisión.
+- Cada publicación lleva una etiqueta `v*` en el repositorio, con el PDF y el EPUB de la edición gratuita adjuntos.

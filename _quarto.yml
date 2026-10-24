@@ -43,7 +43,7 @@ website:
       collapse-level: 2
       contents:
         - libro/index.qmd
-        - section: "Primera parte: qué es un agente y quién decide"
+        - section: "Parte I · Entender"
           contents:
             - libro/01-que-es-un-agente.qmd
     - id: conocimiento
@@ -57,7 +57,7 @@ website:
         - auto: conocimiento/laboratorios
   page-footer:
     left: "Texto: CC BY-NC-SA 4.0 · Código: MIT · © 2026 Javier Cava González"
-    right: "Microsoft, Dynamics 365 y Business Central son marcas de Microsoft Corporation. Este sitio no está afiliado a Microsoft ni respaldado por ella."
+    right: "Obra independiente, no afiliada a Microsoft Corporation ni autorizada, patrocinada o aprobada por ella. Microsoft, Dynamics 365, Business Central y Copilot son marcas de Microsoft Corporation."
 
 format:
   html:

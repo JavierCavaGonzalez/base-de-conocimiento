@@ -27,7 +27,7 @@ Más en [javiercava.com](https://javiercava.com) y en [GitHub](https://github.co
 
 ## Marcas
 
-Microsoft, Dynamics 365, Business Central, Copilot y Microsoft 365 son marcas de Microsoft Corporation. Este sitio es un proyecto personal, no está afiliado a Microsoft ni respaldado por ella, y las citas de Microsoft Learn se hacen con fines de estudio y enseñanza, con enlace a la fuente.
+Esta obra es independiente y no está afiliada a Microsoft Corporation ni autorizada, patrocinada o aprobada por ella. Microsoft, Dynamics 365, Business Central y Copilot son marcas de Microsoft Corporation. Las demás marcas pertenecen a sus respectivos propietarios. Las citas de Microsoft Learn se hacen con fines de estudio y enseñanza, con enlace a la fuente y su fecha de actualización.
 
 ## Correcciones
 

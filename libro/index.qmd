@@ -13,24 +13,30 @@ El libro vivo se publica capítulo a capítulo, gratis y en abierto, y se revisa
 
 Lo que no se ha podido comprobar está marcado en el texto como [no verificado] y se lista al final del capítulo.
 
-## Índice provisional
+## Índice
 
-El índice definitivo está en preparación; esta es la estructura de partida, ordenada por la tesis del libro.
+Estructura propuesta en el documento 2 del proyecto, pendiente de aprobación del autor: cuatro partes y doce capítulos de núcleo, más apéndices y ampliaciones por cada versión de Business Central. Solo el capítulo 1 tiene borrador.
 
-| Nº | Capítulo | Estado |
-|---|---|---|
-| 1 | [¿Qué es un agente (y qué no lo es)?](01-que-es-un-agente.qmd) | borrador |
-| 2 | El mapa de la IA en Business Central: capacidades de Copilot y agentes | pendiente |
-| 3 | Quién decide: permisos, identidad y puntos de revisión | pendiente |
-| 4 | El Agente de pedidos de venta por dentro | pendiente |
-| 5 | El Agente de cuentas por pagar y el Agente de gastos | pendiente |
-| 6 | El modelo como riesgo interno | pendiente |
-| 7 | La regla de dos aplicada a cada agente | pendiente |
-| 8 | Agentes propios: el toolkit de desarrollo (versión preliminar) | pendiente |
-| 9 | Business Central como herramienta de otros agentes: el servidor MCP | pendiente |
-| 10 | Qué registrar y qué auditar | pendiente |
-| 11 | Convivir con los agentes nativos, AppSource y el resto del ecosistema | pendiente |
-| 12 | ¿Un agente por departamento con un jefe validador? Hipótesis a prueba | pendiente |
+| Parte | Nº | Capítulo | Estado |
+|---|---|---|---|
+| I · Entender | 1 | [¿Qué es un agente (y qué no lo es)?](01-que-es-un-agente.qmd) | borrador |
+| I · Entender | 2 | El agente que menos decide | pendiente |
+| I · Entender | 3 | Los agentes nativos de Business Central | pendiente |
+| II · Controlar | 4 | Permisos, identidad y auditoría | pendiente |
+| II · Controlar | 5 | Observar y evaluar | pendiente |
+| III · Construir | 6 | Un agente sin código | pendiente |
+| III · Construir | 7 | Copilot Studio y MCP | pendiente |
+| III · Construir | 8 | Orquestar agentes | pendiente |
+| III · Construir | 9 | Agentes en AL | pendiente |
+| III · Construir | 10 | Protocolos y seguridad | pendiente |
+| IV · Operar | 11 | La torre de control | pendiente |
+| IV · Operar | 12 | Producción y adopción | pendiente |
+
+Apéndices previstos: A, el entorno de pruebas; B, glosario; C, fuentes; D, registro de cambios. Cada versión de Business Central añade una ampliación con lo que cambia.
+
+## Versiones y ritmo
+
+El libro se publica por versiones ligadas a las de Business Central: 2026.2 (1 de diciembre de 2026), 2027.1 (11 de mayo de 2027) y 2027.2 (23 de noviembre de 2027), con revisiones intermedias (2026.2.1, …) cuando cambie algo relevante. Entre versiones, cada capítulo se trabaja durante cuatro semanas: tres ejercicios y una síntesis. Fechas y ritmo pendientes de aprobación.
 
 ## Descargas
 
