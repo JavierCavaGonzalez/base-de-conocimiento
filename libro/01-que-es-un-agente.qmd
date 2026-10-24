@@ -1,0 +1,152 @@
+---
+title: 1. ¿Qué es un agente (y qué no lo es)?
+capitulo: 01-que-es-un-agente
+fuentes:
+- id: dibia-2025-dmas
+  apartado: §1.4 What is an Agent? (págs. 10–14)
+- id: russell-norvig-2020-aima
+  apartado: definición de agente, citada en Dibia 2025, §1.4
+- id: ms-bc-ai-in-bc
+  apartado: lista de capacidades de Copilot y de agentes (2 oct 2026)
+- id: ms-bc-enable-ai
+  apartado: página «Copilot y capacidades de agente» (2 oct 2026)
+- id: ms-bc-sales-order-agent
+  apartado: How the agent processes requests; General flow; Operation (2 oct 2026)
+- id: ms-bc-sales-order-agent-process
+  apartado: intervención del usuario (23 jul 2026)
+- id: ms-bc-sales-order-agent-setup
+  apartado: Prerequisites; Agent account permissions; Respond to inquiries (2 oct
+    2026)
+- id: ms-bc-payables-agent
+  apartado: Process flow (2 oct 2026)
+- id: tnw-2026-nadella
+  apartado: resumen de la publicación de Nadella del 10 oct 2026 (12 oct 2026)
+- id: meta-2025-rule-of-two
+  apartado: Agents Rule of Two (31 oct 2025)
+estado: borrador
+fecha-revision: 2026-10-24
+ola-bc: 2026w2
+---
+
+::: {.callout-note title="Borrador"}
+Este capítulo es un borrador en revisión. Cada afirmación lleva su fuente; lo que no se ha podido comprobar está marcado como [no verificado]. Las citas de Microsoft Learn indican la fecha de actualización de la página consultada.
+:::
+
+## Qué vas a aprender
+
+- Qué es un agente, con una definición que cabe en una frase y otra que sirve para trabajar.
+- En qué se diferencia un agente de un modelo y de una capacidad de Copilot.
+- Cómo es un agente de verdad dentro de Business Central: el Agente de pedidos de venta.
+- Por qué la pregunta importante no es «qué sabe hacer el agente», sino «qué decide solo y quién lo revisa».
+
+## Un agente, dicho sencillo
+
+La definición clásica viene de la inteligencia artificial de antes de los modelos de lenguaje. Russell y Norvig definen un agente como cualquier cosa que percibe su entorno mediante sensores y actúa sobre él mediante actuadores, con una función que convierte lo que percibe en acciones (Russell y Norvig 2020, citados en Dibia 2025, §1.4).
+
+Dibia lo explica con un robot aspirador. Percibe con sensores: obstáculos, suciedad, batería. Aplica reglas fijas: si hay obstáculo, gira; si hay suciedad, aumenta la succión; si la batería está baja, vuelve a la base. Y actúa con motores y cepillos (Dibia 2025, §1.4). Cada lectura de los sensores dispara una respuesta programada. Eso es un bucle de percepción y acción.
+
+Fíjate en lo que no dice la definición: no dice «inteligente». Un termostato cumple la definición. Y, si lo piensas, un flujo de aprobación de Business Central también: percibe que una compra supera un importe y actúa enviando la solicitud de aprobación, con reglas fijas. [no verificado: esta lectura del flujo de aprobación como agente clásico es interpretación propia, no de una fuente.] Esto es lo primero que conviene tener claro: *agente* no significa *listo*. Significa *algo que percibe y actúa en bucle*.
+
+## Lo que añade la IA generativa: razonar, actuar, comunicar y adaptarse
+
+Dibia parte de esa definición y la amplía para la era de la IA generativa. Los agentes generativos mantienen el mismo ciclo de percepción y acción, pero añaden razonamiento con modelos de lenguaje, uso dinámico de herramientas, comunicación en lenguaje natural y comportamiento adaptativo según los resultados (Dibia 2025, §1.4). Su definición de trabajo es esta: los agentes son «entidades que pueden razonar, actuar, comunicar y adaptarse para resolver problemas» (Dibia 2025, §1.4).
+
+Las cuatro capacidades, con un ejemplo de nuestro mundo en cada una (los ejemplos son míos; las capacidades, de Dibia 2025, §1.4.1):
+
+- **Razonar.** Sacar información nueva aplicando reglas o lógica al contexto disponible. El razonamiento puede venir de un modelo generativo, de funciones programadas o de una mezcla. Ejemplo: entender que «¿me podéis servir 20 bicicletas para el viernes?» exige mirar el inventario de hoy, no contestar de memoria.
+- **Actuar.** Hacer algo que afecte al entorno o que consiga información: ejecutar código, llamar a una API, buscar en la web. Ejemplo: crear una oferta de venta en Business Central.
+- **Comunicar.** Intercambiar información con personas, con otros agentes y con sistemas, y saber cuándo pedir una aclaración. Ejemplo: responder al cliente que faltan datos de envío.
+- **Adaptarse.** Cambiar de enfoque ante errores, condiciones nuevas o información nueva. Ejemplo: si un artículo no está disponible, proponer una fecha de entrega posterior en lugar de rendirse.
+
+## Las tres piezas: modelo, herramientas y memoria
+
+Dibia dibuja un agente con tres componentes (Dibia 2025, §1.4.2, figura 1.5):
+
+- El **modelo**, que es el motor de razonamiento: entiende el contexto, hace planes y decide qué hacer. Suele ser un modelo de lenguaje grande.
+- Las **herramientas**, que son la forma de actuar: funciones concretas para ejecutar una tarea (consultar una API, ejecutar código, manejar una interfaz).
+- La **memoria**, que permite recordar y reutilizar información: a corto plazo, la de la tarea en curso; a largo plazo, lo aprendido entre tareas (Dibia 2025, §1.4.2.3).
+
+Y aquí viene la frase más importante del capítulo para un consultor funcional. Dibia escribe que la capacidad de decidir de un agente «puede venir de modelos de IA generativa, de lógica predefinida o de la intervención explícita de una persona», y que combinar el modelo con intervención humana a tiempo «puede mejorar de forma significativa la calidad y la adaptabilidad de las respuestas» (Dibia 2025, §1.4.2.1). Es decir: cuánto decide el modelo dentro de un agente es una decisión de diseño. No es una consecuencia inevitable de usar IA. Nos lo vamos a encontrar en cada agente que miremos.
+
+Los tres componentes trabajan en un ciclo continuo: el modelo razona sobre el estado actual y elige una acción, usa una herramienta para ejecutarla, observa el resultado, actualiza su memoria y adapta el siguiente paso (Dibia 2025, §1.4.2, figura 1.6).
+
+## Agente no es modelo, y Copilot no siempre es agente
+
+Un modelo y un agente pueden parecer lo mismo porque los dos entienden y producen lenguaje. La diferencia está en lo que pueden hacer más allá del texto. Los modelos destacan procesando, analizando y generando texto a partir de lo que aprendieron; los agentes pueden actuar, usar herramientas, mantener el contexto entre interacciones y adaptar su comportamiento según los resultados (Dibia 2025, §1.4.3). Dibia lo ilustra con el precio de una acción: un modelo puede dar una cifra verosímil pero incorrecta, sacada de sus datos de entrenamiento; un agente reconoce que necesita información actual, usa una herramienta para obtenerla y responde con el dato real (Dibia 2025, §1.4.3).
+
+En Business Central esta diferencia tiene nombre propio. Microsoft presenta por separado las **capacidades de Copilot** (Chat, Asistencia de análisis, Resumen, Rellenar automáticamente, Sugerencias de líneas de venta, Sugerencias de texto de marketing, y otras) y los **agentes**: Sales Order Agent, Payables Agent y Expense Agent (Microsoft Learn, «Business Central AI», 2 oct 2026). Todas, capacidades y agentes, se ven en una misma página, «Copilot y capacidades de agente», donde cada una aparece como Activa o Inactiva (Microsoft Learn, «Configure Copilot and agent capabilities», 2 oct 2026).
+
+Mi lectura, que no es una definición de Microsoft: una capacidad de Copilot trabaja dentro de una página, cuando la persona se lo pide, y la persona sigue teniendo la mano (la sugerencia se acepta o se descarta). Un agente ejecuta una tarea de varios pasos por su cuenta y se detiene en puntos de revisión. [no verificado: la distinción exacta entre capacidad y agente no está formulada así en Microsoft Learn.]
+
+## Un agente de verdad: el Agente de pedidos de venta
+
+El Agente de pedidos de venta (Sales Order Agent) sirve para ver las cuatro capacidades en un caso real. Vigila un buzón de correo designado; cuando llega un mensaje, analiza el asunto, el cuerpo y los adjuntos (PDF o imágenes) para identificar peticiones de oferta y extraer los detalles; comprueba si el cliente está registrado, comprueba la disponibilidad de los artículos, crea una oferta de venta y prepara la respuesta al cliente con la oferta en PDF (Microsoft Learn, «Sales Order Agent overview», 2 oct 2026).
+
+Traducido a Dibia: percibe (el buzón), razona (qué se pide y qué artículos son), actúa (crea la oferta), comunica (responde al cliente) y se adapta (pide ayuda cuando se bloquea, por ejemplo si faltan datos; Microsoft Learn, «Process sales quotes and orders with Sales Order Agent», 23 jul 2026).
+
+Lo interesante para este libro no es lo que hace, sino dónde se para. El flujo general tiene doce pasos y alterna tres papeles: el cliente, el agente y el revisor (Microsoft Learn, «Sales Order Agent overview», 2 oct 2026):
+
+| Paso | Quién | Qué pasa |
+|---|---|---|
+| 1 | Cliente | Envía un correo pidiendo una oferta. |
+| 2 | Agente | Recoge el correo y crea una tarea con un paso de revisión de la petición. |
+| 3 | Revisor | Revisa y confirma la petición. |
+| 4 | Agente | Localiza el contacto o cliente, busca los artículos y su disponibilidad, crea la oferta y añade un paso de revisión con el correo de respuesta y la oferta en PDF. |
+| 5 | Revisor | Revisa y confirma el correo y la oferta. |
+| 6 | Agente | Envía el correo con la oferta. |
+| 7 | Cliente | Revisa la oferta y pide el pedido. |
+| 8 | Agente | Recoge el correo y añade un paso de revisión. |
+| 9 | Revisor | Revisa y confirma. |
+| 10 | Agente | Convierte la oferta en pedido y añade un paso de revisión con el correo de confirmación. |
+| 11 | Revisor | Revisa y confirma el correo saliente. |
+| 12 | Agente | Envía el correo al cliente. |
+
+Cuatro de los doce pasos son de una persona. Y Microsoft lo deja escrito: «el agente siempre implica a usuarios designados de Business Central para revisar y aprobar todos los mensajes salientes antes de enviarlos a los clientes» (Microsoft Learn, «Sales Order Agent overview», 2 oct 2026). El flujo puede variar según la configuración: por ejemplo, los mensajes de remitentes no registrados requieren revisión siempre por defecto, y los de remitentes conocidos solo en el primer mensaje de la conversación (Microsoft Learn, «Set up Sales Order Agent», 2 oct 2026).
+
+Hay dos detalles más que importan para la tesis del libro. El agente «opera dentro de los permisos y el perfil (rol) que le asigna el administrador» y «navega por páginas, ejecuta acciones de la interfaz e introduce datos como lo haría un usuario» (Microsoft Learn, «Sales Order Agent overview», 2 oct 2026). Es decir, el agente es un usuario más, con su propio conjunto de permisos (por defecto, «SOA - EDIT»; Microsoft Learn, «Set up Sales Order Agent», 2 oct 2026). Y, por seguridad, identifica a los contactos solo por la coincidencia del correo del remitente con el campo E-Mail de la ficha de contacto, nunca por el nombre (Microsoft Learn, «Sales Order Agent overview», 2 oct 2026).
+
+El Agente de cuentas por pagar sigue el mismo patrón: doce pasos, cuatro de ellos del supervisor, y un límite explícito: confirmar el borrador «no es un flujo de aprobación de Business Central y el agente no registra la factura» (Microsoft Learn, «Payables Agent overview», 2 oct 2026). Si crea un proveedor nuevo, lo deja bloqueado hasta que una persona lo revise (misma fuente).
+
+## Quién decide: el agente que menos decide
+
+Hasta aquí, dos ideas. De Dibia: cuánto decide el modelo es una elección de diseño. De Microsoft: sus agentes nativos se detienen antes de cada salida hacia fuera. Ahora, el porqué.
+
+En octubre de 2026 Satya Nadella publicó un texto largo en el que propone tratar los modelos de IA más avanzados como riesgos internos (*insider risks*): no porque sean maliciosos, sino porque pueden equivocarse o estar comprometidos. Propone separar «la oferta de inteligencia de la autoridad sobre ella», de modo que los controles sobre lo que un modelo puede alcanzar y hacer estén fuera del modelo; que «una persona autorizada pueda siempre pausar o apagar un modelo a mitad de una tarea»; y que se haga con los modelos lo que ya se hace con las personas con acceso privilegiado: identidad, privilegios limitados, actividad registrada y límites de contención. El objetivo que declara es un diseño que «nos permita confiar lo menos posible en el modelo» (The Next Web, resumen de la publicación de Nadella, 12 oct 2026). [no verificado: la publicación original en X no se ha leído directamente; la fecha del 10 de octubre de 2026 es la que infiere The Next Web.]
+
+Un año antes, Meta había propuesto una regla práctica para decidir cuándo un agente puede actuar solo. Un agente debería cumplir como máximo dos de estas tres propiedades en una misma sesión: [A] procesar entradas no fiables; [B] tener acceso a sistemas sensibles o datos privados; [C] cambiar el estado de algo o comunicarse hacia fuera. Si una tarea necesita las tres, el agente «no debería operar de forma autónoma y como mínimo requiere supervisión», por ejemplo con aprobación humana (Meta AI, «Agents Rule of Two», 31 oct 2025).
+
+Aplica la regla al Agente de pedidos de venta. Lee correos de clientes, que son entradas no fiables (A). Consulta clientes, artículos y existencias (B). Crea documentos y envía correos (C). Necesita las tres. La regla de Meta dice entonces: supervisión. Y eso es exactamente lo que son los pasos 3, 5, 9 y 11 del flujo. [no verificado: que Microsoft diseñara los pasos de revisión pensando en esta regla es interpretación propia; la documentación no lo formula así.]
+
+De aquí sale la tesis de este libro: **el agente que mejor funciona en un ERP es el que menos decide por su cuenta**. No el que menos hace. El Agente de pedidos de venta hace casi todo el trabajo; lo que no hace es decidir solo qué sale hacia el cliente. La calidad de un agente en Business Central se mide por tres cosas: qué decide sin nadie delante, qué permisos tiene como usuario y qué rastro deja de lo que hizo. Los capítulos siguientes miden cada agente, nativo o propio, con esa vara.
+
+## Para llevarte
+
+- Un agente es algo que percibe y actúa en bucle. Un robot aspirador lo es. *Agente* no significa *inteligente*.
+- Un agente generativo razona, actúa, comunica y se adapta, con tres piezas: modelo, herramientas y memoria.
+- Cuánto decide el modelo dentro de un agente es una decisión de diseño, no una consecuencia de usar IA.
+- Un modelo genera texto; un agente actúa. Una capacidad de Copilot ayuda a una persona dentro de una página; un agente ejecuta una tarea de varios pasos y se detiene en puntos de revisión.
+- Los agentes nativos de Business Central son usuarios con permisos propios y no envían nada hacia fuera sin que una persona lo apruebe. Esa es la pista para todo lo demás.
+
+## Ejercicio relacionado
+
+[Ejercicio 0: inventario de IA en tu sandbox](../ejercicios/2026-s44-inventario-ia.qmd). Cuarenta y cinco minutos en CRONUS ES para ver con tus ojos qué capacidades y qué agentes tienes encendidos y quién revisa cada uno.
+
+## Pendiente de verificar
+
+- La publicación original de Nadella en X (10 de octubre de 2026): leerla y sustituir las citas tomadas de The Next Web.
+- La lectura del flujo de aprobación de Business Central como agente clásico: interpretación propia.
+- La relación entre los pasos de revisión del Agente de pedidos de venta y la regla de dos de Meta: interpretación propia.
+- Versión y estado (versión preliminar o disponible con carácter general) de cada agente en TEST29: comprobar en el laboratorio del 30 de octubre de 2026.
+
+## Fuentes
+
+- Dibia, V. (2025). *Designing Multi-Agent Systems: Principles, Patterns, and Implementation for AI Agents*. §1.4 «What is an Agent?» (págs. 10–14). https://multiagentbook.com
+- Russell, S. y Norvig, P. (2020). *Artificial Intelligence: A Modern Approach*, 4.ª ed. Pearson. Citado en Dibia 2025, §1.4.
+- Microsoft Learn. «Business Central AI». Actualizada el 2 oct 2026. https://learn.microsoft.com/en-us/dynamics365/business-central/ai-in-bc
+- Microsoft Learn. «Configure Copilot and agent capabilities». Actualizada el 2 oct 2026. https://learn.microsoft.com/dynamics365/business-central/enable-ai
+- Microsoft Learn. «Sales Order Agent overview». Actualizada el 2 oct 2026. https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent
+- Microsoft Learn. «Process sales quotes and orders with Sales Order Agent». Actualizada el 23 jul 2026. https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent-process
+- Microsoft Learn. «Set up Sales Order Agent». Actualizada el 2 oct 2026. https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent-setup
+- Microsoft Learn. «Payables Agent overview». Actualizada el 2 oct 2026. https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent
+- Constantin, A. M. (2026, 12 de octubre). «Satya Nadella says companies should treat AI models as insider risks». The Next Web. https://thenextweb.com/news/nadella-ai-models-insider-risks-emergency-brake
+- Meta AI (2025, 31 de octubre). «Agents Rule of Two: A Practical Approach to AI Agent Security». https://ai.meta.com/blog/practical-ai-agent-security/

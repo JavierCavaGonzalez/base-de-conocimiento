@@ -1,0 +1,83 @@
+---
+title: Ejercicio 0 · Inventario de IA en tu sandbox
+semana: 2026-s44
+laboratorio: 2026-10-30-inventario-copilot
+acceso: gratis
+tiempo: 45 minutos
+entorno: Sandbox de Business Central (TEST29 o equivalente), empresa CRONUS ES
+fuentes:
+- id: ms-bc-enable-ai
+  apartado: página «Copilot y capacidades de agente» (2 oct 2026)
+- id: ms-bc-ai-in-bc
+  apartado: lista de capacidades y agentes (2 oct 2026)
+- id: ms-bc-sales-order-agent
+  apartado: General flow; Customer and Business Central user involvement (2 oct 2026)
+estado: borrador
+fecha-revision: 2026-10-24
+ola-bc: 2026w2
+---
+
+::: {.callout-note title="Borrador"}
+Este ejercicio es gratuito y se publica entero, con solución. La solución está redactada a partir de Microsoft Learn (páginas actualizadas el 2 de octubre de 2026) y se comprobará en el sandbox TEST29 el 30 de octubre de 2026. Hasta entonces es un borrador: lo que todavía no se ha visto en pantalla está marcado como [por comprobar en TEST29].
+:::
+
+## Para quién y qué conseguirás
+
+Para consultores funcionales de Business Central que nunca han abierto la configuración de IA. Al terminar tendrás un inventario, en una tabla, de las capacidades de Copilot y los agentes de tu sandbox, con quién revisa lo que hace cada uno.
+
+## Tiempo estimado
+
+45 minutos.
+
+## Lo que necesitas
+
+- Un sandbox de Business Central (nunca producción) con la empresa de demostración CRONUS ES.
+- Permiso SUPER en ese sandbox o una licencia de administrador: Business Central exige uno de los dos para ver y cambiar esta página (Microsoft Learn, «Configure Copilot and agent capabilities», 2 oct 2026).
+- La plantilla de inventario de más abajo, copiada en un documento o una hoja.
+
+## Enunciado
+
+1. Abre la página de Business Central donde se activan y desactivan las capacidades de Copilot y los agentes.
+2. Rellena la tabla de inventario con una fila por capacidad: nombre, sección (Versión preliminar o Disponible con carácter general), estado (Activo o Inactivo), si es un agente, qué hace sin que nadie se lo pida y quién revisa su resultado.
+3. Responde a tres preguntas: (a) cuántos agentes hay y cuáles son; (b) en el Agente de pedidos de venta, qué pasos exigen que una persona revise antes de seguir; (c) qué permisos hacen falta para cambiar algo en esa página.
+
+No actives ni desactives nada. Esto es un inventario.
+
+Plantilla de inventario:
+
+| Capacidad | Sección | Estado | ¿Es un agente? | ¿Qué hace sin que se lo pidan? | ¿Quién revisa? |
+|---|---|---|---|---|---|
+| | | | | | |
+
+## Pistas
+
+- La búsqueda de Business Central (Alt+Q) encuentra la página por su nombre.
+- La página tiene dos secciones, y cada fila muestra un estado.
+- La lista oficial de agentes está en la página «Business Central AI» de Microsoft Learn; la de capacidades, en la misma página.
+
+
+## Solución paso a paso
+
+1. Entra en el sandbox y comprueba que la empresa activa es CRONUS ES. [por comprobar en TEST29: dónde se muestra el nombre de la empresa en la versión 29.]
+2. Pulsa Buscar (Alt+Q), escribe «Copilot y capacidades de agente» y elige el enlace (Microsoft Learn, «Configurar Copilot y capacidades de agente», versión en español, 2 oct 2026).
+3. Mira las dos secciones, Versión preliminar y Disponible con carácter general, y el estado de cada fila, Activo o Inactivo. Los botones Activar y Desactivar están ahí, pero no los uses (misma fuente).
+4. Copia cada fila en la tabla. Según Microsoft Learn, las capacidades son: Asistencia de análisis, Rellenar automáticamente, Asistencia de conciliación bancaria, Chat, Agente de gastos, Sugerencias de series numéricas, Sugerir productos sustitutos, Resumen, Asignar documentos electrónicos, Sugerencias de texto de marketing, Agente de pagaderos, Sugerencias de líneas de ventas, Agente de pedidos de venta y Agente personalizado (versión preliminar) (Microsoft Learn, «Configurar Copilot y capacidades de agente», 2 oct 2026). La propia página de Learn advierte de que esos nombres son los del artículo, no las etiquetas exactas de la lista; la lista de tu sandbox puede tener más filas o menos. [por comprobar en TEST29: filas y etiquetas exactas.]
+5. Marca como agentes el Agente de pedidos de venta (Sales Order Agent), el Agente de pagaderos (Payables Agent) y el Agente de gastos (Expense Agent): son los tres que Microsoft presenta como agentes (Microsoft Learn, «Business Central AI», 2 oct 2026). La fila «Agente personalizado (versión preliminar)» corresponde a los agentes que se pueden construir con el toolkit de desarrollo.
+6. Respuesta (b): en el Agente de pedidos de venta, el revisor confirma la petición entrante, el correo con la oferta, el correo de confirmación del pedido y el correo saliente final (pasos 3, 5, 9 y 11 del flujo general). Microsoft lo resume así: el agente «siempre implica a usuarios designados de Business Central para revisar y aprobar todos los mensajes salientes antes de enviarlos a los clientes» (Microsoft Learn, «Sales Order Agent overview», 2 oct 2026).
+7. Respuesta (c): permiso SUPER o una de estas licencias: Delegated Admin agent - Partner, Delegated Helpdesk agent - Partner, Internal Admin, Internal BC Administrator o Dynamics 365 Administrator. No hay permisos más finos para esta página (Microsoft Learn, «Configure Copilot and agent capabilities», 2 oct 2026).
+
+## Cómo saber que lo has hecho bien
+
+- Tu tabla tiene al menos las cuatro capacidades «para todos» (Chat, Asistencia de análisis, Resumen, Rellenar automáticamente) y las tres filas de agentes.
+- Para cada agente has escrito quién revisa, no solo qué hace.
+- La página se ve igual que al empezar: no has cambiado ningún estado.
+
+## Qué has aprendido y dónde seguir
+
+Has visto que en Business Central la IA no es un chat suelto: es una lista de capacidades con interruptor, y tres de ellas son agentes que trabajan por pasos y se detienen para que una persona revise. Sigue en el [capítulo 1: ¿Qué es un agente (y qué no lo es)?](../libro/01-que-es-un-agente.qmd).
+
+## Fuentes
+
+- Microsoft Learn. «Configure Copilot and agent capabilities» (versión en español: «Configurar Copilot y capacidades de agente»). Actualizada el 2 oct 2026. https://learn.microsoft.com/dynamics365/business-central/enable-ai
+- Microsoft Learn. «Business Central AI». Actualizada el 2 oct 2026. https://learn.microsoft.com/en-us/dynamics365/business-central/ai-in-bc
+- Microsoft Learn. «Sales Order Agent overview». Actualizada el 2 oct 2026. https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent

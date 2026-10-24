@@ -1,0 +1,33 @@
+---
+title: Herramienta
+termino: herramienta
+en_ingles: tool (también skill o plugin)
+definicion_corta: 'Función concreta con la que un agente actúa: consultar una API,
+  ejecutar código, manejar una interfaz.'
+fuentes:
+- id: dibia-2025-dmas
+  apartado: §1.4.2.2
+- id: ms-bc-sales-order-agent
+  apartado: Operation (2 oct 2026)
+aparece_en:
+- 01-que-es-un-agente
+estado: borrador
+fecha-revision: 2026-10-24
+ola-bc: 2026w2
+---
+
+## Definición breve
+
+Las herramientas son «implementaciones concretas de lógica diseñadas para realizar tareas específicas» y son la forma principal que tiene un agente de actuar; las hay generales (ejecutar código, manejar una interfaz) y específicas (llamar a una API concreta) (Dibia 2025, §1.4.2.2).
+
+## Explicado para un consultor funcional
+
+Si el modelo es quien piensa, las herramientas son las manos. Cuantas más herramientas tiene un agente, más cosas puede hacer, y más cosas puede hacer mal. Decidir qué herramientas se le dan es decidir su alcance.
+
+## Cómo aparece en Business Central
+
+El Sales Order Agent «navega por páginas, ejecuta acciones de la interfaz e introduce datos como lo haría un usuario» (Microsoft Learn, «Sales Order Agent overview», 2 oct 2026): sus herramientas son las propias páginas de Business Central, limitadas por el perfil y los permisos que se le asignan.
+
+## Fuentes
+
+Dibia 2025, §1.4.2.2; Microsoft Learn, «Sales Order Agent overview» (2 oct 2026).

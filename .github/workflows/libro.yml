@@ -1,0 +1,40 @@
+# Edición gratuita del libro (PDF y EPUB sin soluciones) al crear una etiqueta vX.Y.Z.
+# Pendiente de probar en GitHub: la instalación de TinyTeX para el PDF tarda varios minutos.
+name: Libro gratuito
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  libro:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+      - name: Montar el libro gratuito
+        run: python scripts/exportar_libro.py --perfil gratis --salida _libro
+      - name: Renderizar EPUB y PDF
+        run: |
+          quarto render _libro --to epub
+          quarto render _libro --to pdf
+          ls -la _libro/_book
+      - name: Publicar en la release
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "${GITHUB_REF_NAME}" --title "Las llaves del ERP ${GITHUB_REF_NAME}" --notes "Edición gratuita, sin soluciones de ejercicios." _libro/_book/*.pdf _libro/_book/*.epub
+      - uses: actions/upload-artifact@v4
+        with:
+          name: libro-gratuito
+          path: |
+            _libro/_book/*.pdf
+            _libro/_book/*.epub

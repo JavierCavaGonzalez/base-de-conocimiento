@@ -1,0 +1,39 @@
+---
+id: ms-bc-sales-order-agent-setup
+tipo: documentacion
+titulo: Set up Sales Order Agent
+autor: Microsoft Learn
+anio: 2026
+url: https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent-setup
+editorial: Microsoft Learn, página actualizada el 2 de octubre de 2026
+estado: borrador
+licencia_citas: cita breve con referencia y enlace
+fecha_consulta: 2026-10-24
+alimenta:
+  capitulos:
+  - 01-que-es-un-agente
+  conceptos: []
+  ejercicios: []
+title: Set up Sales Order Agent
+lectura: terminado
+fuentes:
+- id: ms-bc-sales-order-agent-setup
+---
+
+# Set up Sales Order Agent
+
+## Qué aporta a este proyecto
+
+Los permisos y los ajustes de revisión del agente: aquí se ve, en concreto, cuánto decide el agente y cuánto la persona. Notas del arranque (24 de octubre de 2026).
+
+## Ideas clave
+
+- (requisitos, 2026-10-24) Para crear una instancia del agente hace falta el permiso de sistema «Configure All Agents» (id 9665); para gestionarla, ese permiso o estar en la lista de acceso del agente con «Can Configure». El buzón debe ser de Microsoft 365 (de usuario o compartido). En sandbox hay que activar «Allow HttpClient Requests» en la extensión.
+- (permisos del agente, 2026-10-24) La cuenta del agente tiene por defecto el conjunto de permisos «SOA - EDIT», que no se edita directamente pero se puede copiar. «AGENT - ADMIN» da «Configure All Agents»; «D365 Agent» da «Manage Agent Tasks»; «Agent - Diagnostics» solo hace falta para ver la instantánea «What the agent saw» en el registro.
+- (ajustes de revisión, 2026-10-24) Por defecto: los mensajes de remitentes ya registrados requieren revisión solo en el primer mensaje de la conversación; los de remitentes no registrados, siempre. «Select only available items» activado; «Include capable to promise» desactivado. Otros ajustes: «Daily email limit», «Review quotes when created and updated», «Send quotes for confirmation».
+- (pausa tras la oferta, 2026-10-24) Con «Review quotes when created and updated» activado y «Send quotes for confirmation» desactivado, el agente crea la oferta y se detiene a pedir revisión a un usuario.
+- (licencias y créditos, 2026-10-24) Las licencias Essential y Premium incluyen «Manage Agent Tasks»; todas incluyen «Configure All Agents», pero el usuario necesita además un conjunto de permisos que lo conceda. La facturación de los Copilot Credits se configura en el centro de administración.
+
+## Mi conclusión
+
+## Lo que no comparto o no aplica a Business Central

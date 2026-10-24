@@ -1,0 +1,16 @@
+---
+title: "Diario"
+listing:
+  id: semanas
+  contents:
+    - "*.qmd"
+  type: default
+  sort: "date desc"
+  fields: [title, date, description]
+toc: false
+---
+
+El estudio se registra cada día en un cuaderno privado. Aquí se publica el resumen de cada semana: qué se ha estudiado, qué se ha entendido, qué ha fallado y qué viene después. El primer resumen corresponderá a la semana del 26 de octubre al 1 de noviembre de 2026.
+
+::: {#semanas}
+:::

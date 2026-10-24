@@ -1,0 +1,21 @@
+# Comprueba cabeceras, fuentes y marcas, y que el sitio renderiza, en cada pull request y push.
+name: Comprobar fuentes y render
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - run: python scripts/comprobar_fuentes.py
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - run: quarto render

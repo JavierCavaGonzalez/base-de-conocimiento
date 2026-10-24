@@ -1,0 +1,42 @@
+---
+id: tnw-2026-nadella
+tipo: articulo
+titulo: Satya Nadella says companies should treat AI models as insider risks
+autor: Ana Maria Constantin (The Next Web)
+anio: 2026
+url: https://thenextweb.com/news/nadella-ai-models-insider-risks-emergency-brake
+editorial: The Next Web, 12 de octubre de 2026
+estado: borrador
+licencia_citas: cita breve con referencia
+fecha_consulta: 2026-10-24
+alimenta:
+  capitulos:
+  - 01-que-es-un-agente
+  conceptos: []
+  ejercicios: []
+title: Satya Nadella says companies should treat AI models as insider risks
+lectura: terminado
+fuentes:
+- id: tnw-2026-nadella
+---
+
+# Nadella: los modelos como riesgos internos (resumen de The Next Web)
+
+## Qué aporta a este proyecto
+
+Fuente secundaria que resume la publicación de Nadella del 10 de octubre de 2026. Sirve para citar los controles que propone mientras no se lea el original. Notas del arranque (24 de octubre de 2026), pendientes de revisión de Javi.
+
+## Ideas clave
+
+- (artículo completo, 2026-10-24) Nadella propone tratar los modelos frontera como riesgos internos: pueden equivocarse o estar comprometidos, así que hay que contenerlos desde el principio.
+- (artículo completo, 2026-10-24) Separar «la oferta de inteligencia de la autoridad sobre ella»: los controles sobre lo que un modelo puede alcanzar y hacer deben estar fuera del modelo.
+- (artículo completo, 2026-10-24) Freno de emergencia: «una persona autorizada debe poder siempre pausar o apagar un modelo a mitad de una tarea».
+- (artículo completo, 2026-10-24) Tomar prestado lo que ya se hace con las personas con acceso privilegiado: establecer identidad, limitar privilegios, registrar la actividad y fijar límites de contención.
+- (artículo completo, 2026-10-24) Toda acción relevante de un modelo debe dejar evidencia legible por personas y a prueba de manipulación; el razonamiento transparente es necesario pero no suficiente.
+- (artículo completo, 2026-10-24) Ningún modelo debe ser la única dependencia de un resultado importante ni comprobar su propio trabajo; las auditorías no deben depender del modelo auditado.
+- (artículo completo, 2026-10-24) El objetivo declarado es un diseño que «nos permita confiar lo menos posible en el modelo».
+- (artículo completo, 2026-10-24) El artículo no atribuye a Nadella la expresión «kill switch»; la usa para una propuesta de ley aparte.
+
+## Mi conclusión
+
+## Lo que no comparto o no aplica a Business Central

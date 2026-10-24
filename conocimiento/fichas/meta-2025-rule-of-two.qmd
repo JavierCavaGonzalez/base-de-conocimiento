@@ -1,0 +1,36 @@
+---
+id: meta-2025-rule-of-two
+tipo: articulo
+titulo: 'Agents Rule of Two: A Practical Approach to AI Agent Security'
+autor: Meta AI (sin autor nombrado en la página)
+anio: 2025
+url: https://ai.meta.com/blog/practical-ai-agent-security/
+editorial: Blog de Meta AI, 31 de octubre de 2025
+estado: borrador
+licencia_citas: cita breve con referencia
+fecha_consulta: 2026-10-24
+alimenta:
+  capitulos:
+  - 01-que-es-un-agente
+  conceptos: []
+  ejercicios: []
+title: 'Agents Rule of Two: A Practical Approach to AI Agent Security'
+lectura: terminado
+fuentes:
+- id: meta-2025-rule-of-two
+---
+
+# La regla de dos para agentes (Meta, 2025)
+
+## Qué aporta a este proyecto
+
+Una regla sencilla para decidir cuándo un agente puede actuar solo y cuándo necesita supervisión. Encaja con la tesis del libro y se puede aplicar a cada agente de Business Central. Notas del arranque (24 de octubre de 2026), pendientes de revisión de Javi.
+
+## Ideas clave
+
+- (sección «Agents Rule of Two», 2026-10-24) Mientras la investigación no detecte y rechace con fiabilidad la inyección de instrucciones, un agente debe cumplir como máximo dos de estas tres propiedades en una misma sesión: [A] procesar entradas no fiables; [B] tener acceso a sistemas sensibles o datos privados; [C] cambiar el estado de algo o comunicarse hacia fuera.
+- (misma sección, 2026-10-24) Si una tarea necesita las tres propiedades sin empezar una sesión nueva (con un contexto limpio), el agente «no debería operar de forma autónoma y como mínimo requiere supervisión»: aprobación humana en el bucle u otro método de validación fiable.
+
+## Mi conclusión
+
+## Lo que no comparto o no aplica a Business Central

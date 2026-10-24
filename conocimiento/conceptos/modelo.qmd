@@ -1,0 +1,31 @@
+---
+title: Modelo (de lenguaje)
+termino: modelo
+en_ingles: model, large language model (LLM)
+definicion_corta: 'El motor de razonamiento de un agente: entiende el contexto, hace
+  planes y elige la siguiente acción. Por sí solo, solo genera texto.'
+fuentes:
+- id: dibia-2025-dmas
+  apartado: §1.4.2.1 y §1.4.3
+aparece_en:
+- 01-que-es-un-agente
+estado: borrador
+fecha-revision: 2026-10-24
+ola-bc: 2026w2
+---
+
+## Definición breve
+
+El modelo es el «cerebro» del agente: procesa las entradas y decide qué hacer a continuación; suele ser un modelo de lenguaje grande o un modelo multimodal (Dibia 2025, §1.4.2.1).
+
+## Explicado para un consultor funcional
+
+Un modelo solo produce texto a partir de lo que aprendió. No consulta nada, no actúa, no recuerda entre conversaciones. Por eso puede dar un dato verosímil pero falso: Dibia pone el ejemplo del precio de una acción, que un modelo «inventa» y un agente consulta (Dibia 2025, §1.4.3). La decisión de un agente puede venir del modelo, de lógica fija o de una persona (Dibia 2025, §1.4.2.1).
+
+## Cómo aparece en Business Central
+
+No se elige el modelo: lo pone Microsoft detrás de cada capacidad de Copilot y de cada agente. Lo que sí se elige es cuánto se le deja decidir: ajustes de revisión y permisos.
+
+## Fuentes
+
+Dibia 2025, §1.4.2.1 y §1.4.3.

@@ -1,0 +1,43 @@
+---
+id: ms-bc-sales-order-agent
+tipo: documentacion
+titulo: Sales Order Agent overview
+autor: Microsoft Learn
+anio: 2026
+url: https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent
+editorial: Microsoft Learn, página actualizada el 2 de octubre de 2026
+estado: borrador
+licencia_citas: cita breve con referencia y enlace
+fecha_consulta: 2026-10-24
+alimenta:
+  capitulos:
+  - 01-que-es-un-agente
+  conceptos:
+  - agente
+  ejercicios:
+  - 2026-s44-inventario-ia
+title: Sales Order Agent overview
+lectura: terminado
+fuentes:
+- id: ms-bc-sales-order-agent
+---
+
+# Sales Order Agent overview (Agente de pedidos de venta)
+
+## Qué aporta a este proyecto
+
+El ejemplo real de agente dentro de Business Central: qué percibe, qué hace y en qué pasos interviene una persona. Notas del arranque (24 de octubre de 2026).
+
+## Ideas clave
+
+- («How the agent processes requests», 2026-10-24) El agente vigila un buzón designado; analiza asunto, cuerpo y adjuntos (PDF o imagen) para identificar peticiones de oferta; comprueba si el cliente está registrado, comprueba disponibilidad, crea la oferta de venta y prepara la respuesta con la oferta en PDF.
+- («General flow», 2026-10-24) Doce pasos que alternan Cliente, Agente y Revisor: el revisor confirma la petición entrante (paso 3), la oferta y el correo de respuesta (paso 5), el correo de confirmación del pedido (paso 9) y el correo saliente de confirmación (paso 11). El agente convierte la oferta en pedido cuando el cliente lo pide (paso 10).
+- («Customer and Business Central user involvement», 2026-10-24) «El agente siempre implica a usuarios designados de Business Central para revisar y aprobar todos los mensajes salientes antes de enviarlos a los clientes».
+- («Operation», 2026-10-24) El agente opera dentro de los permisos y el perfil (rol) que le asigna el administrador; navega por páginas, ejecuta acciones de la interfaz e introduce datos «como lo haría un usuario». Identifica los contactos solo por coincidencia del correo del remitente con el campo E-Mail del contacto.
+- (nota sobre ofertas, 2026-10-24) El agente siempre crea primero una oferta, aunque el cliente pida un pedido; para ir directo a pedidos hay que desactivar «Send quotes for confirmation» y activar «Make orders from quotes».
+- («Copilot Credits», 2026-10-24) Consume Copilot Credits; sin créditos deja de procesar correos pero sigue activo y, al renovarse, procesa todo lo acumulado. Microsoft recomienda desactivarlo cuando no se necesite.
+- (página completa, 2026-10-24) La página no indica versión mínima, países ni idiomas soportados del agente; remite a la disponibilidad de Copilot.
+
+## Mi conclusión
+
+## Lo que no comparto o no aplica a Business Central

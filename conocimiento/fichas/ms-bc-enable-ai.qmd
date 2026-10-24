@@ -1,0 +1,45 @@
+---
+id: ms-bc-enable-ai
+tipo: documentacion
+titulo: 'Configure Copilot and agent capabilities (es: Configurar Copilot y capacidades
+  de agente)'
+autor: Microsoft Learn
+anio: 2026
+url: https://learn.microsoft.com/dynamics365/business-central/enable-ai
+editorial: 'Microsoft Learn, página actualizada el 2 de octubre de 2026 (versión en
+  español: https://learn.microsoft.com/es-es/dynamics365/business-central/enable-ai)'
+estado: borrador
+licencia_citas: cita breve con referencia y enlace
+fecha_consulta: 2026-10-24
+alimenta:
+  capitulos:
+  - 01-que-es-un-agente
+  conceptos:
+  - capacidad-de-copilot
+  ejercicios:
+  - 2026-s44-inventario-ia
+title: 'Configure Copilot and agent capabilities (es: Configurar Copilot y capacidades
+  de agente)'
+lectura: terminado
+fuentes:
+- id: ms-bc-enable-ai
+---
+
+# Configurar Copilot y capacidades de agente
+
+## Qué aporta a este proyecto
+
+La página de Business Central donde se ve y se controla qué IA está encendida. Es el corazón del ejercicio 0. Notas del arranque (24 de octubre de 2026).
+
+## Ideas clave
+
+- (sección de apertura, 2026-10-24) La página se llama «Copilot & agent capabilities» (en español, «Copilot y capacidades de agente»). Se abre con Buscar (Alt+Q), escribiendo el nombre y eligiendo el enlace.
+- (misma sección, 2026-10-24) Lista todas las funciones de Copilot e IA con su estado, Activo o Inactivo, en dos secciones: Versión preliminar y Disponible con carácter general. Botones Activar y Desactivar. Las capacidades están activas por defecto cuando están disponibles.
+- (permisos, 2026-10-24) Para configurarla hace falta permiso SUPER o una de estas licencias: Delegated Admin agent - Partner, Delegated Helpdesk agent - Partner, Internal Admin, Internal BC Administrator, Dynamics 365 Administrator. «Business Central no ofrece todavía permisos granulares a nivel de objeto para que solo ciertos administradores configuren Copilot».
+- (versión 29, 2026-10-24) Desde la versión 29, la capacidad «Chat» controla si está disponible la experiencia de Microsoft Copilot en Business Central en lugar del antiguo Chat con Copilot.
+- (tabla de acceso de usuario, 2026-10-24) Filas de la tabla: Analysis assist, Autofill, Bank reconciliation assist, Chat, Expense Agent, No. series suggestions, Suggest substitute items, Summarize, Map e-documents, Marketing text suggestions, Payables Agent, Sales line suggestions, Sales Order Agent y Custom Agent (preview). La versión en español advierte de que el artículo no reproduce las etiquetas exactas de la lista de la página.
+- (interruptores, 2026-10-24) La versión en español menciona los interruptores «Permitir movimiento de datos» y «Habilitar Búsqueda de Bing».
+
+## Mi conclusión
+
+## Lo que no comparto o no aplica a Business Central

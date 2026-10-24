@@ -1,0 +1,36 @@
+---
+title: Agente
+termino: agente
+en_ingles: agent
+definicion_corta: Algo que percibe su entorno y actúa sobre él en bucle; en la era
+  generativa, una entidad que razona, actúa, comunica y se adapta para resolver una
+  tarea.
+fuentes:
+- id: dibia-2025-dmas
+  apartado: §1.4
+- id: russell-norvig-2020-aima
+  apartado: definición citada en Dibia 2025, §1.4
+- id: ms-bc-sales-order-agent
+  apartado: Operation (2 oct 2026)
+aparece_en:
+- 01-que-es-un-agente
+estado: borrador
+fecha-revision: 2026-10-24
+ola-bc: 2026w2
+---
+
+## Definición breve
+
+Definición clásica: cualquier cosa que percibe su entorno mediante sensores y actúa sobre él mediante actuadores (Russell y Norvig 2020, citados en Dibia 2025, §1.4). Definición de trabajo de este libro, tomada de Dibia: entidad que puede razonar, actuar, comunicar y adaptarse para resolver problemas (Dibia 2025, §1.4).
+
+## Explicado para un consultor funcional
+
+Un agente no es un chat. Es un programa que recibe algo (un correo, un documento, una pregunta), decide qué hacer, lo hace con herramientas (crear una oferta, consultar existencias) y repite hasta terminar o hasta que una persona lo detiene. La palabra no dice nada sobre lo listo que es: un robot aspirador cumple la definición clásica.
+
+## Cómo aparece en Business Central
+
+Microsoft llama agentes a programas como el Sales Order Agent, que vigila un buzón, crea ofertas y responde a clientes. Un agente de Business Central «opera dentro de los permisos y el perfil (rol) que le asigna el administrador» y usa las páginas «como lo haría un usuario» (Microsoft Learn, «Sales Order Agent overview», 2 oct 2026). Es, a efectos de seguridad, un usuario más.
+
+## Fuentes
+
+Dibia 2025, §1.4; Microsoft Learn, «Sales Order Agent overview» (2 oct 2026).

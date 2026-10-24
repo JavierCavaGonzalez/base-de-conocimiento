@@ -1,0 +1,25 @@
+---
+title: "Ejercicios"
+listing:
+  id: ejercicios
+  contents:
+    - "*.qmd"
+  type: table
+  sort: "semana desc"
+  fields: [title, semana, acceso, tiempo, estado]
+  field-display-names:
+    title: "Ejercicio"
+    semana: "Semana"
+    acceso: "Acceso"
+    tiempo: "Tiempo"
+    estado: "Estado"
+toc: false
+---
+
+Un ejercicio a la semana para hacer en tu propio sandbox con datos de demostración, en 60 minutos o menos y sin código salvo que el laboratorio lo tuviera. Cada ejercicio nace de un laboratorio que funcionó.
+
+- **Gratis**: el enunciado, las pistas y, en el ejercicio 0, también la solución.
+- **Suscriptores**: la solución paso a paso con capturas, las comprobaciones y el archivo completo. [Cómo suscribirse](../suscripcion.qmd).
+
+::: {#ejercicios}
+:::

@@ -1,0 +1,34 @@
+---
+title: "Sobre este libro y su autor"
+toc: false
+---
+
+## El autor
+
+Javier Cava González es consultor funcional de Microsoft Dynamics 365 Business Central en Aitana. No programa: aprueba lo que se construye. Este libro es su cuaderno de estudio sobre inteligencia artificial y agentes en el ERP, escrito en abierto mientras aprende y prueba en un sandbox.
+
+Charlas: Bizz Summit Madrid, 3 de octubre de 2026; BC Waves Barcelona, 14 de noviembre de 2026, «¿Le darías las llaves del ERP a un agente?».
+
+Más en [javiercava.com](https://javiercava.com) y en [GitHub](https://github.com/JavierCavaGonzalez).
+
+## Cómo se escribe el libro
+
+- **Fuentes.** Cada afirmación que no sea del autor lleva su cita: libro y apartado, o página de Microsoft Learn con su fecha de actualización. El registro completo está en [fuentes.yml](https://github.com/JavierCavaGonzalez/base-de-conocimiento/blob/main/fuentes.yml).
+- **Lo no verificado se dice.** Lo que no se ha podido comprobar queda marcado como [no verificado] y listado al final de cada capítulo. No se disimula con lenguaje vago.
+- **Estados.** Cada página indica si es borrador, aprobado o final, y la versión de Business Central con la que se escribió.
+- **Datos.** Solo datos de demostración de la empresa CRONUS ES. Nunca datos de clientes.
+- **Revisión separada.** Quien escribe un capítulo no verifica sus citas: la verificación se hace en una sesión aparte, con la fuente delante.
+
+## Licencias
+
+- El texto de este sitio y del libro se publica con licencia [Creative Commons Atribución-NoComercial-CompartirIgual 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es).
+- El código del repositorio (scripts y configuración) se publica con [licencia MIT](https://github.com/JavierCavaGonzalez/base-de-conocimiento/blob/main/LICENSE).
+- El contenido para suscriptores (soluciones, archivo y ediciones completas) es de uso personal y no se redistribuye.
+
+## Marcas
+
+Microsoft, Dynamics 365, Business Central, Copilot y Microsoft 365 son marcas de Microsoft Corporation. Este sitio es un proyecto personal, no está afiliado a Microsoft ni respaldado por ella, y las citas de Microsoft Learn se hacen con fines de estudio y enseñanza, con enlace a la fuente.
+
+## Correcciones
+
+Si encuentras un error, abre una [incidencia en el repositorio](https://github.com/JavierCavaGonzalez/base-de-conocimiento/issues) indicando la página y la fuente que la corrige.

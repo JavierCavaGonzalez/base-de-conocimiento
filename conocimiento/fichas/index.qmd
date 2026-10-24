@@ -1,0 +1,22 @@
+---
+title: "Fichas de fuentes"
+listing:
+  id: fichas
+  contents:
+    - "*.qmd"
+  type: table
+  sort: "title"
+  fields: [title, autor, anio, estado]
+  field-display-names:
+    title: "Fuente"
+    autor: "Autor"
+    anio: "Año"
+    estado: "Estado"
+  filter-ui: true
+toc: false
+---
+
+Una ficha por fuente. Cada idea clave lleva su apartado o página; sin apartado, termina en [no verificado]. Las capturas de libros ajenos no se publican.
+
+::: {#fichas}
+:::

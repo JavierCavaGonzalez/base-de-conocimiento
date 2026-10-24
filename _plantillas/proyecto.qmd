@@ -1,0 +1,21 @@
+---
+title: "{{nombre}}"
+nombre: "{{nombre}}"
+que_hace: ""
+estado: idea
+stack: []
+repositorio: ""
+nace_de: []
+ola-bc: 2026w2
+fecha-revision: {{fecha}}
+---
+
+<!-- estado: idea | prototipo | desplegable | retirado. nace_de: ids de capítulos, laboratorios o ejercicios. -->
+
+## Qué hace
+
+## Qué problema resuelve y para quién
+
+## Qué decide el agente y qué decide la persona
+
+## Estado y próximos pasos

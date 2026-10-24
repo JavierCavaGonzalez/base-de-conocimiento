@@ -1,0 +1,36 @@
+---
+id: russell-norvig-2020-aima
+tipo: libro
+titulo: 'Artificial Intelligence: A Modern Approach (4.ª edición)'
+autor: Stuart Russell y Peter Norvig
+anio: 2020
+url: ''
+editorial: Pearson
+estado: borrador
+licencia_citas: cita breve con referencia
+fecha_consulta: 2026-10-24
+alimenta:
+  capitulos:
+  - 01-que-es-un-agente
+  conceptos:
+  - agente
+  ejercicios: []
+title: 'Artificial Intelligence: A Modern Approach (4.ª edición)'
+lectura: pendiente
+fuentes:
+- id: russell-norvig-2020-aima
+---
+
+# Artificial Intelligence: A Modern Approach
+
+## Qué aporta a este proyecto
+
+La definición clásica de agente (percibe con sensores, actúa con actuadores). De momento se cita a través de Dibia 2025, §1.4; no se ha consultado el original.
+
+## Ideas clave
+
+- (citado en Dibia 2025, §1.4, 2026-10-24) Un agente es cualquier cosa que percibe su entorno mediante sensores y actúa sobre él mediante actuadores, mediante una función de agente que convierte percepciones en acciones.
+
+## Mi conclusión
+
+## Lo que no comparto o no aplica a Business Central

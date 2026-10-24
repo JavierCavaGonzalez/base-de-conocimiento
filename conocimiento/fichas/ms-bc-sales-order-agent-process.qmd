@@ -1,0 +1,38 @@
+---
+id: ms-bc-sales-order-agent-process
+tipo: documentacion
+titulo: Process sales quotes and orders with Sales Order Agent
+autor: Microsoft Learn
+anio: 2026
+url: https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent-process
+editorial: Microsoft Learn, página actualizada el 23 de julio de 2026
+estado: borrador
+licencia_citas: cita breve con referencia y enlace
+fecha_consulta: 2026-10-24
+alimenta:
+  capitulos:
+  - 01-que-es-un-agente
+  conceptos: []
+  ejercicios: []
+title: Process sales quotes and orders with Sales Order Agent
+lectura: terminado
+fuentes:
+- id: ms-bc-sales-order-agent-process
+---
+
+# Process sales quotes and orders with Sales Order Agent
+
+## Qué aporta a este proyecto
+
+Cómo se ve el trabajo del agente desde el panel de tareas y qué puede y no puede hacer la persona que revisa. Notas del arranque (24 de octubre de 2026).
+
+## Ideas clave
+
+- (apertura, 2026-10-24) El agente «hace el grueso del trabajo de forma autónoma» pero pide intervención para: revisar y confirmar los correos entrantes de clientes; revisar las ofertas y pedidos si el administrador lo ha configurado; revisar los correos salientes; y ayudarle a desbloquearse, por ejemplo aportando datos que faltan.
+- (revisión de pasos, 2026-10-24) En el panel Tasks se elige el paso, se pulsa Review, se revisa y se pulsa Confirm para continuar o Stop para hacer la tarea uno mismo. Las tareas detenidas no se pueden reanudar.
+- (límites, 2026-10-24) No se pueden editar los correos entrantes; «Discard step» solo existe en los pasos de revisión de correos salientes; en el paso de disponibilidad no se pueden cambiar artículos ni cantidades.
+- (fiabilidad, 2026-10-24) Casos en que baja la fiabilidad: unidades de medida no base, ediciones grandes del correo de disponibilidad, peticiones que dependen de atributos que el agente no ve. La función «está validada y soportada solo en idiomas concretos».
+
+## Mi conclusión
+
+## Lo que no comparto o no aplica a Business Central

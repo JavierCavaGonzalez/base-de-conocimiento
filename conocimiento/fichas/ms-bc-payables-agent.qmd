@@ -1,0 +1,38 @@
+---
+id: ms-bc-payables-agent
+tipo: documentacion
+titulo: Payables Agent overview
+autor: Microsoft Learn
+anio: 2026
+url: https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent
+editorial: Microsoft Learn, página actualizada el 2 de octubre de 2026
+estado: borrador
+licencia_citas: cita breve con referencia y enlace
+fecha_consulta: 2026-10-24
+alimenta:
+  capitulos:
+  - 01-que-es-un-agente
+  conceptos: []
+  ejercicios: []
+title: Payables Agent overview
+lectura: terminado
+fuentes:
+- id: ms-bc-payables-agent
+---
+
+# Payables Agent overview (Agente de cuentas por pagar)
+
+## Qué aporta a este proyecto
+
+Segundo ejemplo de agente nativo, con cuatro puntos de revisión y un límite claro: el agente no registra la factura. Notas del arranque (24 de octubre de 2026).
+
+## Ideas clave
+
+- (flujo del proceso, 2026-10-24) Doce pasos: el proveedor envía la factura al buzón; el agente la importa y crea entradas en «Inbound E-Documents»; el supervisor revisa el correo y el PDF (paso 3); el agente extrae datos con Azure Document Intelligence e identifica al proveedor; el supervisor ayuda si no está seguro (paso 6); si crea un proveedor nuevo, queda bloqueado («Blocked = All») hasta que alguien lo revise (paso 8); el agente propone líneas y las casa con pedidos; el supervisor revisa o cambia el borrador (paso 11); el agente lo convierte en factura de compra.
+- (límites, 2026-10-24) Confirmar el borrador «no es un flujo de aprobación de Business Central y el agente no registra la factura»; hay que revisar la factura y sus asignaciones de recepción antes de registrar. El agente «se detiene cuando no puede identificar al proveedor».
+- (disponibilidad, 2026-10-24) «Validado y soportado solo en inglés»; puede usarse en otros idiomas pero puede no funcionar como se espera.
+- (permisos y créditos, 2026-10-24) Trabaja dentro de los permisos y el perfil que asigna el administrador; consume Copilot Credits.
+
+## Mi conclusión
+
+## Lo que no comparto o no aplica a Business Central

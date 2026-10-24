@@ -1,0 +1,19 @@
+---
+title: "{{termino}}"
+termino: "{{termino}}"
+en_ingles: ""
+definicion_corta: ""
+fuentes: []
+aparece_en: []
+estado: borrador
+fecha-revision: {{fecha}}
+ola-bc: 2026w2
+---
+
+## Definición breve
+
+## Explicado para un consultor funcional
+
+## Cómo aparece en Business Central
+
+## Fuentes

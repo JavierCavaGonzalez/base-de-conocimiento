@@ -1,0 +1,50 @@
+---
+id: dibia-2025-dmas
+tipo: libro
+titulo: 'Designing Multi-Agent Systems: Principles, Patterns, and Implementation for
+  AI Agents'
+autor: Victor Dibia
+anio: 2025
+url: https://multiagentbook.com
+editorial: Victor Dibia (autoedición), primera edición, noviembre de 2025. ISBN 979-8-9931012-2-4
+estado: borrador
+licencia_citas: cita breve con referencia; capturas solo en privado
+fecha_consulta: 2026-10-24
+alimenta:
+  capitulos:
+  - 01-que-es-un-agente
+  conceptos:
+  - agente
+  - modelo
+  - herramienta
+  - memoria
+  ejercicios: []
+title: 'Designing Multi-Agent Systems: Principles, Patterns, and Implementation for
+  AI Agents'
+lectura: leyendo
+fuentes:
+- id: dibia-2025-dmas
+---
+
+# Designing Multi-Agent Systems
+
+## Qué aporta a este proyecto
+
+La definición de agente con la que arranca el libro vivo y el vocabulario base (modelo, herramientas, memoria, bucle acción-percepción). Es un libro técnico con código en Python; de él se toma la teoría, no el código. Notas iniciales del arranque del proyecto (24 de octubre de 2026), pendientes de revisión de Javi.
+
+## Ideas clave
+
+- (§1.4, 2026-10-24) Definición clásica, tomada de Russell y Norvig (2020): un agente es cualquier cosa que percibe su entorno mediante sensores y actúa sobre él mediante actuadores, con una función que convierte percepciones en acciones.
+- (§1.4, 2026-10-24) Ejemplo del robot aspirador: sensores (obstáculos, suciedad, batería), reglas fijas (obstáculo → esquivar; suciedad → limpiar; batería baja → volver a la base) y actuadores (motores, cepillos).
+- (§1.4, 2026-10-24) Definición de trabajo del libro: los agentes son «entidades que pueden razonar, actuar, comunicar y adaptarse para resolver problemas».
+- (§1.4.1, 2026-10-24) Cuatro capacidades: razonar (deducir con reglas o con un modelo generativo), actuar (ejecutar código, llamar a APIs, buscar), comunicar (con usuarios, otros agentes y sistemas; pedir aclaraciones) y adaptarse (cambiar de enfoque ante errores o nueva información).
+- (§1.4.2, figura 1.5, 2026-10-24) Tres componentes: modelo (motor de razonamiento), herramientas (forma de actuar) y memoria (recordar y reutilizar).
+- (§1.4.2, figura 1.6, 2026-10-24) Bucle acción-percepción: actuar, percibir el resultado, adaptarse, hasta resolver la tarea.
+- (§1.4.2.1, 2026-10-24) La capacidad de decidir de un agente «puede venir de modelos de IA generativa, de lógica predefinida o de la intervención explícita de una persona». Combinar modelo con intervención humana a tiempo mejora la calidad y la adaptabilidad de las respuestas.
+- (§1.4.2.2, 2026-10-24) Herramientas (también llamadas skills o plugins): generales (ejecutar código, manejar una interfaz) y específicas (llamar a una API concreta).
+- (§1.4.2.3, 2026-10-24) Memoria a corto plazo (la tarea en curso) y a largo plazo (lo aprendido entre tareas); memoria gestionada por la aplicación frente a memoria gestionada por el propio agente.
+- (§1.4.3, 2026-10-24) Agente frente a modelo: un modelo genera texto a partir de lo que aprendió; un agente actúa, usa herramientas, mantiene contexto y se adapta. Ejemplo del precio de una acción: el modelo puede inventar una cifra verosímil; el agente la consulta.
+
+## Mi conclusión
+
+## Lo que no comparto o no aplica a Business Central

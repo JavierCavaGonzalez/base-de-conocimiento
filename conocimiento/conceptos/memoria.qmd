@@ -1,0 +1,31 @@
+---
+title: Memoria
+termino: memoria
+en_ingles: memory (short-term, long-term)
+definicion_corta: 'Capacidad del agente de recordar y reutilizar información: la de
+  la tarea en curso (corto plazo) y la aprendida entre tareas (largo plazo).'
+fuentes:
+- id: dibia-2025-dmas
+  apartado: §1.4.2.3
+aparece_en:
+- 01-que-es-un-agente
+estado: borrador
+fecha-revision: 2026-10-24
+ola-bc: 2026w2
+---
+
+## Definición breve
+
+La memoria a corto plazo es la memoria de trabajo de la tarea actual (acciones recientes, historial de la conversación); la de largo plazo guarda conocimiento, estrategias y patrones que persisten entre tareas y sesiones (Dibia 2025, §1.4.2.3).
+
+## Explicado para un consultor funcional
+
+Sin memoria, cada petición empieza de cero. Con memoria a corto plazo, el agente sabe qué ha hecho ya en esta tarea. Con memoria a largo plazo, puede «aprender» de tareas anteriores, lo que es útil y a la vez un riesgo: lo que recuerda también puede estar mal. Dibia distingue además quién controla la memoria: la aplicación o el propio agente (Dibia 2025, §1.4.2.3).
+
+## Cómo aparece en Business Central
+
+[no verificado: cómo gestionan la memoria los agentes nativos de Business Central no está descrito en las páginas consultadas hasta ahora.]
+
+## Fuentes
+
+Dibia 2025, §1.4.2.3.

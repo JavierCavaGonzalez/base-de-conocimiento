@@ -1,0 +1,35 @@
+---
+title: Capacidad de Copilot
+termino: capacidad de Copilot
+en_ingles: Copilot capability
+definicion_corta: Cada una de las funciones de IA de Business Central que se activan
+  o desactivan en la página «Copilot y capacidades de agente»; incluye tanto ayudas
+  dentro de una página como los agentes.
+fuentes:
+- id: ms-bc-enable-ai
+  apartado: página «Copilot y capacidades de agente» (2 oct 2026)
+- id: ms-bc-ai-in-bc
+  apartado: lista de capacidades y agentes (2 oct 2026)
+aparece_en:
+- 01-que-es-un-agente
+- 2026-s44-inventario-ia
+estado: borrador
+fecha-revision: 2026-10-24
+ola-bc: 2026w2
+---
+
+## Definición breve
+
+La página «Copilot y capacidades de agente» lista todas las funciones de Copilot e IA con su estado, Activo o Inactivo, en dos secciones: Versión preliminar y Disponible con carácter general (Microsoft Learn, «Configure Copilot and agent capabilities», 2 oct 2026).
+
+## Explicado para un consultor funcional
+
+Es el interruptor general de la IA en Business Central. Para tocarla hace falta permiso SUPER o una licencia de administrador; no existen todavía permisos granulares para que solo ciertos administradores la configuren (misma fuente). Microsoft separa las capacidades de Copilot (Chat, Asistencia de análisis, Resumen, Rellenar automáticamente, entre otras) de los agentes (Sales Order Agent, Payables Agent, Expense Agent), aunque todos aparecen en la misma página (Microsoft Learn, «Business Central AI», 2 oct 2026).
+
+## Cómo aparece en Business Central
+
+Buscar (Alt+Q), escribir «Copilot y capacidades de agente» y elegir el enlace. El ejercicio 0 consiste en inventariar lo que aparece ahí.
+
+## Fuentes
+
+Microsoft Learn, «Configure Copilot and agent capabilities» (2 oct 2026); Microsoft Learn, «Business Central AI» (2 oct 2026).

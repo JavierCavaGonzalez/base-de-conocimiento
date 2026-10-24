@@ -1,0 +1,15 @@
+---
+title: "Novedades y versiones"
+toc: false
+---
+
+Cada cambio de contenido queda en el [historial del repositorio](https://github.com/JavierCavaGonzalez/base-de-conocimiento/commits/main). Aquí se anotan las versiones del libro y lo que cambia en cada una.
+
+| Versión | Fecha | Qué cambia | Versión de BC |
+|---|---|---|---|
+| 0.1 (borrador) | 24 de octubre de 2026 | Estructura del sitio, capítulo 1 en borrador, ejercicio 0 en borrador, diez fichas de fuentes y cinco conceptos. | 2026 release wave 2 (versión 29) |
+
+## Cómo se numeran
+
+- La versión del libro sube el primer número cuando cambia la estructura y el segundo con cada revisión de contenido.
+- Cada página lleva `ola-bc`, la versión de Business Central con la que se escribió, porque lo que vale para la versión 29 puede no valer para la 30. La siguiente ola, 2027 release wave 1, llega en abril de 2027.

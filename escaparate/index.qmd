@@ -1,0 +1,20 @@
+---
+title: "Escaparate"
+listing:
+  id: proyectos
+  contents:
+    - "*.qmd"
+  type: table
+  sort: "title"
+  fields: [title, estado, ola-bc]
+  field-display-names:
+    title: "Proyecto"
+    estado: "Estado"
+    ola-bc: "Versión de BC"
+toc: false
+---
+
+Los proyectos que nacen del libro, cada uno con su estado (idea, prototipo, desplegable o retirado), la versión de Business Central con la que se probó y, sobre todo, qué decide el agente y qué decide la persona. Todavía no hay ninguno: el primero saldrá de los laboratorios de noviembre de 2026.
+
+::: {#proyectos}
+:::

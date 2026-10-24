@@ -1,0 +1,38 @@
+---
+id: nadella-2026-insider
+tipo: articulo
+titulo: Publicación de Satya Nadella en X sobre tratar los modelos de IA como riesgos
+  internos
+autor: Satya Nadella
+anio: 2026
+url: https://x.com/satyanadella/status/2108931348857827686
+editorial: X (publicación larga), 10 de octubre de 2026 [fecha no verificada en el
+  original]
+estado: borrador
+licencia_citas: cita breve con referencia
+fecha_consulta: 2026-10-24
+alimenta:
+  capitulos:
+  - 01-que-es-un-agente
+  conceptos: []
+  ejercicios: []
+title: Publicación de Satya Nadella en X sobre tratar los modelos de IA como riesgos
+  internos
+lectura: pendiente
+fuentes:
+- id: nadella-2026-insider
+---
+
+# Modelos como riesgos internos (Nadella, octubre de 2026)
+
+## Qué aporta a este proyecto
+
+Es el texto que da la tesis del libro: «el agente que mejor funciona es el que menos decide». Pendiente de leer en el original; hasta entonces, las ideas se toman del resumen de The Next Web (`tnw-2026-nadella`).
+
+## Ideas clave
+
+- (vía tnw-2026-nadella, 2026-10-24) Tratar los modelos frontera, cerrados y abiertos, como riesgos internos (insider risks): no porque sean maliciosos, sino porque pueden equivocarse o estar comprometidos. [no verificado en el original]
+
+## Mi conclusión
+
+## Lo que no comparto o no aplica a Business Central

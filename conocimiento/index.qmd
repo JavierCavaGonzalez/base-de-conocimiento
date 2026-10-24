@@ -1,0 +1,12 @@
+---
+title: "Base de conocimiento"
+toc: false
+---
+
+Todo lo que alimenta el libro, en abierto:
+
+- [Fichas de fuentes](fichas/index.qmd): qué aporta cada libro, artículo o página de documentación, sus ideas clave con apartado o página, y lo que el autor no comparte o no aplica a Business Central.
+- [Conceptos](conceptos/index.qmd): los términos del libro explicados para un consultor funcional, con su fuente y dónde aparecen en Business Central.
+- [Laboratorios](laboratorios/index.qmd): pruebas hechas en un sandbox con la empresa CRONUS ES, con su resultado (funciona, parcial o falla). Los que fallan también se publican.
+
+Las fichas y los conceptos se escriben en el cuaderno de estudio privado y llegan aquí cuando están revisados. El registro completo de fuentes está en [fuentes.yml](https://github.com/JavierCavaGonzalez/base-de-conocimiento/blob/main/fuentes.yml).

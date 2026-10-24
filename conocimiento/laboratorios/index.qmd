@@ -1,0 +1,21 @@
+---
+title: "Laboratorios"
+listing:
+  id: laboratorios
+  contents:
+    - "*.qmd"
+  type: table
+  sort: "fecha desc"
+  fields: [title, fecha, resultado, estado]
+  field-display-names:
+    title: "Laboratorio"
+    fecha: "Fecha"
+    resultado: "Resultado"
+    estado: "Estado"
+toc: false
+---
+
+Pruebas hechas en un sandbox de Business Central con la empresa de demostración CRONUS ES. Se publican con su resultado, funcione o no: lo que falla también enseña. El primero, el inventario de capacidades de Copilot y agentes, está previsto para el 30 de octubre de 2026.
+
+::: {#laboratorios}
+:::

@@ -1,0 +1,37 @@
+---
+title: "{{titulo}}"
+semana: {{semana}}
+laboratorio: {{laboratorio}}
+acceso: suscriptores
+tiempo: "60 minutos"
+entorno: "Sandbox de Business Central (TEST29 o equivalente), empresa CRONUS ES"
+fuentes: []
+estado: borrador
+fecha-revision: {{fecha}}
+ola-bc: 2026w2
+---
+
+<!--
+acceso: gratis (se publica entero, con solución) | suscriptores (se publica solo hasta <!-- solucion -->)
+Todo lo anterior a la marca <!-- solucion --> es público; lo posterior, de suscriptores.
+-->
+
+## Para quién y qué conseguirás
+
+## Tiempo estimado
+
+## Lo que necesitas
+
+## Enunciado
+
+## Pistas
+
+<!-- solucion -->
+
+## Solución paso a paso
+
+## Cómo saber que lo has hecho bien
+
+## Qué has aprendido y dónde seguir
+
+## Fuentes

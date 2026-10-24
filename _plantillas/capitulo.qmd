@@ -1,0 +1,22 @@
+---
+title: "{{titulo}}"
+capitulo: {{id}}
+fuentes: []
+estado: borrador
+fecha-revision: {{fecha}}
+ola-bc: 2026w2
+---
+
+::: {.callout-note title="Borrador"}
+Este capítulo es un borrador en revisión. Cada afirmación lleva su fuente; lo que no se ha podido comprobar está marcado como [no verificado].
+:::
+
+## Qué vas a aprender
+
+## Para llevarte
+
+## Ejercicio relacionado
+
+## Pendiente de verificar
+
+## Fuentes

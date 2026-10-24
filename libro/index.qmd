@@ -1,0 +1,37 @@
+---
+title: "El libro"
+toc: false
+---
+
+El libro vivo se publica capítulo a capítulo, gratis y en abierto, y se revisa con cada versión de Business Central. Cada capítulo lleva en su cabecera las fuentes que lo sostienen, su estado y la versión de Business Central con la que se escribió (`ola-bc`, por ejemplo `2026w2` para la versión 29, publicada en octubre de 2026).
+
+## Cómo leerlo
+
+- **Borrador**: escrito y citado, pendiente de revisión. Puede cambiar.
+- **Aprobado**: revisado por el autor y con las citas verificadas en una sesión aparte.
+- **Final**: aprobado y sin cambios previstos hasta la siguiente versión de Business Central.
+
+Lo que no se ha podido comprobar está marcado en el texto como [no verificado] y se lista al final del capítulo.
+
+## Índice provisional
+
+El índice definitivo está en preparación; esta es la estructura de partida, ordenada por la tesis del libro.
+
+| Nº | Capítulo | Estado |
+|---|---|---|
+| 1 | [¿Qué es un agente (y qué no lo es)?](01-que-es-un-agente.qmd) | borrador |
+| 2 | El mapa de la IA en Business Central: capacidades de Copilot y agentes | pendiente |
+| 3 | Quién decide: permisos, identidad y puntos de revisión | pendiente |
+| 4 | El Agente de pedidos de venta por dentro | pendiente |
+| 5 | El Agente de cuentas por pagar y el Agente de gastos | pendiente |
+| 6 | El modelo como riesgo interno | pendiente |
+| 7 | La regla de dos aplicada a cada agente | pendiente |
+| 8 | Agentes propios: el toolkit de desarrollo (versión preliminar) | pendiente |
+| 9 | Business Central como herramienta de otros agentes: el servidor MCP | pendiente |
+| 10 | Qué registrar y qué auditar | pendiente |
+| 11 | Convivir con los agentes nativos, AppSource y el resto del ecosistema | pendiente |
+| 12 | ¿Un agente por departamento con un jefe validador? Hipótesis a prueba | pendiente |
+
+## Descargas
+
+La edición completa en PDF y EPUB (con las soluciones de los ejercicios) será para suscriptores a partir de la primera versión etiquetada. La edición gratuita en PDF y EPUB se publicará en las [versiones del repositorio](https://github.com/JavierCavaGonzalez/base-de-conocimiento/releases). Todavía no hay ninguna.

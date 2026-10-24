@@ -1,0 +1,155 @@
+# Registro de fuentes publicado desde el repositorio privado. No editar aquí.
+fuentes:
+- id: dibia-2025-dmas
+  tipo: libro
+  titulo: 'Designing Multi-Agent Systems: Principles, Patterns, and Implementation
+    for AI Agents'
+  autor: Victor Dibia
+  anio: 2025
+  editorial: Victor Dibia (autoedición), primera edición, noviembre de 2025
+  isbn: 979-8-9931012-2-4
+  url: https://multiagentbook.com
+  fecha_alta: 2026-10-24
+  estado: leyendo
+  licencia_citas: cita breve con referencia; capturas solo en privado
+- id: russell-norvig-2020-aima
+  tipo: libro
+  titulo: 'Artificial Intelligence: A Modern Approach (4.ª edición)'
+  autor: Stuart Russell y Peter Norvig
+  anio: 2020
+  editorial: Pearson
+  url: ''
+  fecha_alta: 2026-10-24
+  estado: pendiente
+  nota: 'Citado a través de Dibia 2025, §1.4. No consultado directamente: ISBN y URL
+    pendientes.'
+- id: nadella-2026-insider
+  tipo: articulo
+  titulo: Publicación de Satya Nadella en X sobre tratar los modelos de IA como riesgos
+    internos (insider risks)
+  autor: Satya Nadella
+  anio: 2026
+  url: https://x.com/satyanadella/status/2108931348857827686
+  fecha_alta: 2026-10-24
+  estado: pendiente
+  nota: Título exacto y fecha (10 de octubre de 2026) pendientes de confirmar en el
+    original; de momento se cita a través de tnw-2026-nadella.
+- id: tnw-2026-nadella
+  tipo: articulo
+  titulo: Satya Nadella says companies should treat AI models as insider risks
+  autor: Ana Maria Constantin (The Next Web)
+  anio: 2026
+  url: https://thenextweb.com/news/nadella-ai-models-insider-risks-emergency-brake
+  fecha_pagina: 2026-10-12
+  fecha_alta: 2026-10-24
+  estado: terminado
+  nota: 'Fuente secundaria: resume la publicación de Nadella del 10 de octubre de
+    2026.'
+- id: meta-2025-rule-of-two
+  tipo: articulo
+  titulo: 'Agents Rule of Two: A Practical Approach to AI Agent Security'
+  autor: Meta AI (sin autor nombrado en la página)
+  anio: 2025
+  url: https://ai.meta.com/blog/practical-ai-agent-security/
+  fecha_pagina: 2025-10-31
+  fecha_alta: 2026-10-24
+  estado: terminado
+- id: li-2024-vulnerable
+  tipo: articulo
+  titulo: Commercial LLM Agents Are Already Vulnerable to Simple yet Dangerous Attacks
+  autor: Ang Li, Yin Zhou, Vethavikashini Chithrra Raghuram, Tom Goldstein y Micah
+    Goldblum
+  anio: 2024
+  url: https://arxiv.org/abs/2502.08586
+  fecha_alta: 2026-10-24
+  estado: pendiente
+  nota: Referencia tomada de la bibliografía de Dibia 2025 (arXiv:2502.08586). No
+    consultado todavía.
+- id: lynch-2025-misalignment
+  tipo: articulo
+  titulo: 'Agentic Misalignment: How LLMs Could Be Insider Threats'
+  autor: Aengus Lynch y otros
+  anio: 2025
+  url: ''
+  fecha_alta: 2026-10-24
+  estado: pendiente
+  nota: 'Investigación publicada por un laboratorio de IA. URL y autores completos
+    pendientes. Decisión de Javi: si se cita, se cita como fuente de investigación,
+    nunca como herramienta.'
+- id: ms-bc-ai-in-bc
+  tipo: documentacion
+  titulo: Business Central AI
+  autor: Microsoft Learn
+  anio: 2026
+  url: https://learn.microsoft.com/en-us/dynamics365/business-central/ai-in-bc
+  fecha_pagina: 2026-10-02
+  fecha_alta: 2026-10-24
+  estado: terminado
+- id: ms-bc-enable-ai
+  tipo: documentacion
+  titulo: 'Configure Copilot and agent capabilities (es: Configurar Copilot y capacidades
+    de agente)'
+  autor: Microsoft Learn
+  anio: 2026
+  url: https://learn.microsoft.com/dynamics365/business-central/enable-ai
+  url_es: https://learn.microsoft.com/es-es/dynamics365/business-central/enable-ai
+  fecha_pagina: 2026-10-02
+  fecha_alta: 2026-10-24
+  estado: terminado
+- id: ms-bc-sales-order-agent
+  tipo: documentacion
+  titulo: Sales Order Agent overview
+  autor: Microsoft Learn
+  anio: 2026
+  url: https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent
+  fecha_pagina: 2026-10-02
+  fecha_alta: 2026-10-24
+  estado: terminado
+- id: ms-bc-sales-order-agent-process
+  tipo: documentacion
+  titulo: Process sales quotes and orders with Sales Order Agent
+  autor: Microsoft Learn
+  anio: 2026
+  url: https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent-process
+  fecha_pagina: 2026-07-23
+  fecha_alta: 2026-10-24
+  estado: terminado
+- id: ms-bc-sales-order-agent-setup
+  tipo: documentacion
+  titulo: Set up Sales Order Agent
+  autor: Microsoft Learn
+  anio: 2026
+  url: https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent-setup
+  fecha_pagina: 2026-10-02
+  fecha_alta: 2026-10-24
+  estado: terminado
+- id: ms-bc-payables-agent
+  tipo: documentacion
+  titulo: Payables Agent overview
+  autor: Microsoft Learn
+  anio: 2026
+  url: https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent
+  fecha_pagina: 2026-10-02
+  fecha_alta: 2026-10-24
+  estado: terminado
+- id: ms-bc-mcp
+  tipo: documentacion
+  titulo: Servidor MCP de Business Central (documentación de Microsoft Learn)
+  autor: Microsoft Learn
+  anio: 2026
+  url: ''
+  fecha_alta: 2026-10-24
+  estado: pendiente
+  nota: URL pendiente de localizar con /ficha nueva documentacion <URL> antes de la
+    semana 47.
+- id: ms-bc-agentes-toolkit
+  tipo: documentacion
+  titulo: Diseño y codificación de agentes personalizados (versión preliminar) en
+    Business Central
+  autor: Microsoft Learn
+  anio: 2026
+  url: ''
+  fecha_alta: 2026-10-24
+  estado: pendiente
+  nota: 'URL pendiente de localizar: enlace «Designing and coding agents (preview)»
+    desde la página enable-ai.'

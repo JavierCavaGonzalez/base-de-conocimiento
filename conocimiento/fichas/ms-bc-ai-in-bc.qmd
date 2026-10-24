@@ -1,0 +1,40 @@
+---
+id: ms-bc-ai-in-bc
+tipo: documentacion
+titulo: Business Central AI
+autor: Microsoft Learn
+anio: 2026
+url: https://learn.microsoft.com/en-us/dynamics365/business-central/ai-in-bc
+editorial: Microsoft Learn, página actualizada el 2 de octubre de 2026
+estado: borrador
+licencia_citas: cita breve con referencia y enlace
+fecha_consulta: 2026-10-24
+alimenta:
+  capitulos:
+  - 01-que-es-un-agente
+  conceptos:
+  - capacidad-de-copilot
+  ejercicios:
+  - 2026-s44-inventario-ia
+title: Business Central AI
+lectura: terminado
+fuentes:
+- id: ms-bc-ai-in-bc
+---
+
+# Business Central AI (mapa de la IA en Business Central)
+
+## Qué aporta a este proyecto
+
+El mapa oficial: qué es una capacidad de Copilot y qué es un agente en Business Central, con la lista completa. Es la base del ejercicio 0 (inventario). Notas del arranque (24 de octubre de 2026).
+
+## Ideas clave
+
+- (página completa, 2026-10-24) Tres agentes: Payables Agent (vigila el buzón de facturas de proveedor, extrae datos, casa con pedidos y recepciones, propone cuentas), Expense Agent (gastos de empleados con comprobación de política) y Sales Order Agent (atiende peticiones de clientes por correo, genera ofertas para revisión y las convierte en pedidos cuando el cliente confirma).
+- (página completa, 2026-10-24) Capacidades de Copilot «para todos»: Chat, Analysis assist, Summarize, Autofill. Para finanzas: E-document matching, Bank account reconciliation assist, Finance solution in Microsoft Copilot. Para inventario y cadena de suministro: Item substitute suggestions, Suggest greenhouse gas emissions. Para ventas, servicio y marketing: Shopify Tax Matching, Sales line suggestions, Marketing text suggestions. Para configuración: Number series suggestions.
+- (página completa, 2026-10-24) Otras funciones de IA no generativa: búsqueda de páginas e informes, previsión de inventario, predicción de pagos atrasados, análisis de flujo de caja.
+- (página completa, 2026-10-24) La disponibilidad por país e idioma y el estado (preview o general) se consultan en cada funcionalidad; Shopify Tax Matching solo está en la versión de Estados Unidos.
+
+## Mi conclusión
+
+## Lo que no comparto o no aplica a Business Central

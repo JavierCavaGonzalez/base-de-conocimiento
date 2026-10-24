@@ -1,0 +1,20 @@
+---
+title: "Conceptos"
+listing:
+  id: conceptos
+  contents:
+    - "*.qmd"
+  type: table
+  sort: "title"
+  fields: [title, definicion_corta, estado]
+  field-display-names:
+    title: "Término"
+    definicion_corta: "En una frase"
+    estado: "Estado"
+toc: false
+---
+
+Los términos del libro, explicados la primera vez para un consultor funcional que empieza de cero en inteligencia artificial.
+
+::: {#conceptos}
+:::

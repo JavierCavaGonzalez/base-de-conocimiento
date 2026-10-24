@@ -1,0 +1,45 @@
+---
+title: "Las llaves del ERP"
+subtitle: "Un libro vivo sobre inteligencia artificial y agentes en Business Central, escrito mientras se aprende"
+toc: false
+---
+
+::: {.callout-warning title="Sitio en construcción"}
+Este sitio se está montando. El nombre, el primer capítulo y el ejercicio 0 son borradores pendientes de revisión. Todo lo que ves tiene su fuente citada; lo que no se ha podido comprobar está marcado como [no verificado].
+:::
+
+## ¿Le darías las llaves del ERP a un agente?
+
+Esa es la pregunta. La respuesta que defiende este libro, y que cada capítulo pone a prueba, es que **el agente que mejor funciona en un ERP es el que menos decide por su cuenta**. No el que menos hace: el que menos decide sin que nadie lo revise, con permisos propios y dejando rastro de lo que hizo.
+
+Lo escribe un consultor funcional de Business Central que empieza de cero en inteligencia artificial, para consultores funcionales que empiezan de cero. Sin código salvo cuando no hay más remedio, con ejemplos en la empresa de demostración CRONUS ES y con una regla: nada se afirma sin fuente.
+
+## Qué encontrarás aquí
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+### [El libro](libro/index.qmd)
+Capítulo a capítulo, gratis y en abierto. Se escribe a medida que se estudia y se prueba en un sandbox, y se actualiza con cada versión de Business Central. Empieza por el [capítulo 1: ¿Qué es un agente (y qué no lo es)?](libro/01-que-es-un-agente.qmd)
+:::
+::: {.g-col-12 .g-col-md-6}
+### [Ejercicios](ejercicios/index.qmd)
+Un ejercicio práctico a la semana para hacer en tu propio sandbox con datos de demostración. El enunciado siempre es gratis; la solución paso a paso es para suscriptores. El [ejercicio 0](ejercicios/2026-s44-inventario-ia.qmd) va entero, con solución.
+:::
+::: {.g-col-12 .g-col-md-6}
+### [Base de conocimiento](conocimiento/index.qmd)
+Fichas de las fuentes que alimentan el libro, conceptos explicados para consultores funcionales y laboratorios hechos en el sandbox, con su resultado, funcione o no.
+:::
+::: {.g-col-12 .g-col-md-6}
+### [Escaparate](escaparate/index.qmd)
+Los proyectos que nacen del libro: qué hacen, en qué estado están y, sobre todo, qué decide el agente y qué decide la persona.
+:::
+:::
+
+## Cómo se escribe
+
+- Cada afirmación lleva su fuente, con apartado o página, y las páginas de Microsoft Learn se citan con su fecha de actualización.
+- Lo que no se ha podido comprobar se marca como [no verificado] y se lista al final de cada capítulo.
+- Cada página indica su estado (borrador, aprobado o final) y la versión de Business Central con la que se escribió.
+- Solo datos de demostración (CRONUS). Nunca datos de clientes.
+
+[Suscríbete a la lista de espera](suscripcion.qmd) para recibir el ejercicio semanal, o sigue el [diario](diario/index.qmd) para ver cómo avanza el estudio.

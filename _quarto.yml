@@ -1,0 +1,82 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "!_plantillas/"
+    - "!_libro/"
+
+lang: es
+date-format: "D [de] MMMM [de] YYYY"
+
+website:
+  title: "Las llaves del ERP"
+  description: "Libro vivo sobre inteligencia artificial y agentes en Microsoft Dynamics 365 Business Central, escrito por un consultor funcional mientras estudia y prueba en un sandbox."
+  site-url: https://javiercavagonzalez.github.io/base-de-conocimiento/
+  repo-url: https://github.com/JavierCavaGonzalez/base-de-conocimiento
+  repo-actions: [issue]
+  page-navigation: true
+  search: true
+  navbar:
+    left:
+      - text: "Libro"
+        href: libro/index.qmd
+      - text: "Conocimiento"
+        href: conocimiento/index.qmd
+      - text: "Ejercicios"
+        href: ejercicios/index.qmd
+      - text: "Escaparate"
+        href: escaparate/index.qmd
+      - text: "Diario"
+        href: diario/index.qmd
+    right:
+      - text: "Novedades"
+        href: novedades.qmd
+      - text: "Suscripción"
+        href: suscripcion.qmd
+      - text: "Sobre"
+        href: sobre.qmd
+  sidebar:
+    - id: libro
+      title: "Libro"
+      style: docked
+      collapse-level: 2
+      contents:
+        - libro/index.qmd
+        - section: "Primera parte: qué es un agente y quién decide"
+          contents:
+            - libro/01-que-es-un-agente.qmd
+    - id: conocimiento
+      title: "Conocimiento"
+      style: docked
+      collapse-level: 1
+      contents:
+        - conocimiento/index.qmd
+        - section: "Fichas de fuentes"
+          href: conocimiento/fichas/index.qmd
+          contents:
+            - "conocimiento/fichas/[!i]*.qmd"
+        - section: "Conceptos"
+          href: conocimiento/conceptos/index.qmd
+          contents:
+            - "conocimiento/conceptos/[!i]*.qmd"
+        - section: "Laboratorios"
+          href: conocimiento/laboratorios/index.qmd
+          contents:
+            - "conocimiento/laboratorios/[!i]*.qmd"
+  page-footer:
+    left: "Texto: CC BY-NC-SA 4.0 · Código: MIT · © 2026 Javier Cava González"
+    right: "Microsoft, Dynamics 365 y Business Central son marcas de Microsoft Corporation. Este sitio no está afiliado a Microsoft ni respaldado por ella."
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    toc-title: "En esta página"
+    code-copy: true
+    link-external-newwindow: true
+
+execute:
+  enabled: false

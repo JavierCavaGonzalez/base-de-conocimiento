@@ -1,0 +1,30 @@
+---
+title: "Suscripción"
+toc: false
+---
+
+::: {.callout-note title="En preparación"}
+La lista de espera se abre el 14 de noviembre de 2026 y la suscripción de pago, el 1 de diciembre de 2026. Los precios y la plataforma están pendientes de confirmación.
+:::
+
+## Qué es gratis
+
+- Todo el texto del libro, en esta web, capítulo a capítulo.
+- La base de conocimiento completa: fichas, conceptos y laboratorios.
+- El enunciado y las pistas de cada ejercicio semanal, y el [ejercicio 0](ejercicios/2026-s44-inventario-ia.qmd) entero, con solución.
+- El resumen semanal del diario.
+
+## Qué es para suscriptores
+
+- La solución paso a paso de cada ejercicio semanal, con capturas del sandbox y las comprobaciones para saber que lo has hecho bien.
+- El archivo de todos los ejercicios resueltos.
+- La edición completa del libro en PDF y EPUB, con las soluciones.
+- Un correo cada semana con el ejercicio y lo que ha cambiado en el libro.
+
+## Precio
+
+6 euros al mes o 60 euros al año, IVA incluido. Quienes se suscriban antes del 31 de enero de 2027 pagan 50 euros al año mientras mantengan la suscripción. [no verificado: precios y condiciones pendientes de aprobación]
+
+## Lista de espera
+
+El formulario de la lista de espera se publicará aquí el 14 de noviembre de 2026. Mientras tanto, puedes seguir el [diario](diario/index.qmd) y empezar por el [capítulo 1](libro/01-que-es-un-agente.qmd).
