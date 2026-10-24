@@ -52,18 +52,9 @@ website:
       collapse-level: 1
       contents:
         - conocimiento/index.qmd
-        - section: "Fichas de fuentes"
-          href: conocimiento/fichas/index.qmd
-          contents:
-            - "conocimiento/fichas/[!i]*.qmd"
-        - section: "Conceptos"
-          href: conocimiento/conceptos/index.qmd
-          contents:
-            - "conocimiento/conceptos/[!i]*.qmd"
-        - section: "Laboratorios"
-          href: conocimiento/laboratorios/index.qmd
-          contents:
-            - "conocimiento/laboratorios/[!i]*.qmd"
+        - auto: conocimiento/fichas
+        - auto: conocimiento/conceptos
+        - auto: conocimiento/laboratorios
   page-footer:
     left: "Texto: CC BY-NC-SA 4.0 · Código: MIT · © 2026 Javier Cava González"
     right: "Microsoft, Dynamics 365 y Business Central son marcas de Microsoft Corporation. Este sitio no está afiliado a Microsoft ni respaldado por ella."
