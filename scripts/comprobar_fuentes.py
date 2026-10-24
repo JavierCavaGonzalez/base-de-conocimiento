@@ -11,7 +11,7 @@ Errores (devuelve 1):
   - `fuentes:` con un id que no está en el registro;
   - `estado` desconocido;
   - archivo con `estado: aprobado` o `final` (o `publicacion: aprobado`) que contiene
-    `[no verificado`, `[sugerencia]`, `[paso por confirmar]`, `[cliente]` o un id `pendiente-...`;
+    `[no verificado`, `[sugerencia]`, `[paso por confirmar]`, `[por comprobar`, `[cliente]` o un id `pendiente-...`;
   - registro con ids repetidos o entradas sin id, tipo o título.
 Avisos (no bloquean): marcas `[no verificado` en borradores, ids `pendiente-...` en borradores,
   fuentes registradas sin URL ni ISBN, menciones a herramientas de IA (hay que revisar si son
@@ -31,7 +31,7 @@ from comun import RAIZ, cargar_registro, leer_cabecera
 EXCLUIR_DIRS = {"plantillas", "_plantillas", ".claude", "verificaciones", "tareas-programadas", "_site", "_libro", ".quarto", "node_modules", ".git", "charlas", "plataformas", "vigilancia", "progreso", "suscriptores/pendiente-envio"}
 EXCLUIR_ARCHIVOS = {"README.md", "CLAUDE.md", "LICENSE-CONTENIDO.md", "pull_request_template.md"}
 ESTADOS = {"borrador", "aprobado", "final", "pendiente", "leyendo", "terminado"}
-MARCAS_BLOQUEO = ("[no verificado", "[sugerencia]", "[paso por confirmar]", "[cliente]")
+MARCAS_BLOQUEO = ("[no verificado", "[sugerencia]", "[paso por confirmar]", "[por comprobar", "[cliente]")
 HERRAMIENTAS_IA = re.compile(r"\b(Claude|Anthropic|ChatGPT|OpenAI|Gemini|Co-Authored-By)\b", re.I)
 CITA_EN_LINEA = re.compile(r"\(([^()\n]*?(?:\b(?:19|20)\d{2}\b|Microsoft Learn)[^()\n]*?)\)")
 
