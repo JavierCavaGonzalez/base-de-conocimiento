@@ -1,0 +1,49 @@
+---
+title: "6. Observar y evaluar"
+capitulo: 06-observar-y-evaluar
+parte: "II"
+nivel: basico
+fuentes: []
+estado: pendiente
+fecha-revision: 2026-10-25
+ola-bc: 2026w2
+---
+
+```{=html}
+<div class="ficha-capitulo">
+  <div><span class="ficha-etiqueta">Parte</span> II · Controlar</div>
+  <div><span class="ficha-etiqueta">Nivel</span> Básico</div>
+  <div><span class="ficha-etiqueta">Estado</span> <span class="chip chip-pendiente">pendiente</span></div>
+  <div><span class="ficha-etiqueta">Previsto</span> abril de 2027</div>
+</div>
+```
+
+::: {.callout-note title="Capítulo pendiente de escribir"}
+Este capítulo se escribe a partir de abril de 2027, después de estudiar y probar sus fuentes en el sandbox. Lo que ves es su plan: qué aprenderás, qué construirás y con qué herramientas. El plan puede cambiar cuando llegue su turno. Mientras tanto, puedes seguir el [diario](../diario/index.qmd).
+:::
+
+## Qué vas a aprender
+
+Medir en vez de confiar: evaluación de trayectorias, bancos de pruebas, jueces con modelo y sus límites; la herramienta de evaluación de AL (conjuntos JSONL o YAML, evaluación de agentes y límite de créditos); telemetría con las convenciones gen-ai de OpenTelemetry. Primera mención de las evaluaciones externas en Foundry, que se desarrollan en el capítulo 10.
+
+## Qué construirás en CRONUS ES
+
+Un banco de veinte pedidos de prueba en CRONUS (correctos, ambiguos y con trampa) y una hoja de resultados del Sales Order Agent o del agente del capítulo 7: tasa de acierto, tasa de pedir ayuda, tasa de inventar.
+
+## Herramientas de Microsoft que aparecen
+
+- Herramienta de evaluación de AL
+- Telemetría de Business Central
+- OpenTelemetry (convenciones gen-ai)
+
+## Ejercicios previstos
+
+Tres ejercicios semanales y una síntesis, por suscripción (el enunciado siempre es gratis):
+
+1. Construir el banco de veinte casos con criterios de aprobación.
+2. Pasar el banco y rellenar la hoja de resultados; itinerario técnico: el mismo banco como conjunto JSONL de la herramienta de evaluación.
+3. Diseñar un «juez» (lista de comprobación o modelo) y comprobar dónde se equivoca el juez.
+
+## Fuentes previstas
+
+Microsoft Learn: «Evaluation for AL», «AI tests»; Dibia 2025 (caps. 10 y 11); OpenTelemetry gen-ai; Kwa et al. (METR) 2025; GDPval 2025; Packt 2026 (cap. 4).

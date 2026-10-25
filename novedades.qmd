@@ -7,6 +7,7 @@ Cada cambio de contenido queda en el [historial del repositorio](https://github.
 
 | Versión | Fecha | Qué cambia | Versión de BC |
 |---|---|---|---|
+| Borrador previo a 2026.2 | 25 de octubre de 2026 | Nombre definitivo del libro («IA y agentes en Business Central»), índice de catorce capítulos en cuatro partes con nivel y página de plan por capítulo, índice por herramienta y diseño nuevo de la web con modo oscuro. | 2026 release wave 2 (versión 29) |
 | Borrador previo a 2026.2 | 24 de octubre de 2026 | Estructura del sitio, capítulo 1 en borrador, ejercicio 0 en borrador, once fichas de fuentes y cinco conceptos. | 2026 release wave 2 (versión 29) |
 
 ## Cómo se numeran

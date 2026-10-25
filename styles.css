@@ -1,6 +1,0 @@
-/* Ajustes mínimos sobre el tema cosmo */
-:root { --bs-body-font-size: 1.05rem; }
-.navbar-brand { font-weight: 700; }
-.callout-note.borrador { border-left-color: #b58900; }
-table { font-size: 0.95rem; }
-.estado { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 0.5rem; font-size: 0.85rem; background: #f1e9c9; }

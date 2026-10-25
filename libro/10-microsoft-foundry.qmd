@@ -1,0 +1,51 @@
+---
+title: "10. Microsoft Foundry: alojar, evaluar y observar agentes"
+capitulo: 10-microsoft-foundry
+parte: "III"
+nivel: avanzado
+fuentes: []
+estado: pendiente
+fecha-revision: 2026-10-25
+ola-bc: 2026w2
+---
+
+```{=html}
+<div class="ficha-capitulo">
+  <div><span class="ficha-etiqueta">Parte</span> III · Construir</div>
+  <div><span class="ficha-etiqueta">Nivel</span> Avanzado</div>
+  <div><span class="ficha-etiqueta">Estado</span> <span class="chip chip-pendiente">pendiente</span></div>
+  <div><span class="ficha-etiqueta">Previsto</span> agosto de 2027</div>
+</div>
+```
+
+::: {.callout-note title="Capítulo pendiente de escribir"}
+Este capítulo se escribe a partir de agosto de 2027, después de estudiar y probar sus fuentes en el sandbox. Lo que ves es su plan: qué aprenderás, qué construirás y con qué herramientas. El plan puede cambiar cuando llegue su turno. Mientras tanto, puedes seguir el [diario](../diario/index.qmd).
+:::
+
+<p class="itinerario">Laboratorio técnico con versión guiada para el consultor funcional.</p>
+
+## Qué vas a aprender
+
+Qué aporta Foundry cuando el agente sale del sandbox: catálogo de modelos y despliegues, agentes alojados construidos con Agent Framework, evaluaciones y trazas desde el portal, y cómo encaja con Entra Agent ID y con el servidor MCP de Business Central; cuándo compensa frente a Copilot Studio o Logic Apps.
+
+## Qué construirás en CRONUS ES
+
+El flujo del capítulo 9 desplegado como agente alojado en Foundry, con sus evaluaciones y trazas visibles, conectado a CRONUS por MCP solo con herramientas de consulta.
+
+## Herramientas de Microsoft que aparecen
+
+- Microsoft Foundry (agentes y agentes alojados)
+- Evaluaciones y trazas de Foundry
+- Microsoft Agent Framework
+
+## Ejercicios previstos
+
+Tres ejercicios semanales y una síntesis, por suscripción (el enunciado siempre es gratis):
+
+1. Desplegar el flujo del capítulo 9 como agente alojado.
+2. Evaluarlo en Foundry con el banco del capítulo 6 y comparar con la evaluación local.
+3. Comparar coste, trazas y controles con la versión en Logic Apps.
+
+## Fuentes previstas
+
+Microsoft Learn: «Foundry agents overview», «Hosted agents», evaluaciones en Foundry; anuncio de Agent Framework 1.0; Packt 2026 (cap. 4, evaluación externa con Foundry).

@@ -1,6 +1,6 @@
 # base-de-conocimiento
 
-Repositorio público del libro vivo y la base de conocimiento sobre inteligencia artificial y agentes en Business Central. Es un sitio Quarto publicado en GitHub Pages. Este repositorio recibe contenido; no se escribe contenido en él.
+Repositorio público del libro vivo «IA y agentes en Business Central» y de su base de conocimiento. Es un sitio Quarto publicado en GitHub Pages. Este repositorio recibe contenido; no se escribe contenido en él.
 
 ## Reglas
 
@@ -14,7 +14,9 @@ Repositorio público del libro vivo y la base de conocimiento sobre inteligencia
 ## Estructura
 
 - `index.qmd`, `suscripcion.qmd`, `sobre.qmd`, `novedades.qmd`: páginas fijas.
-- `libro/NN-slug.qmd`: capítulos. El orden está en `_quarto.yml` (sidebar «Libro»).
+- `libro/NN-slug.qmd`: capítulos. El orden está en `_quarto.yml` (sidebar «libro»). Los capítulos con `estado: pendiente` son páginas de plan (objetivo, qué construye, herramientas, ejercicios y fuentes previstas) que se sustituyen por el capítulo real cuando llega con `/publicar`; su cabecera lleva `parte` y `nivel`.
+- `libro/index.qmd`: el mapa del libro (tarjetas por parte, índice por herramienta, apéndices, versiones). Cuando cambie el índice, se actualiza a la vez `progreso/indice.md` en el repositorio privado.
+- `tema.scss`, `tema-oscuro.scss` y `fuentes.css`: el tema del sitio (modo claro y oscuro) y las tipografías alojadas en `fonts/` (Archivo y Source Serif 4, licencia OFL).
 - `conocimiento/fichas/`, `conocimiento/conceptos/`, `conocimiento/laboratorios/`: base de conocimiento con listados automáticos.
 - `ejercicios/`: enunciados públicos (y el ejercicio 0 completo).
 - `escaparate/`: proyectos. `diario/`: resúmenes semanales.

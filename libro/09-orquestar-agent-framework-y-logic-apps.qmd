@@ -1,0 +1,51 @@
+---
+title: "9. Orquestar varios agentes: Agent Framework y Logic Apps"
+capitulo: 09-orquestar-agent-framework-y-logic-apps
+parte: "III"
+nivel: avanzado
+fuentes: []
+estado: pendiente
+fecha-revision: 2026-10-25
+ola-bc: 2026w2
+---
+
+```{=html}
+<div class="ficha-capitulo">
+  <div><span class="ficha-etiqueta">Parte</span> III · Construir</div>
+  <div><span class="ficha-etiqueta">Nivel</span> Avanzado</div>
+  <div><span class="ficha-etiqueta">Estado</span> <span class="chip chip-pendiente">pendiente</span></div>
+  <div><span class="ficha-etiqueta">Previsto</span> julio de 2027</div>
+</div>
+```
+
+::: {.callout-note title="Capítulo pendiente de escribir"}
+Este capítulo se escribe a partir de julio de 2027, después de estudiar y probar sus fuentes en el sandbox. Lo que ves es su plan: qué aprenderás, qué construirás y con qué herramientas. El plan puede cambiar cuando llegue su turno. Mientras tanto, puedes seguir el [diario](../diario/index.qmd).
+:::
+
+<p class="itinerario">Laboratorio técnico con versión guiada para el consultor funcional.</p>
+
+## Qué vas a aprender
+
+Patrones de orquestación (secuencial, concurrente, grupo, traspaso, Magentic) y cuándo basta un solo agente; Agent Framework 1.0 en Python y .NET: flujos como grafos, puntos de control, humano en el bucle; el bucle de agente de Logic Apps como versión sin código; coste en tokens; trazas con OpenTelemetry. Aquí se pone a prueba la hipótesis de los agentes por departamento con un «jefe» validador.
+
+## Qué construirás en CRONUS ES
+
+Técnico: un flujo en Python con Agent Framework (un agente «lector de pedidos», un agente «comprobador de crédito» y un paso validador determinista, que no es un modelo, que aprueba o escala a una persona) sobre el MCP de Business Central. Funcional: el mismo flujo en Logic Apps siguiendo la guía.
+
+## Herramientas de Microsoft que aparecen
+
+- Microsoft Agent Framework (Python y .NET)
+- Logic Apps (bucle de agente)
+- Servidor MCP de Business Central
+
+## Ejercicios previstos
+
+Tres ejercicios semanales y una síntesis, por suscripción (el enunciado siempre es gratis):
+
+1. Flujo de dos agentes con validador, con la plantilla de código generado y revisado paso a paso.
+2. Romperlo: quitar el validador y medir con el banco del capítulo 6 qué pasa.
+3. A elegir: versión Logic Apps (funcional) o versión .NET (técnico).
+
+## Fuentes previstas
+
+Microsoft Learn: documentación de Agent Framework y de los flujos de agente de Logic Apps; Dibia 2025 (caps. 6, 7 y 9); Cognition 2025; Hadfield et al. (Anthropic) 2025; Fourney et al. 2024 (Magentic-One); Packt 2026 (caps. 8 y 9).

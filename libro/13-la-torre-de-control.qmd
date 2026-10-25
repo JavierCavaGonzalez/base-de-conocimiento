@@ -1,0 +1,49 @@
+---
+title: "13. La torre de control"
+capitulo: 13-la-torre-de-control
+parte: "IV"
+nivel: avanzado
+fuentes: []
+estado: pendiente
+fecha-revision: 2026-10-25
+ola-bc: 2026w2
+---
+
+```{=html}
+<div class="ficha-capitulo">
+  <div><span class="ficha-etiqueta">Parte</span> IV · Operar</div>
+  <div><span class="ficha-etiqueta">Nivel</span> Avanzado</div>
+  <div><span class="ficha-etiqueta">Estado</span> <span class="chip chip-pendiente">pendiente</span></div>
+  <div><span class="ficha-etiqueta">Previsto</span> noviembre de 2027</div>
+</div>
+```
+
+::: {.callout-note title="Capítulo pendiente de escribir"}
+Este capítulo se escribe a partir de noviembre de 2027, después de estudiar y probar sus fuentes en el sandbox. Lo que ves es su plan: qué aprenderás, qué construirás y con qué herramientas. El plan puede cambiar cuando llegue su turno. Mientras tanto, puedes seguir el [diario](../diario/index.qmd).
+:::
+
+## Qué vas a aprender
+
+Qué tiene que ver una persona para confiar sin leerlo todo: trazas, colas de aprobación, costes, errores y paradas; principios de interfaz para agentes y humano en el bucle; la hipótesis de la oficina de agentes por departamentos y de la torre isométrica en 3D, puesta a prueba con usuarios.
+
+## Qué construirás en CRONUS ES
+
+Un panel sobre las trazas reales de los agentes de los capítulos 7 a 10 (estados, aprobaciones pendientes, coste, botón de pausa), primero plano, con la herramienta que prefiera el lector (Power BI, Excel o Python); la versión isométrica en 3D como escaparate con los mismos datos.
+
+## Herramientas de Microsoft que aparecen
+
+- Telemetría y OpenTelemetry
+- Observabilidad de Logic Apps y trazas de Foundry
+- Power BI
+
+## Ejercicios previstos
+
+Tres ejercicios semanales y una síntesis, por suscripción (el enunciado siempre es gratis):
+
+1. Definir las diez señales del panel y de dónde sale cada una.
+2. Panel plano con datos reales.
+3. Prueba con tres usuarios: qué miran y qué no; decidir si la 3D aporta.
+
+## Fuentes previstas
+
+Dibia 2025 (cap. 3); Mozannar et al. 2025 (Magentic-UI); OpenTelemetry gen-ai; Microsoft Learn: observabilidad de Logic Apps; Nadella 2026 (observar todo).

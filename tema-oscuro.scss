@@ -1,0 +1,69 @@
+/*-- scss:defaults --*/
+
+// Modo oscuro: mismas familias y misma lógica, con la tinta invertida.
+$tinta: #e6ebf2 !default;
+$papel: #131b26 !default;
+$superficie: #1a2432 !default;
+$verde: #5cc298 !default;
+$verde-suave: #1f3b31 !default;
+$oro: #e0b65f !default;
+$oro-suave: #3a3222 !default;
+$gris: #9ba7b7 !default;
+$borde: #2c3847 !default;
+$pizarra: #c3cdda !default;
+
+$body-bg: $papel !default;
+$body-color: $tinta !default;
+$primary: $verde !default;
+$secondary: $pizarra !default;
+$link-color: $verde !default;
+$link-hover-color: lighten($verde, 10%) !default;
+
+$headings-color: #f4f6f9 !default;
+$navbar-bg: $superficie !default;
+$navbar-fg: $tinta !default;
+$navbar-hl: $verde !default;
+$sidebar-bg: $papel !default;
+$sidebar-fg: $tinta !default;
+$footer-bg: $superficie !default;
+$footer-fg: $gris !default;
+
+$code-bg: #222d3c !default;
+$code-color: #e6ebf2 !default;
+$table-border-color: $borde !default;
+
+$callout-color-note: $pizarra !default;
+$callout-color-tip: $verde !default;
+$callout-color-warning: $oro !default;
+$callout-color-important: #e07c7c !default;
+$callout-color-caution: $oro !default;
+
+/*-- scss:rules --*/
+
+:root {
+  --tinta: #{$tinta};
+  --papel: #{$papel};
+  --superficie: #{$superficie};
+  --verde: #{$verde};
+  --verde-suave: #{$verde-suave};
+  --oro: #{$oro};
+  --oro-suave: #{$oro-suave};
+  --gris: #{$gris};
+  --borde: #{$borde};
+  --pizarra: #{$pizarra};
+}
+
+.navbar a.nav-link[href$="suscripcion.html"] { color: #0f1a14 !important; }
+.navbar a.nav-link[href$="suscripcion.html"]:hover { background: #7ad0ac; }
+.btn-primario { color: #0f1a14; }
+.btn-primario:hover { background: #7ad0ac; color: #0f1a14; }
+.chip-borrador { color: #f1dca6; border-color: #5a4a26; }
+.chip-aprobado { color: #a9e2c6; border-color: #2f5a47; }
+.chip-final { background: #e6ebf2; color: #131b26; }
+.chip-nivel-avanzado::before { background: #e6ebf2; }
+.quien-agente { color: #a9e2c6; }
+.quien-persona { background: #e6ebf2; color: #131b26; }
+.quien-regla { background: #2c3847; color: var(--pizarra); }
+.secciones > div, .parte-cabecera, .ficha-capitulo { border-top-color: var(--tinta); }
+.banda { background: #0d141d; border: 1px solid var(--borde); }
+.banda .btn-primario { color: #1a1408; }

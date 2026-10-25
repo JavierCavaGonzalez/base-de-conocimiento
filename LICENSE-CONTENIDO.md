@@ -1,6 +1,6 @@
 # Licencia del contenido
 
-El texto, las imágenes propias y el resto del contenido de este sitio y del libro «Las llaves del ERP» (archivos `.qmd` y `.md` fuera de `scripts/`) son de Javier Cava González y se publican con la licencia **Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)**.
+El texto, las imágenes propias y el resto del contenido de este sitio y del libro «IA y agentes en Business Central» (archivos `.qmd` y `.md` fuera de `scripts/`) son de Javier Cava González y se publican con la licencia **Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)**.
 
 Puedes copiar, redistribuir y adaptar el contenido siempre que:
 

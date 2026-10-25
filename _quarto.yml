@@ -5,40 +5,44 @@ project:
     - "*.qmd"
     - "!_plantillas/"
     - "!_libro/"
+  resources:
+    - fonts/
 
 lang: es
 date-format: "D [de] MMMM [de] YYYY"
 
 website:
-  title: "Las llaves del ERP"
-  description: "Libro vivo sobre inteligencia artificial y agentes en Microsoft Dynamics 365 Business Central, escrito por un consultor funcional mientras estudia y prueba en un sandbox."
-  site-url: https://javiercavagonzalez.github.io/base-de-conocimiento/
+  title: "IA y agentes en Business Central"
+  description: "Libro vivo sobre inteligencia artificial y agentes en Microsoft Dynamics 365 Business Central: Copilot, los agentes que trae de serie y los que se construyen con el stack de Microsoft. Escrito por un consultor funcional mientras estudia y prueba en un sandbox."
+  site-url: https://libro.javiercava.com/
   repo-url: https://github.com/JavierCavaGonzalez/base-de-conocimiento
   repo-actions: [issue]
   page-navigation: true
-  search: true
+  search:
+    location: navbar
+    type: overlay
   navbar:
     left:
       - text: "Libro"
         href: libro/index.qmd
-      - text: "Conocimiento"
-        href: conocimiento/index.qmd
       - text: "Ejercicios"
         href: ejercicios/index.qmd
-      - text: "Escaparate"
-        href: escaparate/index.qmd
+      - text: "Base de conocimiento"
+        href: conocimiento/index.qmd
       - text: "Diario"
         href: diario/index.qmd
+      - text: "Escaparate"
+        href: escaparate/index.qmd
     right:
       - text: "Novedades"
         href: novedades.qmd
-      - text: "Suscripción"
-        href: suscripcion.qmd
       - text: "Sobre"
         href: sobre.qmd
+      - text: "Suscripción"
+        href: suscripcion.qmd
   sidebar:
     - id: libro
-      title: "Libro"
+      title: "El libro"
       style: docked
       collapse-level: 2
       contents:
@@ -46,8 +50,27 @@ website:
         - section: "Parte I · Entender"
           contents:
             - libro/01-que-es-un-agente.qmd
+            - libro/02-el-agente-que-menos-decide.qmd
+            - libro/03-copilot-en-business-central.qmd
+            - libro/04-los-agentes-que-ya-trae-business-central.qmd
+        - section: "Parte II · Controlar"
+          contents:
+            - libro/05-permisos-identidad-y-auditoria.qmd
+            - libro/06-observar-y-evaluar.qmd
+        - section: "Parte III · Construir"
+          contents:
+            - libro/07-agent-designer.qmd
+            - libro/08-copilot-studio-y-el-servidor-mcp.qmd
+            - libro/09-orquestar-agent-framework-y-logic-apps.qmd
+            - libro/10-microsoft-foundry.qmd
+            - libro/11-agentes-y-copilot-en-al.qmd
+            - libro/12-protocolos-y-seguridad.qmd
+        - section: "Parte IV · Operar"
+          contents:
+            - libro/13-la-torre-de-control.qmd
+            - libro/14-produccion-y-adopcion.qmd
     - id: conocimiento
-      title: "Conocimiento"
+      title: "Base de conocimiento"
       style: docked
       collapse-level: 1
       contents:
@@ -57,17 +80,21 @@ website:
         - auto: conocimiento/laboratorios
   page-footer:
     left: "Texto: CC BY-NC-SA 4.0 · Código: MIT · © 2026 Javier Cava González"
+    center: "[javiercava.com](https://javiercava.com) · [GitHub](https://github.com/JavierCavaGonzalez)"
     right: "Obra independiente, no afiliada a Microsoft Corporation ni autorizada, patrocinada o aprobada por ella. Microsoft, Dynamics 365, Business Central y Copilot son marcas de Microsoft Corporation."
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      light: [cosmo, tema.scss]
+      dark: [cosmo, tema.scss, tema-oscuro.scss]
+    css: fuentes.css
     toc: true
     toc-depth: 3
     toc-title: "En esta página"
     code-copy: true
     link-external-newwindow: true
+    smooth-scroll: true
 
 execute:
   enabled: false

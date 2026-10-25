@@ -1,0 +1,50 @@
+---
+title: "3. El mapa de la IA en Business Central: Copilot y lo que trae de serie"
+capitulo: 03-copilot-en-business-central
+parte: "I"
+nivel: desde-cero
+fuentes: []
+estado: pendiente
+fecha-revision: 2026-10-25
+ola-bc: 2026w2
+---
+
+```{=html}
+<div class="ficha-capitulo">
+  <div><span class="ficha-etiqueta">Parte</span> I · Entender</div>
+  <div><span class="ficha-etiqueta">Nivel</span> Desde cero</div>
+  <div><span class="ficha-etiqueta">Estado</span> <span class="chip chip-pendiente">pendiente</span></div>
+  <div><span class="ficha-etiqueta">Previsto</span> enero de 2027</div>
+</div>
+```
+
+::: {.callout-note title="Capítulo pendiente de escribir"}
+Este capítulo se escribe a partir de enero de 2027, después de estudiar y probar sus fuentes en el sandbox. Lo que ves es su plan: qué aprenderás, qué construirás y con qué herramientas. El plan puede cambiar cuando llegue su turno. Mientras tanto, puedes seguir el [diario](../diario/index.qmd).
+:::
+
+## Qué vas a aprender
+
+Recorrer todo lo que Business Central ya trae: el chat con Copilot; las capacidades de Copilot (análisis de datos, resúmenes, autorrelleno, casar documentos electrónicos, conciliación bancaria asistida, sugerencias de sustitutos, de líneas de venta y de texto de marketing, series numéricas) y las funciones de IA no generativa (previsión de inventario, predicción de pagos atrasados, análisis de flujo de caja). Para cada una: qué propone, qué decide, dónde revisa la persona, qué consume y cómo se activa y gobierna desde la página «Copilot y capacidades de agente».
+
+## Qué construirás en CRONUS ES
+
+El inventario de la IA de tu sandbox: qué capacidades están activas, cuáles faltan por país o versión y, para cada una, quién decide.
+
+## Herramientas de Microsoft que aparecen
+
+- Chat con Copilot
+- Capacidades de Copilot
+- Página «Copilot y capacidades de agente»
+- Funciones de IA no generativa (previsiones y predicciones)
+
+## Ejercicios previstos
+
+Tres ejercicios semanales y una síntesis, por suscripción (el enunciado siempre es gratis):
+
+1. Hacer el inventario de capacidades en el sandbox y marcar cuáles faltan en una empresa española.
+2. Probar tres capacidades con CRONUS (análisis de datos, resumen y conciliación bancaria) y anotar qué propone cada una y qué deja a la persona.
+3. Comparar el chat de Copilot con una consulta directa a los datos: dónde acierta, dónde inventa.
+
+## Fuentes previstas
+
+Microsoft Learn: «AI in Business Central», «Chat with Copilot», «Enable AI» y las páginas de cada capacidad; novedades de la versión 29.0; Packt 2026 (cap. 5).
