@@ -1,6 +1,6 @@
 # IA y agentes en Business Central · libro vivo y base de conocimiento
 
-Libro vivo y base de conocimiento sobre inteligencia artificial y agentes en Microsoft Dynamics 365 Business Central (Copilot, los agentes que trae de serie y los que se construyen con el stack de Microsoft), escrito por un consultor funcional mientras estudia y prueba en un sandbox. Abre con una pregunta: ¿le darías las llaves del ERP a un agente? Sitio publicado con [Quarto](https://quarto.org) en GitHub Pages: https://javiercavagonzalez.github.io/base-de-conocimiento/
+Libro vivo y base de conocimiento sobre inteligencia artificial y agentes en Microsoft Dynamics 365 Business Central (Copilot, los agentes que trae de serie y los que se construyen con el stack de Microsoft), escrito por un consultor funcional mientras estudia y prueba en un sandbox. Abre con una pregunta: ¿le darías las llaves del ERP a un agente? Sitio publicado con [Quarto](https://quarto.org) en GitHub Pages: https://libro.javiercava.com/ (hasta que el dominio esté activo, https://javiercavagonzalez.github.io/base-de-conocimiento/)
 
 - El texto del libro es gratis y se publica capítulo a capítulo: catorce capítulos en cuatro partes, de cero a avanzado.
 - Cada afirmación lleva su fuente; lo no comprobado está marcado como [no verificado].

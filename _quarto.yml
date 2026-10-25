@@ -14,7 +14,7 @@ date-format: "D [de] MMMM [de] YYYY"
 website:
   title: "IA y agentes en Business Central"
   description: "Libro vivo sobre inteligencia artificial y agentes en Microsoft Dynamics 365 Business Central: Copilot, los agentes que trae de serie y los que se construyen con el stack de Microsoft. Escrito por un consultor funcional mientras estudia y prueba en un sandbox."
-  site-url: https://javiercavagonzalez.github.io/base-de-conocimiento/
+  site-url: https://libro.javiercava.com/
   repo-url: https://github.com/JavierCavaGonzalez/base-de-conocimiento
   repo-actions: [issue]
   page-navigation: true
