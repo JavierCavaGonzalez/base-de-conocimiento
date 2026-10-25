@@ -80,6 +80,7 @@ website:
         - auto: conocimiento/laboratorios
   page-footer:
     left: "Texto: CC BY-NC-SA 4.0 · Código: MIT · © 2026 Javier Cava González"
+    center: "[javiercava.com](https://javiercava.com) · [GitHub](https://github.com/JavierCavaGonzalez)"
     right: "Obra independiente, no afiliada a Microsoft Corporation ni autorizada, patrocinada o aprobada por ella. Microsoft, Dynamics 365, Business Central y Copilot son marcas de Microsoft Corporation."
 
 format:
