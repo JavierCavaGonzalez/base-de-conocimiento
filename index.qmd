@@ -1,132 +1,144 @@
 ---
 title: "IA y agentes en Business Central"
+pagetitle: "IA y agentes en Business Central · Javier Cava"
+description: "Libro vivo, gratis y en abierto, sobre inteligencia artificial y agentes en Microsoft Dynamics 365 Business Central."
 title-block-style: none
 page-layout: full
 toc: false
+body-classes: portada-pagina
 ---
 
 ```{=html}
-<style>#title-block-header { display: none; }</style>
-<div class="ancho">
-
-<section class="portada">
-  <div>
-    <p class="portada-contexto">Un libro vivo, gratis y en abierto, para consultores de Business Central que empiezan de cero en inteligencia artificial.</p>
-    <h1>IA y agentes en Business Central</h1>
-    <p class="portada-pregunta">¿Le darías las llaves del ERP a un agente?</p>
-    <p class="portada-tesis">La respuesta que defiende este libro, y que cada capítulo pone a prueba, es que <strong>el agente que mejor funciona en un ERP es el que menos decide por su cuenta</strong>. No el que menos hace: el que menos decide sin que nadie lo revise, con permisos propios y dejando rastro de lo que hizo.</p>
-    <p class="portada-acciones">
-      <a class="btn-primario" href="libro/01-que-es-un-agente.html">Empezar por el capítulo 1</a>
-      <a class="btn-secundario" href="libro/index.html">Ver el índice completo</a>
-    </p>
-  </div>
-  <div class="matriz" aria-label="Matriz de decisiones de un pedido de venta">
-    <p class="matriz-titulo">Matriz de decisiones</p>
-    <p class="matriz-sub">Un pedido de venta en CRONUS ES: quién decide en cada paso</p>
-    <table>
-      <thead><tr><th>Paso</th><th>Decide</th><th>Rastro</th></tr></thead>
-      <tbody>
-        <tr><td class="paso">Leer el pedido del cliente</td><td><span class="quien quien-agente">agente</span></td><td class="rastro">tarea del agente</td></tr>
-        <tr><td class="paso">Comprobar existencias y precios</td><td><span class="quien quien-agente">agente</span></td><td class="rastro">consulta registrada</td></tr>
-        <tr><td class="paso">Proponer la oferta</td><td><span class="quien quien-agente">agente</span></td><td class="rastro">borrador para revisar</td></tr>
-        <tr><td class="paso">Cambiar un precio o un descuento</td><td><span class="quien quien-regla">regla</span></td><td class="rastro">nunca el agente</td></tr>
-        <tr><td class="paso">Registrar el pedido</td><td><span class="quien quien-persona">persona</span></td><td class="rastro">registro de cambios</td></tr>
-      </tbody>
-    </table>
-    <p class="matriz-pie">La herramienta del capítulo 2. Cada capítulo la rellena con lo que se observa en el sandbox.</p>
-  </div>
-</section>
-
-<p class="estado-libro"><strong>Estado del libro:</strong> en construcción. Catorce capítulos planificados, de cero a avanzado; el capítulo 1 y el ejercicio 0 están en borrador. Primera versión prevista: 2026.2, sobre Business Central 29. Todo lo que ves tiene su fuente; lo que no se ha podido comprobar está marcado como [no verificado].</p>
-
-<section class="bloque">
-  <h2>Qué encontrarás aquí</h2>
-  <p class="bloque-intro">Cuatro cosas que crecen juntas: el texto del libro, los ejercicios, el material de estudio y lo que se construye por el camino.</p>
-  <div class="secciones">
+<section class="banda-azul">
+  <div class="ancho portada">
     <div>
-      <h3><a href="libro/index.html">El libro</a></h3>
-      <p>Catorce capítulos en cuatro partes, gratis y en abierto. Se escriben a medida que se estudian y se prueban en un sandbox, y se revisan con cada versión de Business Central.</p>
+      <p class="portada-contexto">Libro vivo · Gratis y en abierto</p>
+      <h1>IA y agentes en Business Central</h1>
+      <p class="portada-pregunta">¿Le darías las llaves del ERP a un agente?</p>
+      <p class="portada-tesis">La respuesta que defiende este libro, y que cada capítulo pone a prueba, es que <strong>el agente que mejor funciona en un ERP es el que menos decide por su cuenta</strong>. No el que menos hace: el que menos decide sin que nadie lo revise, con permisos propios y dejando rastro de lo que hizo. Escrito por un consultor funcional para consultores de Business Central que empiezan de cero en inteligencia artificial.</p>
+      <p class="portada-acciones">
+        <a class="btn-primario" href="libro/01-que-es-un-agente.html">Empezar por el capítulo 1</a>
+        <a class="btn-secundario" href="libro/index.html">Ver el índice completo</a>
+      </p>
     </div>
-    <div>
-      <h3><a href="ejercicios/index.html">Ejercicios</a></h3>
-      <p>Un ejercicio práctico a la semana para hacer en tu propio sandbox con datos de demostración. El enunciado siempre es gratis; la solución paso a paso es para suscriptores. El ejercicio 0 va entero.</p>
-    </div>
-    <div>
-      <h3><a href="conocimiento/index.html">Base de conocimiento</a></h3>
-      <p>Fichas de las fuentes que alimentan el libro, conceptos explicados para consultores funcionales y laboratorios hechos en el sandbox, con su resultado, funcione o no.</p>
-    </div>
-    <div>
-      <h3><a href="escaparate/index.html">Escaparate</a></h3>
-      <p>Los proyectos que nacen del libro: qué hacen, en qué estado están y, sobre todo, qué decide el agente y qué decide la persona.</p>
+    <div class="matriz" aria-label="Matriz de decisiones de un pedido de venta">
+      <p class="matriz-titulo">Matriz de decisiones</p>
+      <p class="matriz-sub">Un pedido de venta en CRONUS ES: quién decide en cada paso</p>
+      <table>
+        <thead><tr><th>Paso</th><th>Decide</th><th>Rastro</th></tr></thead>
+        <tbody>
+          <tr><td class="paso">Leer el pedido del cliente</td><td><span class="quien quien-agente">agente</span></td><td class="rastro">tarea del agente</td></tr>
+          <tr><td class="paso">Comprobar existencias y precios</td><td><span class="quien quien-agente">agente</span></td><td class="rastro">consulta registrada</td></tr>
+          <tr><td class="paso">Proponer la oferta</td><td><span class="quien quien-agente">agente</span></td><td class="rastro">borrador para revisar</td></tr>
+          <tr><td class="paso">Cambiar un precio o un descuento</td><td><span class="quien quien-regla">regla</span></td><td class="rastro">nunca el agente</td></tr>
+          <tr><td class="paso">Registrar el pedido</td><td><span class="quien quien-persona">persona</span></td><td class="rastro">registro de cambios</td></tr>
+        </tbody>
+      </table>
+      <p class="matriz-pie">La herramienta del capítulo 2. Cada capítulo la rellena con lo que se observa en el sandbox.</p>
     </div>
   </div>
 </section>
 
-<section class="bloque">
-  <h2>El mapa del libro</h2>
-  <p class="bloque-intro">Cuatro partes que van de cero a avanzado. Los controles se aprenden antes de construir el primer agente propio, porque es lo que un consultor tiene que explicar y defender ante un cliente.</p>
-  <div class="mapa">
-    <div>
-      <p class="mapa-parte">Parte I</p>
-      <h3>Entender</h3>
-      <p class="mapa-caps">Capítulos 1 a 4</p>
-      <p>Qué es un agente, qué defiende este libro, el Copilot de serie y los agentes que ya trae Business Central.</p>
-      <div class="nivel-medidor"><i class="on"></i><i></i><i></i><i></i><span>Desde cero</span></div>
-    </div>
-    <div>
-      <p class="mapa-parte">Parte II</p>
-      <h3>Controlar</h3>
-      <p class="mapa-caps">Capítulos 5 y 6</p>
-      <p>Permisos, identidad en Entra, auditoría y evaluación: medir en vez de confiar.</p>
-      <div class="nivel-medidor"><i class="on"></i><i class="on"></i><i></i><i></i><span>Básico</span></div>
-    </div>
-    <div>
-      <p class="mapa-parte">Parte III</p>
-      <h3>Construir</h3>
-      <p class="mapa-caps">Capítulos 7 a 12</p>
-      <p>Agent Designer, Copilot Studio y MCP, Agent Framework y Logic Apps, Foundry, AL, protocolos y seguridad.</p>
-      <div class="nivel-medidor"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><span>Medio a avanzado</span></div>
-    </div>
-    <div>
-      <p class="mapa-parte">Parte IV</p>
-      <h3>Operar</h3>
-      <p class="mapa-caps">Capítulos 13 y 14</p>
-      <p>La torre de control para supervisar agentes y el paso a producción con un cliente.</p>
-      <div class="nivel-medidor"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><span>Avanzado</span></div>
-    </div>
+<section class="banda-gris">
+  <div class="ancho">
+    <p class="estado-libro"><strong>Estado del libro:</strong> en construcción. Catorce capítulos planificados, de cero a avanzado; el capítulo 1 y el ejercicio 0 están en borrador. Primera versión prevista: 2026.2, sobre Business Central 29. Todo lo que ves tiene su fuente; lo que no se ha podido comprobar está marcado como [no verificado].</p>
   </div>
-  <p style="margin-top:1.25rem"><a href="libro/index.html">Ver los catorce capítulos y el índice por herramienta</a></p>
 </section>
 
-<section class="bloque">
-  <h2>Cómo se escribe</h2>
-  <div class="principios">
-    <div>
-      <h3>Cada afirmación lleva su fuente</h3>
-      <p>Libro y apartado, o página de Microsoft Learn con su fecha de actualización. El registro completo de fuentes es público.</p>
-    </div>
-    <div>
-      <h3>Lo no verificado se dice</h3>
-      <p>Lo que no se ha podido comprobar queda marcado como [no verificado] y listado al final de cada capítulo.</p>
-    </div>
-    <div>
-      <h3>Cada página dice en qué estado está</h3>
-      <p>Borrador, aprobado o final, y la versión de Business Central con la que se escribió.</p>
-    </div>
-    <div>
-      <h3>Solo datos de demostración</h3>
-      <p>Todo se prueba en la empresa CRONUS ES de un sandbox. Nunca datos de clientes.</p>
+<section class="banda-blanca bloque">
+  <div class="ancho">
+    <h2 class="bloque-titulo">Qué encontrarás aquí</h2>
+    <p class="bloque-intro">Cuatro cosas que crecen juntas: el texto del libro, los ejercicios, el material de estudio y lo que se construye por el camino.</p>
+    <div class="secciones">
+      <div>
+        <h3><a href="libro/index.html">El libro</a></h3>
+        <p>Catorce capítulos en cuatro partes, gratis y en abierto. Se escriben a medida que se estudian y se prueban en un sandbox, y se revisan con cada versión de Business Central.</p>
+      </div>
+      <div>
+        <h3><a href="ejercicios/index.html">Ejercicios</a></h3>
+        <p>Un ejercicio práctico a la semana para hacer en tu propio sandbox con datos de demostración. El enunciado siempre es gratis; la solución paso a paso es para suscriptores. El ejercicio 0 va entero.</p>
+      </div>
+      <div>
+        <h3><a href="conocimiento/index.html">Base de conocimiento</a></h3>
+        <p>Fichas de las fuentes que alimentan el libro, conceptos explicados para consultores funcionales y laboratorios hechos en el sandbox, con su resultado, funcione o no.</p>
+      </div>
+      <div>
+        <h3><a href="escaparate/index.html">Escaparate</a></h3>
+        <p>Los proyectos que nacen del libro: qué hacen, en qué estado están y, sobre todo, qué decide el agente y qué decide la persona.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="banda">
-  <div>
-    <h2>Un ejercicio cada semana</h2>
-    <p>La lista de espera se abre el 14 de noviembre de 2026 y la suscripción, el 1 de diciembre. Mientras tanto, el <a href="diario/index.html" style="color:#fff">diario</a> cuenta cómo avanza el estudio semana a semana.</p>
+<section class="banda-gris bloque">
+  <div class="ancho">
+    <h2 class="bloque-titulo">El mapa del libro</h2>
+    <p class="bloque-intro">Cuatro partes que van de cero a avanzado. Los controles se aprenden antes de construir el primer agente propio, porque es lo que un consultor tiene que explicar y defender ante un cliente.</p>
+    <div class="mapa">
+      <div>
+        <p class="mapa-parte">Parte I</p>
+        <h3>Entender</h3>
+        <p class="mapa-caps">Capítulos 1 a 4</p>
+        <p>Qué es un agente, qué defiende este libro, el Copilot de serie y los agentes que ya trae Business Central.</p>
+        <div class="nivel-medidor"><i class="on"></i><i></i><i></i><i></i><span>Desde cero</span></div>
+      </div>
+      <div>
+        <p class="mapa-parte">Parte II</p>
+        <h3>Controlar</h3>
+        <p class="mapa-caps">Capítulos 5 y 6</p>
+        <p>Permisos, identidad en Entra, auditoría y evaluación: medir en vez de confiar.</p>
+        <div class="nivel-medidor"><i class="on"></i><i class="on"></i><i></i><i></i><span>Básico</span></div>
+      </div>
+      <div>
+        <p class="mapa-parte">Parte III</p>
+        <h3>Construir</h3>
+        <p class="mapa-caps">Capítulos 7 a 12</p>
+        <p>Agent Designer, Copilot Studio y MCP, Agent Framework y Logic Apps, Foundry, AL, protocolos y seguridad.</p>
+        <div class="nivel-medidor"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><span>Medio a avanzado</span></div>
+      </div>
+      <div>
+        <p class="mapa-parte">Parte IV</p>
+        <h3>Operar</h3>
+        <p class="mapa-caps">Capítulos 13 y 14</p>
+        <p>La torre de control para supervisar agentes y el paso a producción con un cliente.</p>
+        <div class="nivel-medidor"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><span>Avanzado</span></div>
+      </div>
+    </div>
+    <p class="mapa-enlace"><a href="libro/index.html">Ver los catorce capítulos y el índice por herramienta</a></p>
   </div>
-  <a class="btn-primario" href="suscripcion.html">Cómo funciona la suscripción</a>
 </section>
 
-</div>
+<section class="banda-blanca bloque">
+  <div class="ancho">
+    <h2 class="bloque-titulo">Cómo se escribe</h2>
+    <div class="principios">
+      <div>
+        <h3>Cada afirmación lleva su fuente</h3>
+        <p>Libro y apartado, o página de Microsoft Learn con su fecha de actualización. El registro completo de fuentes es público.</p>
+      </div>
+      <div>
+        <h3>Lo no verificado se dice</h3>
+        <p>Lo que no se ha podido comprobar queda marcado como [no verificado] y listado al final de cada capítulo.</p>
+      </div>
+      <div>
+        <h3>Cada página dice en qué estado está</h3>
+        <p>Borrador, aprobado o final, y la versión de Business Central con la que se escribió.</p>
+      </div>
+      <div>
+        <h3>Solo datos de demostración</h3>
+        <p>Todo se prueba en la empresa CRONUS ES de un sandbox. Nunca datos de clientes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banda-azul banda-cta">
+  <div class="ancho">
+    <div>
+      <h2>Un ejercicio cada semana</h2>
+      <p>La lista de espera se abre el 14 de noviembre de 2026 y la suscripción, el 1 de diciembre. Mientras tanto, el <a href="diario/index.html">diario</a> cuenta cómo avanza el estudio semana a semana.</p>
+    </div>
+    <a class="btn-primario" href="suscripcion.html">Cómo funciona la suscripción</a>
+  </div>
+</section>
 ```

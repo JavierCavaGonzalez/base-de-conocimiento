@@ -1,13 +1,10 @@
 ---
-title: "El libro"
-title-block-style: none
+title: "El libro, capítulo a capítulo"
 toc: false
 ---
 
 ```{=html}
-<style>#title-block-header { display: none; }</style>
-<h1 style="margin-top:0.5rem">El libro, capítulo a capítulo</h1>
-<p class="bloque-intro" style="font-size:1.1rem;max-width:72ch">Catorce capítulos en cuatro partes, de cero a avanzado, gratis y en abierto. Cada capítulo deja algo construido en la empresa CRONUS ES de un sandbox, lleva en su cabecera las fuentes que lo sostienen, su estado y la versión de Business Central con la que se escribió, y se revisa con cada versión nueva.</p>
+<p class="bloque-intro" style="font-size:1.1rem;max-width:72ch;margin-top:0.25rem">Catorce capítulos en cuatro partes, de cero a avanzado, gratis y en abierto. Cada capítulo deja algo construido en la empresa CRONUS ES de un sandbox, lleva en su cabecera las fuentes que lo sostienen, su estado y la versión de Business Central con la que se escribió, y se revisa con cada versión nueva.</p>
 
 <div class="leyenda">
   <span><span class="ficha-etiqueta">Estado</span></span>

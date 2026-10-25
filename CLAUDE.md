@@ -16,7 +16,8 @@ Repositorio público del libro vivo «IA y agentes en Business Central» y de su
 - `index.qmd`, `suscripcion.qmd`, `sobre.qmd`, `novedades.qmd`: páginas fijas.
 - `libro/NN-slug.qmd`: capítulos. El orden está en `_quarto.yml` (sidebar «libro»). Los capítulos con `estado: pendiente` son páginas de plan (objetivo, qué construye, herramientas, ejercicios y fuentes previstas) que se sustituyen por el capítulo real cuando llega con `/publicar`; su cabecera lleva `parte` y `nivel`.
 - `libro/index.qmd`: el mapa del libro (tarjetas por parte, índice por herramienta, apéndices, versiones). Cuando cambie el índice, se actualiza a la vez `progreso/indice.md` en el repositorio privado.
-- `tema.scss`, `tema-oscuro.scss` y `fuentes.css`: el tema del sitio (modo claro y oscuro) y las tipografías alojadas en `fonts/` (Archivo y Source Serif 4, licencia OFL).
+- `tema.scss`, `tema-oscuro.scss` y `fuentes.css`: el tema del sitio (modo claro y oscuro) con la identidad de javiercava.com (azul #1370AE, amarillo #FFC905, Poppins y Space Mono) y Source Serif 4 para el texto del libro; tipografías alojadas en `fonts/` (licencia OFL).
+- Integración con javiercava.com: el primer nivel de la cabecera (`website.announcement` en `_quarto.yml`) repite el menú de javiercava.com con el logo de `marca/`. Si cambia el menú de javiercava.com, se cambia aquí también. El sitio se publica en https://libro.javiercava.com (registro CNAME en el DNS de Squarespace).
 - `conocimiento/fichas/`, `conocimiento/conceptos/`, `conocimiento/laboratorios/`: base de conocimiento con listados automáticos.
 - `ejercicios/`: enunciados públicos (y el ejercicio 0 completo).
 - `escaparate/`: proyectos. `diario/`: resúmenes semanales.
