@@ -7,6 +7,7 @@ project:
     - "!_libro/"
   resources:
     - fonts/
+    - marca/
 
 lang: es
 date-format: "D [de] MMMM [de] YYYY"
@@ -17,11 +18,30 @@ website:
   site-url: https://libro.javiercava.com/
   repo-url: https://github.com/JavierCavaGonzalez/base-de-conocimiento
   repo-actions: [issue]
+  favicon: marca/favicon.png
   page-navigation: true
   search:
     location: navbar
     type: overlay
+  # Primer nivel de la cabecera: la misma navegación que javiercava.com, para que el libro sea una sección más de la web.
+  announcement:
+    type: primary
+    dismissable: false
+    position: above-navbar
+    content: >-
+      <nav class="barra-global" aria-label="javiercava.com">
+      <a class="barra-logo" href="https://javiercava.com/"><img src="/marca/logo-javier-cava.webp" alt="Javier Cava" width="300" height="112"></a>
+      <ul class="barra-enlaces">
+      <li><a href="https://javiercava.com/ia-en-business-central">Business Central</a></li>
+      <li><a href="https://javiercava.com/ia-en-power-bi">Power BI</a></li>
+      <li><a href="https://javiercava.com/blog">Blog</a></li>
+      <li><a href="/" aria-current="page">Libro</a></li>
+      <li><a href="https://javiercava.com/sobrejaviercava">Sobre mí</a></li>
+      <li><a class="barra-contacto" href="https://javiercava.com/sobrejaviercava#hablamos">Contacto</a></li>
+      </ul>
+      </nav>
   navbar:
+    collapse-below: xl
     left:
       - text: "Libro"
         href: libro/index.qmd
@@ -34,9 +54,7 @@ website:
       - text: "Escaparate"
         href: escaparate/index.qmd
     right:
-      - text: "Novedades"
-        href: novedades.qmd
-      - text: "Sobre"
+      - text: "Sobre el libro"
         href: sobre.qmd
       - text: "Suscripción"
         href: suscripcion.qmd
@@ -46,7 +64,8 @@ website:
       style: docked
       collapse-level: 2
       contents:
-        - libro/index.qmd
+        - text: "Índice del libro"
+          href: libro/index.qmd
         - section: "Parte I · Entender"
           contents:
             - libro/01-que-es-un-agente.qmd
@@ -79,8 +98,8 @@ website:
         - auto: conocimiento/conceptos
         - auto: conocimiento/laboratorios
   page-footer:
-    left: "Texto: CC BY-NC-SA 4.0 · Código: MIT · © 2026 Javier Cava González"
-    center: "[javiercava.com](https://javiercava.com) · [GitHub](https://github.com/JavierCavaGonzalez)"
+    left: "© 2026 Javier Cava González · Texto CC BY-NC-SA 4.0 · Código MIT"
+    center: "[javiercava.com](https://javiercava.com) · [Novedades del libro](/novedades.qmd) · [LinkedIn](https://www.linkedin.com/in/javier-cava-gonzalez/) · [YouTube](https://www.youtube.com/@JavierCavaInTech/videos) · [info@javiercava.com](mailto:info@javiercava.com)"
     right: "Obra independiente, no afiliada a Microsoft Corporation ni autorizada, patrocinada o aprobada por ella. Microsoft, Dynamics 365, Business Central y Copilot son marcas de Microsoft Corporation."
 
 format:
@@ -89,11 +108,15 @@ format:
       light: [cosmo, tema.scss]
       dark: [cosmo, tema.scss, tema-oscuro.scss]
     css: fuentes.css
+    include-in-header:
+      text: |
+        <link rel="apple-touch-icon" href="/marca/apple-touch-icon.png">
     toc: true
     toc-depth: 3
     toc-title: "En esta página"
     code-copy: true
     link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/(?:www\.|libro\.)?javiercava\.com'
     smooth-scroll: true
 
 execute:

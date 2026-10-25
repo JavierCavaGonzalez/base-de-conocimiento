@@ -1,219 +1,263 @@
 /*-- scss:defaults --*/
 
-// Paleta (modo claro). Verde de libro de cuentas, tinta azul marino y un oro discreto
-// para lo que está «en revisión». Nada de cremas ni terracotas.
-$tinta: #182538 !default;
-$papel: #f6f7f9 !default;
+// Identidad de javiercava.com: azul de la cabecera, amarillo de los botones,
+// gris claro de las secciones, Poppins para títulos y Space Mono para la interfaz.
+// El texto de lectura del libro va en Source Serif 4.
+$azul: #1370ae !default;
+$azul-oscuro: #0e5a8c !default;
+$azul-suave: #dcebf6 !default;
+$amarillo: #ffc905 !default;
+$amarillo-suave: #fff3c4 !default;
+$tinta: #1a1a1a !default;
+$papel: #ffffff !default;
+$seccion: #ededed !default;
 $superficie: #ffffff !default;
-$verde: #1b6a4e !default;
-$verde-suave: #e3f1ea !default;
-$oro: #a8731c !default;
-$oro-suave: #f6ecd5 !default;
-$gris: #5a6676 !default;
-$borde: #d8dee6 !default;
-$pizarra: #3b4a60 !default;
+$gris: #59626e !default;
+$borde: #d9dde2 !default;
+$pizarra: #34404f !default;
 
 $body-bg: $papel !default;
 $body-color: $tinta !default;
-$primary: $verde !default;
+$primary: $azul !default;
 $secondary: $pizarra !default;
-$link-color: $verde !default;
-$link-hover-color: darken($verde, 8%) !default;
+$link-color: $azul !default;
+$link-hover-color: $azul-oscuro !default;
 $link-decoration: underline !default;
 
-$font-family-sans-serif: "Archivo", "Segoe UI", system-ui, -apple-system, sans-serif !default;
+$font-family-sans-serif: "Poppins", "Segoe UI", system-ui, sans-serif !default;
 $font-family-serif: "Source Serif 4", Georgia, "Times New Roman", serif !default;
 $font-family-base: $font-family-serif !default;
-$font-family-monospace: ui-monospace, "Cascadia Code", "Consolas", "SFMono-Regular", Menlo, monospace !default;
+$font-family-monospace: "Space Mono", ui-monospace, "Consolas", monospace !default;
 $font-size-base: 1.0625rem !default;
 $line-height-base: 1.65 !default;
 
 $headings-font-family: $font-family-sans-serif !default;
 $headings-font-weight: 700 !default;
 $headings-color: $tinta !default;
-$headings-line-height: 1.15 !default;
-$h1-font-size: 2.25rem !default;
-$h2-font-size: 1.6rem !default;
-$h3-font-size: 1.25rem !default;
-$h4-font-size: 1.1rem !default;
+$headings-line-height: 1.2 !default;
+$h1-font-size: 2.2rem !default;
+$h2-font-size: 1.55rem !default;
+$h3-font-size: 1.2rem !default;
+$h4-font-size: 1.05rem !default;
 
-$border-radius: 0.3rem !default;
+$border-radius: 0.4rem !default;
 $border-color: $borde !default;
 
 $navbar-bg: $superficie !default;
 $navbar-fg: $tinta !default;
-$navbar-hl: $verde !default;
+$navbar-hl: $azul !default;
 $sidebar-bg: $papel !default;
 $sidebar-fg: $tinta !default;
-$footer-bg: $superficie !default;
-$footer-fg: $gris !default;
+$footer-bg: $azul !default;
+$footer-fg: #ffffff !default;
 
-$code-bg: #eef1f4 !default;
+$code-bg: #f1f3f5 !default;
 $code-color: #1f2a3a !default;
 $table-border-color: $borde !default;
 
-$callout-color-note: $pizarra !default;
-$callout-color-tip: $verde !default;
-$callout-color-warning: $oro !default;
-$callout-color-important: #9b2c2c !default;
-$callout-color-caution: $oro !default;
+$callout-color-note: $azul !default;
+$callout-color-tip: $azul !default;
+$callout-color-warning: #b38900 !default;
+$callout-color-important: #b42318 !default;
+$callout-color-caution: #b38900 !default;
 
 /*-- scss:rules --*/
 
 :root {
+  --azul: #{$azul};
+  --azul-oscuro: #{$azul-oscuro};
+  --azul-suave: #{$azul-suave};
+  --amarillo: #{$amarillo};
+  --amarillo-suave: #{$amarillo-suave};
   --tinta: #{$tinta};
   --papel: #{$papel};
+  --seccion: #{$seccion};
   --superficie: #{$superficie};
-  --verde: #{$verde};
-  --verde-suave: #{$verde-suave};
-  --oro: #{$oro};
-  --oro-suave: #{$oro-suave};
   --gris: #{$gris};
   --borde: #{$borde};
   --pizarra: #{$pizarra};
-  --sans: #{$font-family-sans-serif};
-  --serif: #{$font-family-serif};
+  --poppins: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --mono: "Space Mono", ui-monospace, "Consolas", monospace;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 
 // ---------- Base ----------
 
-body {
-  font-optical-sizing: auto;
-  -webkit-font-smoothing: antialiased;
-}
+html, body { overflow-x: clip; }
+body { font-optical-sizing: auto; -webkit-font-smoothing: antialiased; }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
-  letter-spacing: -0.015em;
-}
-
-h1.title, .quarto-title h1 {
-  font-weight: 800;
-  letter-spacing: -0.025em;
-}
-
-.quarto-title .subtitle {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.25rem;
-  color: var(--gris);
-}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 { letter-spacing: -0.02em; }
+h1.title, .quarto-title h1 { font-weight: 800; letter-spacing: -0.03em; }
+.quarto-title .subtitle { font-family: var(--serif); font-style: italic; color: var(--gris); }
 
 p, li { max-width: 72ch; }
-table p, .matriz p, .capitulo p, .tabla-herramientas p { max-width: none; }
-
+table p, .matriz p, .capitulo p, .tabla-herramientas p, .banda p { max-width: none; }
 strong { font-weight: 600; }
 
 a:focus-visible, button:focus-visible, .btn:focus-visible {
-  outline: 3px solid var(--oro);
+  outline: 3px solid var(--amarillo);
   outline-offset: 2px;
 }
 
-// ---------- Barra de navegación ----------
+// ---------- Barra de javiercava.com (primer nivel de la cabecera) ----------
+
+#quarto-announcement {
+  background: var(--azul) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #fff;
+}
+#quarto-announcement .quarto-announcement-content { width: 100%; padding: 0; margin: 0; }
+#quarto-announcement .quarto-announcement-content p { margin: 0; max-width: none; }
+
+.barra-global {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  height: 70px;
+  padding: 0 1.25rem;
+  font-family: var(--mono);
+}
+.barra-logo { display: flex; align-items: center; flex: 0 0 auto; }
+.barra-logo img { height: 48px; width: auto; display: block; }
+.barra-enlaces {
+  display: flex;
+  align-items: center;
+  gap: 1.35rem;
+  list-style: none;
+  margin: 0 0 0 auto;
+  padding: 0;
+}
+.barra-enlaces li { max-width: none; }
+.barra-enlaces a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  padding: 0.3rem 0;
+  border-bottom: 2px solid transparent;
+}
+.barra-enlaces a:hover { border-bottom-color: rgba(255, 255, 255, 0.6); color: #fff; }
+.barra-enlaces a[aria-current="page"] { border-bottom-color: var(--amarillo); }
+.barra-enlaces a.barra-contacto {
+  border: 1.5px solid var(--amarillo);
+  border-radius: 999px;
+  padding: 0.35rem 1.1rem;
+  color: var(--amarillo);
+}
+.barra-enlaces a.barra-contacto:hover { background: var(--amarillo); color: #0a0a0a; }
+
+// ---------- Barra del libro (segundo nivel) ----------
 
 .navbar {
   border-bottom: 1px solid var(--borde);
-  font-family: var(--sans);
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
 }
-
-.navbar .navbar-brand {
-  font-weight: 800;
-  font-size: 1.1rem;
-  letter-spacing: -0.02em;
+.navbar .navbar-brand { padding-left: 0.1rem; }
+.navbar .navbar-title {
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 1.02rem;
+  letter-spacing: -0.01em;
 }
-
 .navbar .nav-link {
-  font-weight: 500;
-  font-size: 0.98rem;
+  font-family: var(--mono);
+  font-size: 0.86rem;
+  white-space: nowrap;
 }
-
+.navbar .nav-link.active { color: var(--azul) !important; text-decoration: underline; text-decoration-color: var(--amarillo); text-decoration-thickness: 3px; text-underline-offset: 0.45rem; }
 .navbar a.nav-link[href$="suscripcion.html"] {
-  background: var(--verde);
-  color: #fff !important;
+  background: var(--amarillo);
+  color: #0a0a0a !important;
   border-radius: 999px;
-  padding: 0.35rem 0.95rem;
+  padding: 0.35rem 1rem !important;
   margin-left: 0.35rem;
-  font-weight: 600;
+  font-weight: 700;
+  text-decoration: none;
 }
-.navbar a.nav-link[href$="suscripcion.html"]:hover {
-  background: #15553e;
-}
+.navbar a.nav-link[href$="suscripcion.html"]:hover { background: #ffd53d; }
 
 // ---------- Barra lateral y tabla de contenidos ----------
 
-#quarto-sidebar, #quarto-margin-sidebar, #TOC {
-  font-family: var(--sans);
-}
-
-#quarto-sidebar .sidebar-item .sidebar-item-text { font-size: 0.93rem; }
-#quarto-sidebar .sidebar-menu-container .sidebar-section .sidebar-item-container .sidebar-item-text,
-#quarto-sidebar .sidebar-item-section > .sidebar-item-container > .sidebar-item-toggle,
-#quarto-sidebar .sidebar-item-section > .sidebar-item-container > a {
-  font-weight: 600;
-}
+#quarto-sidebar, #quarto-margin-sidebar, #TOC { font-family: var(--poppins); }
+#quarto-sidebar .sidebar-item .sidebar-item-text { font-size: 0.9rem; font-weight: 400; }
 #quarto-sidebar .sidebar-title { font-weight: 800; letter-spacing: -0.02em; }
-
-#TOC .nav-link, #quarto-margin-sidebar .nav-link { font-size: 0.88rem; }
+#quarto-sidebar .sidebar-item-section > .sidebar-item-container > a,
+#quarto-sidebar .sidebar-item-section > .sidebar-item-container .sidebar-item-text { font-weight: 600; }
+#TOC .nav-link, #quarto-margin-sidebar .nav-link { font-size: 0.86rem; }
 .toc-title { font-weight: 700; }
 
-// ---------- Tablas ----------
+// ---------- Tablas y avisos ----------
 
 table { font-size: 0.95rem; }
-thead th, table th {
-  font-family: var(--sans);
-  font-weight: 600;
+thead th, table th { font-family: var(--mono); font-weight: 700; font-size: 0.78rem; color: var(--gris); }
+.callout .callout-title-container, .callout-header { font-family: var(--poppins); font-weight: 600; }
+
+// ---------- Botones (como en javiercava.com) ----------
+
+.btn-primario, .btn-secundario {
+  display: inline-block;
+  font-family: var(--mono);
+  font-weight: 700;
   font-size: 0.86rem;
-  color: var(--gris);
+  padding: 0.8rem 1.7rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1.5px solid var(--amarillo);
+  line-height: 1.2;
 }
-
-// ---------- Avisos ----------
-
-.callout { font-family: var(--serif); }
-.callout .callout-title-container, .callout-header { font-family: var(--sans); font-weight: 600; }
+.btn-primario { background: var(--amarillo); color: #0a0a0a; }
+.btn-primario:hover { background: #ffd53d; color: #0a0a0a; }
+.btn-secundario { background: transparent; color: var(--amarillo); font-weight: 400; }
+.btn-secundario:hover { background: rgba(255, 201, 5, 0.12); color: var(--amarillo); }
+.btn-secundario.sobre-claro { color: var(--azul); border-color: var(--azul); }
+.btn-secundario.sobre-claro:hover { background: var(--azul-suave); color: var(--azul); }
 
 // ---------- Etiquetas de estado y nivel ----------
 
 .chip {
   display: inline-block;
-  font-family: var(--sans);
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 700;
   line-height: 1;
-  padding: 0.3rem 0.55rem;
+  padding: 0.32rem 0.6rem;
   border-radius: 999px;
   border: 1px solid transparent;
   vertical-align: middle;
   white-space: nowrap;
 }
 .chip-pendiente { color: var(--gris); border-color: var(--borde); background: transparent; }
-.chip-borrador  { color: #6b4a0e; background: var(--oro-suave); border-color: #e6d3a3; }
-.chip-aprobado  { color: #134d38; background: var(--verde-suave); border-color: #b9dcc9; }
+.chip-borrador  { color: #5c4a00; background: var(--amarillo-suave); border-color: #f2dc8a; }
+.chip-aprobado  { color: var(--azul-oscuro); background: var(--azul-suave); border-color: #b9d6ec; }
 .chip-final     { color: #fff; background: var(--tinta); }
-.chip-nivel     { color: var(--pizarra); border-color: var(--borde); background: var(--superficie); }
+.chip-nivel     { color: var(--pizarra); border-color: var(--borde); background: var(--superficie); font-weight: 400; }
 .chip-nivel::before {
   content: "";
   display: inline-block;
   width: 0.55rem; height: 0.55rem;
   border-radius: 50%;
-  margin-right: 0.35rem;
+  margin-right: 0.4rem;
   background: var(--borde);
   vertical-align: 0;
 }
-.chip-nivel-desde-cero::before { background: #8fc7ad; }
-.chip-nivel-basico::before     { background: #4e9f7c; }
-.chip-nivel-medio::before      { background: var(--verde); }
-.chip-nivel-avanzado::before   { background: var(--tinta); }
+.chip-nivel-desde-cero::before { background: #9cc7e6; }
+.chip-nivel-basico::before     { background: #5aa0d6; }
+.chip-nivel-medio::before      { background: var(--azul); }
+.chip-nivel-avanzado::before   { background: #0b3f63; }
 
 .ficha-etiqueta {
-  font-family: var(--sans);
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  font-weight: 700;
   color: var(--gris);
   margin-right: 0.35rem;
 }
 
-.itinerario { font-family: var(--sans); font-size: 0.93rem; color: var(--pizarra); border-left: 3px solid var(--oro); padding-left: 0.75rem; }
+.itinerario { font-family: var(--poppins); font-size: 0.92rem; color: var(--pizarra); border-left: 3px solid var(--amarillo); padding-left: 0.75rem; }
 
 // ---------- Ficha al inicio de cada capítulo ----------
 
@@ -221,17 +265,30 @@ thead th, table th {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1.75rem;
-  font-family: var(--sans);
-  font-size: 0.93rem;
+  font-family: var(--poppins);
+  font-size: 0.92rem;
   padding: 0.7rem 0;
   margin: 0 0 1.25rem;
-  border-top: 2px solid var(--tinta);
+  border-top: 3px solid var(--azul);
   border-bottom: 1px solid var(--borde);
 }
 
-// ---------- Contenedor ancho (portada e índice del libro) ----------
+// ---------- Bandas a todo el ancho (portada) ----------
 
-.ancho { max-width: 1120px; margin: 0 auto; padding: 0 1rem; }
+.banda-azul, .banda-gris, .banda-blanca { width: 100%; }
+.banda-azul { background: var(--azul); color: #fff; }
+.banda-gris { background: var(--seccion); }
+.banda-blanca { background: var(--papel); }
+.ancho { max-width: 1140px; margin: 0 auto; padding: 0 1.25rem; }
+
+// Quarto deja un margen alrededor del contenido; la portada lo anula para que las bandas lleguen al borde.
+.portada-pagina #title-block-header { display: none; }
+.portada-pagina #quarto-content, .portada-pagina main.content { padding-top: 0 !important; margin-top: 0 !important; }
+.portada-pagina main.content { padding-left: 0; padding-right: 0; }
+.portada-pagina .page-columns .content { grid-column: screen-start / screen-end; }
+.portada-pagina main.content { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+.portada-pagina footer.footer, .portada-pagina .nav-footer { margin-top: 0 !important; }
+.portada-pagina #quarto-content { margin-bottom: 0 !important; padding-bottom: 0 !important; grid-template-rows: [content-top] minmax(max-content, 1fr) [content-bottom] 0 [page-bottom] !important; }
 
 // ---------- Portada ----------
 
@@ -240,190 +297,181 @@ thead th, table th {
   grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
   gap: 3rem;
   align-items: center;
-  padding: 2.5rem 0 3rem;
+  padding-top: 3.25rem;
+  padding-bottom: 3.5rem;
 }
 .portada-contexto {
-  font-family: var(--sans);
-  font-weight: 500;
-  color: var(--gris);
-  margin-bottom: 1rem;
+  display: inline-block;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--amarillo);
+  border-bottom: 2px solid var(--amarillo);
+  padding-bottom: 0.25rem;
+  margin: 0 0 1.25rem;
 }
 .portada h1 {
-  font-size: clamp(2.4rem, 5.2vw, 3.6rem);
+  font-family: var(--poppins);
+  color: #fff;
+  font-size: clamp(2.3rem, 4.8vw, 3.4rem);
   font-weight: 800;
-  line-height: 1.02;
+  line-height: 1.05;
   letter-spacing: -0.03em;
-  margin: 0 0 1.25rem;
-  max-width: 14ch;
+  margin: 0 0 1.1rem;
+  max-width: 15ch;
 }
 .portada-pregunta {
   font-family: var(--serif);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(1.35rem, 2.3vw, 1.65rem);
+  font-size: clamp(1.3rem, 2.2vw, 1.6rem);
   line-height: 1.3;
-  color: var(--tinta);
+  color: #fff;
   margin: 0 0 1rem;
   padding-left: 1rem;
-  border-left: 3px solid var(--oro);
+  border-left: 3px solid var(--amarillo);
 }
-.portada-tesis { font-size: 1.1rem; margin-bottom: 1.5rem; }
-.portada-acciones { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+.portada-tesis { color: rgba(255, 255, 255, 0.88); font-size: 1.08rem; margin-bottom: 1.6rem; }
+.portada-tesis strong { color: #fff; }
+.portada-acciones { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin: 0; }
 
-.btn-primario, .btn-secundario {
-  font-family: var(--sans);
-  font-weight: 600;
-  font-size: 0.98rem;
-  padding: 0.65rem 1.2rem;
-  border-radius: 999px;
-  text-decoration: none;
-  display: inline-block;
-  border: 1.5px solid var(--verde);
-}
-.btn-primario { background: var(--verde); color: #fff; }
-.btn-primario:hover { background: #15553e; color: #fff; }
-.btn-secundario { background: transparent; color: var(--verde); }
-.btn-secundario:hover { background: var(--verde-suave); color: var(--verde); }
-
-// La matriz de decisiones: el objeto propio del libro, presentado como un libro de cuentas.
+// La matriz de decisiones: el objeto propio del libro.
 .matriz {
   background: var(--superficie);
-  border: 1px solid var(--borde);
-  border-top: 3px solid var(--oro);
-  border-radius: 0.4rem;
-  padding: 1rem 1.1rem 0.9rem;
+  color: var(--tinta);
+  border-radius: 0.6rem;
+  border-top: 5px solid var(--amarillo);
+  padding: 1.1rem 1.2rem 0.95rem;
+  box-shadow: 0 18px 40px rgba(6, 40, 66, 0.28);
 }
-.matriz-titulo {
-  font-family: var(--sans);
-  font-weight: 700;
-  font-size: 0.95rem;
-  margin: 0 0 0.15rem;
-}
-.matriz-sub { font-family: var(--sans); font-size: 0.82rem; color: var(--gris); margin: 0 0 0.75rem; }
+.matriz-titulo { font-family: var(--poppins); font-weight: 700; font-size: 1rem; margin: 0 0 0.1rem; color: var(--tinta); }
+.matriz-sub { font-family: var(--poppins); font-size: 0.82rem; color: var(--gris); margin: 0 0 0.75rem; }
 .matriz table { width: 100%; margin: 0; font-size: 0.9rem; border-collapse: collapse; }
 .matriz th { padding: 0.35rem 0.4rem; border-bottom: 1px solid var(--borde); text-align: left; }
 .matriz td { padding: 0.5rem 0.4rem; border-bottom: 1px solid var(--borde); vertical-align: middle; }
 .matriz tr:last-child td { border-bottom: 0; }
 .matriz td.paso { font-family: var(--serif); }
-.matriz td.rastro { color: var(--gris); font-size: 0.85rem; }
+.matriz td.rastro { color: var(--gris); font-size: 0.84rem; }
 .quien {
   display: inline-block;
-  font-family: var(--sans);
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  font-weight: 700;
   padding: 0.25rem 0.55rem;
   border-radius: 0.3rem;
   white-space: nowrap;
 }
-.quien-agente  { background: var(--verde-suave); color: #134d38; }
+.quien-agente  { background: var(--azul-suave); color: var(--azul-oscuro); }
 .quien-persona { background: var(--tinta); color: #fff; }
-.quien-regla   { background: #e6e9ee; color: var(--pizarra); }
-.matriz-pie { font-family: var(--sans); font-size: 0.8rem; color: var(--gris); margin: 0.7rem 0 0; }
+.quien-regla   { background: var(--seccion); color: var(--pizarra); }
+.matriz-pie { font-family: var(--poppins); font-size: 0.78rem; color: var(--gris); margin: 0.7rem 0 0; }
 
 .estado-libro {
   max-width: none;
-  font-family: var(--sans);
-  font-size: 0.95rem;
+  font-family: var(--poppins);
+  font-size: 0.92rem;
   color: var(--gris);
-  border-top: 1px solid var(--borde);
-  border-bottom: 1px solid var(--borde);
-  padding: 0.8rem 0;
-  margin: 0 0 3rem;
+  margin: 0;
+  padding: 1rem 0;
 }
 .estado-libro strong { color: var(--tinta); font-weight: 600; }
 
-.bloque { padding: 0 0 3rem; }
-.bloque > h2 { font-size: 1.75rem; margin-bottom: 0.35rem; border-bottom: 0; padding-bottom: 0; }
-.bloque-intro { color: var(--gris); margin-bottom: 1.5rem; }
+.bloque { padding: 3.5rem 0; }
+.bloque > .ancho > h2, .bloque h2.bloque-titulo {
+  font-family: var(--poppins);
+  font-weight: 800;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  letter-spacing: -0.03em;
+  margin: 0 0 0.5rem;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.bloque-intro { color: var(--gris); margin-bottom: 1.75rem; }
 
 .secciones {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.75rem 2.5rem;
+  gap: 1.25rem;
 }
-.secciones > div { border-top: 2px solid var(--tinta); padding-top: 0.9rem; }
-.secciones h3 { font-size: 1.15rem; margin: 0 0 0.4rem; }
-.secciones h3 a { text-decoration: none; }
-.secciones h3 a:hover { text-decoration: underline; }
+.secciones > div {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 0.6rem;
+  padding: 1.3rem 1.4rem;
+}
+.secciones h3 { font-family: var(--poppins); font-size: 1.15rem; margin: 0 0 0.4rem; }
+.secciones h3 a { text-decoration: none; color: var(--tinta); }
+.secciones h3 a:hover { color: var(--azul); text-decoration: underline; }
 .secciones p { margin: 0; font-size: 1rem; }
 
 .mapa {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
-.mapa > div { border-top: 2px solid var(--borde); padding-top: 0.8rem; }
-.mapa-parte { font-family: var(--sans); font-size: 0.85rem; font-weight: 600; color: var(--gris); margin: 0; }
-.mapa h3 { font-size: 1.3rem; margin: 0.1rem 0 0.4rem; }
-.mapa-caps { font-family: var(--sans); font-size: 0.88rem; color: var(--gris); margin: 0 0 0.5rem; }
-.mapa p { font-size: 0.97rem; margin: 0 0 0.6rem; }
-.nivel-medidor { display: flex; gap: 3px; align-items: center; font-family: var(--sans); font-size: 0.8rem; color: var(--gris); }
+.mapa > div { background: var(--superficie); border-radius: 0.6rem; padding: 1.2rem 1.25rem; border-top: 4px solid var(--azul); }
+.mapa-parte { font-family: var(--mono); font-size: 0.78rem; font-weight: 700; color: var(--azul); margin: 0; }
+.mapa h3 { font-family: var(--poppins); font-size: 1.3rem; margin: 0.15rem 0 0.35rem; }
+.mapa-caps { font-family: var(--poppins); font-size: 0.86rem; color: var(--gris); margin: 0 0 0.5rem; }
+.mapa p { font-size: 0.97rem; margin: 0 0 0.7rem; }
+.nivel-medidor { display: flex; gap: 3px; align-items: center; font-family: var(--mono); font-size: 0.74rem; color: var(--gris); }
 .nivel-medidor i { display: inline-block; width: 1.1rem; height: 0.4rem; background: var(--borde); border-radius: 2px; }
-.nivel-medidor i.on { background: var(--verde); }
-.nivel-medidor span { margin-left: 0.4rem; }
+.nivel-medidor i.on { background: var(--azul); }
+.nivel-medidor span { margin-left: 0.45rem; }
+.mapa-enlace { margin: 1.5rem 0 0; font-family: var(--poppins); font-weight: 600; }
 
-.principios { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 2.5rem; }
-.principios div { border-left: 3px solid var(--verde); padding-left: 0.9rem; }
-.principios h3 { font-size: 1.05rem; margin: 0 0 0.25rem; }
+.principios { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem 2.5rem; }
+.principios div { border-left: 3px solid var(--amarillo); padding-left: 0.95rem; }
+.principios h3 { font-family: var(--poppins); font-size: 1.05rem; margin: 0 0 0.25rem; }
 .principios p { font-size: 0.98rem; margin: 0; }
 
-.banda {
-  background: var(--tinta);
-  color: #e9edf3;
-  border-radius: 0.5rem;
-  padding: 2rem 2.25rem;
-  display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-  gap: 1.5rem;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-.banda h2 { color: #fff; margin: 0 0 0.5rem; font-size: 1.5rem; border-bottom: 0; padding-bottom: 0; }
-.banda p { margin: 0; color: #c9d2de; }
-.banda .btn-primario { background: var(--oro); border-color: var(--oro); color: #1a1408; justify-self: end; }
-.banda .btn-primario:hover { background: #c58a26; border-color: #c58a26; color: #1a1408; }
+.banda-cta { padding: 3rem 0; }
+.banda-cta .ancho { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 1.5rem; align-items: center; }
+.banda-cta h2 { color: #fff; margin: 0 0 0.5rem; font-family: var(--poppins); font-weight: 800; font-size: 1.8rem; border-bottom: 0; padding-bottom: 0; }
+.banda-cta p { margin: 0; color: rgba(255, 255, 255, 0.88); }
+.banda-cta p a { color: #fff; }
+.banda-cta .btn-primario { justify-self: end; }
 
 // ---------- Índice del libro ----------
 
-.parte { margin: 0 0 2.5rem; }
-.parte-cabecera { border-top: 2px solid var(--tinta); padding-top: 0.9rem; margin-bottom: 0.5rem; }
-.parte-titulo { font-size: 1.45rem; margin: 0 0 0.3rem; }
+.parte { margin: 0 0 2.75rem; }
+.parte-cabecera { border-top: 3px solid var(--azul); padding-top: 0.9rem; margin-bottom: 0.5rem; }
+.parte-titulo { font-family: var(--poppins); font-weight: 800; font-size: 1.45rem; margin: 0 0 0.3rem; }
 .parte-descr { color: var(--gris); margin: 0; max-width: none; }
-.parte-rango { font-family: var(--sans); font-size: 0.9rem; }
+.parte-rango { font-family: var(--poppins); font-size: 0.88rem; }
 
 .capitulo {
   display: grid;
   grid-template-columns: 3.25rem minmax(0, 1fr);
   gap: 0 1rem;
-  padding: 1rem 0;
+  padding: 1.05rem 0;
   border-bottom: 1px solid var(--borde);
 }
 .capitulo:last-child { border-bottom: 0; }
 .capitulo-numero {
-  font-family: var(--sans);
-  font-weight: 800;
-  font-size: 1.9rem;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 1.65rem;
   line-height: 1;
-  color: var(--gris);
-  letter-spacing: -0.03em;
-  padding-top: 0.15rem;
+  color: var(--azul);
+  padding-top: 0.2rem;
 }
-.capitulo-titulo { font-size: 1.15rem; margin: 0 0 0.3rem; }
-.capitulo-titulo a { text-decoration: none; }
-.capitulo-titulo a:hover { text-decoration: underline; }
+.capitulo-titulo { font-family: var(--poppins); font-weight: 600; font-size: 1.12rem; margin: 0 0 0.3rem; }
+.capitulo-titulo a { text-decoration: none; color: var(--tinta); }
+.capitulo-titulo a:hover { color: var(--azul); text-decoration: underline; }
 .capitulo-objetivo { margin: 0 0 0.3rem; font-size: 0.98rem; }
-.capitulo-construye { margin: 0 0 0.5rem; font-size: 0.93rem; color: var(--pizarra); }
+.capitulo-construye { margin: 0 0 0.55rem; font-size: 0.93rem; color: var(--pizarra); }
 .capitulo-meta { margin: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
-.capitulo-previsto { font-family: var(--sans); font-size: 0.82rem; color: var(--gris); }
+.capitulo-previsto { font-family: var(--mono); font-size: 0.74rem; color: var(--gris); }
 
 .tabla-herramientas { width: 100%; }
-.tabla-herramientas th[scope="row"] { font-family: var(--sans); font-weight: 600; color: var(--tinta); font-size: 0.93rem; white-space: nowrap; }
+.tabla-herramientas th[scope="row"] { font-family: var(--poppins); font-weight: 600; color: var(--tinta); font-size: 0.92rem; white-space: nowrap; }
 .tabla-herramientas td.caps a {
   display: inline-block;
-  font-family: var(--sans);
-  font-weight: 600;
-  font-size: 0.82rem;
-  min-width: 1.7rem;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.78rem;
+  min-width: 1.8rem;
   text-align: center;
   padding: 0.15rem 0.4rem;
   margin: 0 0.15rem 0.15rem 0;
@@ -431,41 +479,63 @@ thead th, table th {
   border-radius: 0.3rem;
   text-decoration: none;
 }
-.tabla-herramientas td.caps a:hover { background: var(--verde-suave); border-color: var(--verde); }
+.tabla-herramientas td.caps a:hover { background: var(--azul-suave); border-color: var(--azul); }
 
-.leyenda { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; font-family: var(--sans); font-size: 0.9rem; color: var(--gris); margin: 0 0 1.5rem; }
+.leyenda { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; font-family: var(--poppins); font-size: 0.88rem; color: var(--gris); margin: 0 0 1.25rem; }
 
-// ---------- Listados (fichas, ejercicios, diario) ----------
+// ---------- Listados ----------
 
-.quarto-listing-table th { font-family: var(--sans); }
+.quarto-listing-table th { font-family: var(--mono); }
 .quarto-listing .listing-title a { text-decoration: none; }
 
-// ---------- Pie ----------
+// ---------- Pie (como el de javiercava.com) ----------
 
 .nav-footer {
-  font-family: var(--sans);
-  font-size: 0.82rem;
-  border-top: 1px solid var(--borde);
-  padding-top: 1rem;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  background: var(--azul);
+  color: #fff;
+  border-top: 0;
+  padding: 1.5rem 1.25rem;
+  align-items: flex-start;
 }
+.nav-footer a { color: #fff; }
+.nav-footer a:hover { color: var(--amarillo); }
+.nav-footer .nav-footer-left, .nav-footer .nav-footer-center, .nav-footer .nav-footer-right { color: rgba(255, 255, 255, 0.9); }
 .nav-footer .nav-footer-right { max-width: 48ch; text-align: right; }
+.nav-footer .nav-footer-center .toc-actions, .nav-footer .toc-actions a { color: #fff; }
 
 // ---------- Móvil ----------
 
+@media (max-width: 1199px) {
+  .navbar .navbar-brand, .navbar .navbar-title { white-space: normal; line-height: 1.2; }
+}
 @media (max-width: 991px) {
-  .portada { grid-template-columns: 1fr; gap: 2rem; padding-top: 1.5rem; }
+  .portada { grid-template-columns: 1fr; gap: 2.25rem; padding-top: 2.25rem; padding-bottom: 2.75rem; }
+  .barra-enlaces { -webkit-mask-image: linear-gradient(to right, #000 82%, transparent); mask-image: linear-gradient(to right, #000 82%, transparent); padding-right: 2rem !important; }
   .mapa { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .barra-global { gap: 1rem; }
+  .barra-enlaces {
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 1.1rem;
+    padding: 0 0.25rem;
+  }
+  .barra-enlaces::-webkit-scrollbar { display: none; }
+  .barra-enlaces a { font-size: 0.84rem; }
 }
 @media (max-width: 767px) {
   .secciones, .mapa, .principios { grid-template-columns: 1fr; }
-  .banda { grid-template-columns: 1fr; padding: 1.5rem; }
-  .banda .btn-primario { justify-self: start; }
+  .banda-cta .ancho { grid-template-columns: 1fr; }
+  .banda-cta .btn-primario { justify-self: start; }
   .capitulo { grid-template-columns: 2.4rem minmax(0, 1fr); }
-  .capitulo-numero { font-size: 1.5rem; }
+  .capitulo-numero { font-size: 1.35rem; }
   .nav-footer .nav-footer-right { text-align: left; max-width: none; }
   .tabla-herramientas th[scope="row"] { white-space: normal; }
+  .barra-logo img { height: 36px; }
+  .barra-global { height: 58px; }
+  .navbar .navbar-title { font-size: 0.92rem; }
 }
-
 @media (max-width: 480px) {
   .matriz th:nth-child(3), .matriz td.rastro { display: none; }
 }

@@ -1,69 +1,68 @@
 /*-- scss:defaults --*/
 
-// Modo oscuro: mismas familias y misma lógica, con la tinta invertida.
+// Modo oscuro: la barra y el pie mantienen el azul de javiercava.com; el resto se oscurece.
+$azul: #5aa9e6 !default;
+$azul-oscuro: #8cc4ef !default;
+$azul-suave: #17344d !default;
+$amarillo: #ffc905 !default;
+$amarillo-suave: #3a3215 !default;
 $tinta: #e6ebf2 !default;
-$papel: #131b26 !default;
-$superficie: #1a2432 !default;
-$verde: #5cc298 !default;
-$verde-suave: #1f3b31 !default;
-$oro: #e0b65f !default;
-$oro-suave: #3a3222 !default;
+$papel: #0f1923 !default;
+$seccion: #16222e !default;
+$superficie: #1b2836 !default;
 $gris: #9ba7b7 !default;
-$borde: #2c3847 !default;
+$borde: #2c3a49 !default;
 $pizarra: #c3cdda !default;
 
 $body-bg: $papel !default;
 $body-color: $tinta !default;
-$primary: $verde !default;
+$primary: $azul !default;
 $secondary: $pizarra !default;
-$link-color: $verde !default;
-$link-hover-color: lighten($verde, 10%) !default;
+$link-color: $azul !default;
+$link-hover-color: $azul-oscuro !default;
 
 $headings-color: #f4f6f9 !default;
 $navbar-bg: $superficie !default;
 $navbar-fg: $tinta !default;
-$navbar-hl: $verde !default;
+$navbar-hl: $azul !default;
 $sidebar-bg: $papel !default;
 $sidebar-fg: $tinta !default;
-$footer-bg: $superficie !default;
-$footer-fg: $gris !default;
+$footer-bg: #1370ae !default;
+$footer-fg: #ffffff !default;
 
-$code-bg: #222d3c !default;
+$code-bg: #1e2b3a !default;
 $code-color: #e6ebf2 !default;
 $table-border-color: $borde !default;
 
-$callout-color-note: $pizarra !default;
-$callout-color-tip: $verde !default;
-$callout-color-warning: $oro !default;
-$callout-color-important: #e07c7c !default;
-$callout-color-caution: $oro !default;
+$callout-color-note: $azul !default;
+$callout-color-tip: $azul !default;
+$callout-color-warning: $amarillo !default;
+$callout-color-important: #f08b8b !default;
+$callout-color-caution: $amarillo !default;
 
 /*-- scss:rules --*/
 
 :root {
+  --azul: #{$azul};
+  --azul-oscuro: #{$azul-oscuro};
+  --azul-suave: #{$azul-suave};
+  --amarillo-suave: #{$amarillo-suave};
   --tinta: #{$tinta};
   --papel: #{$papel};
+  --seccion: #{$seccion};
   --superficie: #{$superficie};
-  --verde: #{$verde};
-  --verde-suave: #{$verde-suave};
-  --oro: #{$oro};
-  --oro-suave: #{$oro-suave};
   --gris: #{$gris};
   --borde: #{$borde};
   --pizarra: #{$pizarra};
 }
 
-.navbar a.nav-link[href$="suscripcion.html"] { color: #0f1a14 !important; }
-.navbar a.nav-link[href$="suscripcion.html"]:hover { background: #7ad0ac; }
-.btn-primario { color: #0f1a14; }
-.btn-primario:hover { background: #7ad0ac; color: #0f1a14; }
-.chip-borrador { color: #f1dca6; border-color: #5a4a26; }
-.chip-aprobado { color: #a9e2c6; border-color: #2f5a47; }
-.chip-final { background: #e6ebf2; color: #131b26; }
+// La identidad de javiercava.com no cambia con el modo oscuro.
+#quarto-announcement, .banda-azul, .nav-footer { background: #1370ae !important; }
+.chip-borrador { color: #f6dc84; border-color: #5a4a1c; }
+.chip-aprobado { color: #a9d2f2; border-color: #2a4c69; }
+.chip-final { background: #e6ebf2; color: #0f1923; }
 .chip-nivel-avanzado::before { background: #e6ebf2; }
-.quien-agente { color: #a9e2c6; }
-.quien-persona { background: #e6ebf2; color: #131b26; }
-.quien-regla { background: #2c3847; color: var(--pizarra); }
-.secciones > div, .parte-cabecera, .ficha-capitulo { border-top-color: var(--tinta); }
-.banda { background: #0d141d; border: 1px solid var(--borde); }
-.banda .btn-primario { color: #1a1408; }
+.quien-agente { color: #a9d2f2; }
+.quien-persona { background: #e6ebf2; color: #0f1923; }
+.matriz { box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45); }
+.btn-secundario.sobre-claro { color: var(--azul); border-color: var(--azul); }
