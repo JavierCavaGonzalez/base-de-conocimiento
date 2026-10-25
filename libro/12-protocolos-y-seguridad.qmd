@@ -1,0 +1,50 @@
+---
+title: "12. Protocolos y seguridad: MCP, A2A y lo que puede salir mal"
+capitulo: 12-protocolos-y-seguridad
+parte: "III"
+nivel: avanzado
+fuentes: []
+estado: pendiente
+fecha-revision: 2026-10-25
+ola-bc: 2026w2
+---
+
+```{=html}
+<div class="ficha-capitulo">
+  <div><span class="ficha-etiqueta">Parte</span> III · Construir</div>
+  <div><span class="ficha-etiqueta">Nivel</span> Avanzado</div>
+  <div><span class="ficha-etiqueta">Estado</span> <span class="chip chip-pendiente">pendiente</span></div>
+  <div><span class="ficha-etiqueta">Previsto</span> octubre de 2027</div>
+</div>
+```
+
+::: {.callout-note title="Capítulo pendiente de escribir"}
+Este capítulo se escribe a partir de octubre de 2027, después de estudiar y probar sus fuentes en el sandbox. Lo que ves es su plan: qué aprenderás, qué construirás y con qué herramientas. El plan puede cambiar cuando llegue su turno. Mientras tanto, puedes seguir el [diario](../diario/index.qmd).
+:::
+
+## Qué vas a aprender
+
+MCP y A2A; identidad y autorización; inyección de instrucciones en documentos, correos y datos del propio ERP; ataques conocidos a agentes comerciales; la regla de dos; contención y botón de parada; diversidad de modelos; la lista de despliegue responsable.
+
+## Qué construirás en CRONUS ES
+
+Un modelo de amenazas del agente del capítulo 9 (o del 7): activos, entradas no fiables y controles; y un ataque de demostración en CRONUS: un correo de pedido con instrucciones ocultas, para comprobar si el validador lo frena.
+
+## Herramientas de Microsoft que aparecen
+
+- MCP (especificación)
+- A2A 1.0
+- Autorización con Entra
+- Seguridad del servidor MCP de Business Central
+
+## Ejercicios previstos
+
+Tres ejercicios semanales y una síntesis, por suscripción (el enunciado siempre es gratis):
+
+1. Modelo de amenazas con plantilla.
+2. El correo con instrucciones ocultas en el sandbox y la defensa.
+3. Separar modelos: el que propone y el que verifica no son el mismo; medir la diferencia.
+
+## Fuentes previstas
+
+Especificación MCP (julio de 2026); A2A 1.0; Li et al. 2024; Meta 2025; Dibia 2025 (caps. 12 y 13); Nadella 2026 (contención, diversidad de modelos); Microsoft Learn: seguridad del servidor MCP.

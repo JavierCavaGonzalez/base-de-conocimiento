@@ -1,43 +1,237 @@
 ---
 title: "El libro"
+title-block-style: none
 toc: false
 ---
 
-El libro vivo se publica capítulo a capítulo, gratis y en abierto, y se revisa con cada versión de Business Central. Cada capítulo lleva en su cabecera las fuentes que lo sostienen, su estado y la versión de Business Central con la que se escribió (`ola-bc`, por ejemplo `2026w2` para la versión 29, publicada en octubre de 2026).
+```{=html}
+<style>#title-block-header { display: none; }</style>
+<h1 style="margin-top:0.5rem">El libro, capítulo a capítulo</h1>
+<p class="bloque-intro" style="font-size:1.1rem;max-width:72ch">Catorce capítulos en cuatro partes, de cero a avanzado, gratis y en abierto. Cada capítulo deja algo construido en la empresa CRONUS ES de un sandbox, lleva en su cabecera las fuentes que lo sostienen, su estado y la versión de Business Central con la que se escribió, y se revisa con cada versión nueva.</p>
 
-## Cómo leerlo
+<div class="leyenda">
+  <span><span class="ficha-etiqueta">Estado</span></span>
+  <span class="chip chip-pendiente">pendiente</span><span>plan publicado, sin escribir</span>
+  <span class="chip chip-borrador">borrador</span><span>escrito y citado, en revisión</span>
+  <span class="chip chip-aprobado">aprobado</span><span>revisado y con las citas verificadas</span>
+  <span class="chip chip-final">final</span><span>sin cambios previstos hasta la siguiente versión de BC</span>
+</div>
+<div class="leyenda">
+  <span><span class="ficha-etiqueta">Nivel</span></span>
+  <span class="chip chip-nivel chip-nivel-desde-cero">Desde cero</span>
+  <span class="chip chip-nivel chip-nivel-basico">Básico</span>
+  <span class="chip chip-nivel chip-nivel-medio">Medio</span>
+  <span class="chip chip-nivel chip-nivel-avanzado">Avanzado</span>
+  <span>Los capítulos 9, 10 y 11 tienen laboratorio técnico con versión guiada para el consultor funcional.</span>
+</div>
 
-- **Borrador**: escrito y citado, pendiente de revisión. Puede cambiar.
-- **Aprobado**: revisado por el autor y con las citas verificadas en una sesión aparte.
-- **Final**: aprobado y sin cambios previstos hasta la siguiente versión de Business Central.
 
-Lo que no se ha podido comprobar está marcado en el texto como [no verificado] y se lista al final del capítulo.
 
-## Índice
+<section class="parte" id="parte-i">
+  <header class="parte-cabecera">
+    <h3 class="parte-titulo">Parte I · Entender</h3>
+    <p class="parte-descr">Qué es un agente, qué defiende este libro y qué trae ya Business Central. <span class="parte-rango">Capítulos 1 a 4 · nivel desde cero a básico.</span></p>
+  </header>
+<article class="capitulo">
+  <div class="capitulo-numero">1</div>
+  <div class="capitulo-cuerpo">
+    <h4 class="capitulo-titulo"><a href="01-que-es-un-agente.html">¿Qué es un agente (y qué no lo es)?</a></h4>
+    <p class="capitulo-objetivo">Distinguir modelo, herramientas, bucle de ejecución, memoria y permisos; entender por qué un ERP cambia las reglas (dinero real, transacciones, permisos, auditoría) y fijar el vocabulario del libro.</p>
+    <p class="capitulo-construye"><span class="ficha-etiqueta">Construyes</span> Tu primera conversación con los datos de CRONUS: con el chat de Copilot dentro de Business Central y después desde un cliente externo a través del servidor MCP de Business Central, solo con herramientas de consulta; y un glosario propio de veinte términos.</p>
+    <p class="capitulo-meta"><span class="chip chip-nivel chip-nivel-desde-cero">Desde cero</span> <span class="chip chip-borrador">borrador</span> <span class="capitulo-previsto">diciembre de 2026</span></p>
+  </div>
+</article>
+<article class="capitulo">
+  <div class="capitulo-numero">2</div>
+  <div class="capitulo-cuerpo">
+    <h4 class="capitulo-titulo"><a href="02-el-agente-que-menos-decide.html">La tesis: el agente que menos decide</a></h4>
+    <p class="capitulo-objetivo">Explicar la tesis del libro y traducir a un ERP los siete principios de Nadella sobre tratar los modelos de IA como riesgo interno; separar inteligencia (el modelo), arnés (la orquestación) y espacio de acción (lo que puede tocar); distinguir un flujo con control explícito de un agente autónomo.</p>
+    <p class="capitulo-construye"><span class="ficha-etiqueta">Construyes</span> La «matriz de decisiones» de un proceso de CRONUS, el pedido de venta de principio a fin: en cada paso, quién decide (persona, regla o agente), qué evidencia queda y cómo se para.</p>
+    <p class="capitulo-meta"><span class="chip chip-nivel chip-nivel-desde-cero">Desde cero</span> <span class="chip chip-pendiente">pendiente</span> <span class="capitulo-previsto">diciembre de 2026</span></p>
+  </div>
+</article>
+<article class="capitulo">
+  <div class="capitulo-numero">3</div>
+  <div class="capitulo-cuerpo">
+    <h4 class="capitulo-titulo"><a href="03-copilot-en-business-central.html">El mapa de la IA en Business Central: Copilot y lo que trae de serie</a></h4>
+    <p class="capitulo-objetivo">Recorrer todo lo que Business Central ya trae: el chat con Copilot; las capacidades de Copilot (análisis de datos, resúmenes, autorrelleno, casar documentos electrónicos, conciliación bancaria asistida, sugerencias de sustitutos, de líneas de venta y de texto de marketing, series numéricas) y las funciones de IA no generativa (previsión de inventario, predicción de pagos atrasados, análisis de flujo de caja).</p>
+    <p class="capitulo-construye"><span class="ficha-etiqueta">Construyes</span> El inventario de la IA de tu sandbox: qué capacidades están activas, cuáles faltan por país o versión y, para cada una, quién decide.</p>
+    <p class="capitulo-meta"><span class="chip chip-nivel chip-nivel-desde-cero">Desde cero</span> <span class="chip chip-pendiente">pendiente</span> <span class="capitulo-previsto">enero de 2027</span></p>
+  </div>
+</article>
+<article class="capitulo">
+  <div class="capitulo-numero">4</div>
+  <div class="capitulo-cuerpo">
+    <h4 class="capitulo-titulo"><a href="04-los-agentes-que-ya-trae-business-central.html">Los agentes que ya trae Business Central</a></h4>
+    <p class="capitulo-objetivo">Conocer el Sales Order Agent, el Payables Agent y el Expense Agent: qué proponen, qué deciden, dónde revisa la persona, qué consumen (créditos de Copilot) y cómo se gobiernan.</p>
+    <p class="capitulo-construye"><span class="ficha-etiqueta">Construyes</span> Activar el Sales Order Agent en el sandbox, recibir un pedido por correo de un cliente de CRONUS, seguir la tarea en su lista, revisar y registrar; rellenar la matriz del capítulo 2 con lo observado.</p>
+    <p class="capitulo-meta"><span class="chip chip-nivel chip-nivel-basico">Básico</span> <span class="chip chip-pendiente">pendiente</span> <span class="capitulo-previsto">febrero de 2027</span></p>
+  </div>
+</article>
+</section>
 
-Estructura propuesta en el documento 2 del proyecto, pendiente de aprobación del autor: cuatro partes y doce capítulos de núcleo, más apéndices y ampliaciones por cada versión de Business Central. Solo el capítulo 1 tiene borrador.
+<section class="parte" id="parte-ii">
+  <header class="parte-cabecera">
+    <h3 class="parte-titulo">Parte II · Controlar</h3>
+    <p class="parte-descr">Permisos, identidad, auditoría y evaluación: los controles van antes que el primer agente propio. <span class="parte-rango">Capítulos 5 a 6 · nivel básico.</span></p>
+  </header>
+<article class="capitulo">
+  <div class="capitulo-numero">5</div>
+  <div class="capitulo-cuerpo">
+    <h4 class="capitulo-titulo"><a href="05-permisos-identidad-y-auditoria.html">Permisos, identidad y auditoría del agente</a></h4>
+    <p class="capitulo-objetivo">Cómo limita Business Central a un agente: conjuntos de permisos del agente y su intersección con los del usuario que lo configura, usuario de agente y licencia; identidad del agente en Microsoft Entra (Agent ID) y Agent 365 como capa de gobierno de la organización; qué rastro queda (lista de tareas del agente, registro de cambios, telemetría).</p>
+    <p class="capitulo-construye"><span class="ficha-etiqueta">Construyes</span> Un conjunto de permisos mínimo para el agente y la prueba de que, al quitarle un permiso, se detiene y lo deja escrito; una ficha de identidad del agente para el administrador (quién lo creó, qué puede, cómo se apaga).</p>
+    <p class="capitulo-meta"><span class="chip chip-nivel chip-nivel-basico">Básico</span> <span class="chip chip-pendiente">pendiente</span> <span class="capitulo-previsto">marzo de 2027</span></p>
+  </div>
+</article>
+<article class="capitulo">
+  <div class="capitulo-numero">6</div>
+  <div class="capitulo-cuerpo">
+    <h4 class="capitulo-titulo"><a href="06-observar-y-evaluar.html">Observar y evaluar</a></h4>
+    <p class="capitulo-objetivo">Medir en vez de confiar: evaluación de trayectorias, bancos de pruebas, jueces con modelo y sus límites; la herramienta de evaluación de AL (conjuntos JSONL o YAML, evaluación de agentes y límite de créditos); telemetría con las convenciones gen-ai de OpenTelemetry.</p>
+    <p class="capitulo-construye"><span class="ficha-etiqueta">Construyes</span> Un banco de veinte pedidos de prueba en CRONUS (correctos, ambiguos y con trampa) y una hoja de resultados del Sales Order Agent o del agente del capítulo 7: tasa de acierto, tasa de pedir ayuda, tasa de inventar.</p>
+    <p class="capitulo-meta"><span class="chip chip-nivel chip-nivel-basico">Básico</span> <span class="chip chip-pendiente">pendiente</span> <span class="capitulo-previsto">abril de 2027</span></p>
+  </div>
+</article>
+</section>
 
-| Parte | Nº | Capítulo | Estado |
-|---|---|---|---|
-| I · Entender | 1 | [¿Qué es un agente (y qué no lo es)?](01-que-es-un-agente.qmd) | borrador |
-| I · Entender | 2 | El agente que menos decide | pendiente |
-| I · Entender | 3 | Los agentes nativos de Business Central | pendiente |
-| II · Controlar | 4 | Permisos, identidad y auditoría | pendiente |
-| II · Controlar | 5 | Observar y evaluar | pendiente |
-| III · Construir | 6 | Un agente sin código | pendiente |
-| III · Construir | 7 | Copilot Studio y MCP | pendiente |
-| III · Construir | 8 | Orquestar agentes | pendiente |
-| III · Construir | 9 | Agentes en AL | pendiente |
-| III · Construir | 10 | Protocolos y seguridad | pendiente |
-| IV · Operar | 11 | La torre de control | pendiente |
-| IV · Operar | 12 | Producción y adopción | pendiente |
+<section class="parte" id="parte-iii">
+  <header class="parte-cabecera">
+    <h3 class="parte-titulo">Parte III · Construir</h3>
+    <p class="parte-descr">De lo más simple (sin código) a lo más abierto (orquestación, Foundry, AL y protocolos). <span class="parte-rango">Capítulos 7 a 12 · nivel medio a avanzado.</span></p>
+  </header>
+<article class="capitulo">
+  <div class="capitulo-numero">7</div>
+  <div class="capitulo-cuerpo">
+    <h4 class="capitulo-titulo"><a href="07-agent-designer.html">Diseñar un agente sin código: el Agent Designer</a></h4>
+    <p class="capitulo-objetivo">El ciclo crear, configurar, activar, iterar, graduar y limpiar del AI development toolkit; instrucciones, herramientas (páginas) y permisos; la plantilla de validación de ventas y el patio de pruebas; sus límites hoy (vista previa, solo sandbox).</p>
+    <p class="capitulo-construye"><span class="ficha-etiqueta">Construyes</span> Un agente de validación de pedidos para CRONUS que propone y nunca registra, con la matriz del capítulo 2 y los permisos del capítulo 5, evaluado con el banco del capítulo 6.</p>
+    <p class="capitulo-meta"><span class="chip chip-nivel chip-nivel-medio">Medio</span> <span class="chip chip-pendiente">pendiente</span> <span class="capitulo-previsto">mayo de 2027</span></p>
+  </div>
+</article>
+<article class="capitulo">
+  <div class="capitulo-numero">8</div>
+  <div class="capitulo-cuerpo">
+    <h4 class="capitulo-titulo"><a href="08-copilot-studio-y-el-servidor-mcp.html">Copilot Studio y el servidor MCP de Business Central</a></h4>
+    <p class="capitulo-objetivo">Las dos vías de entrada desde fuera: el conector de Business Central y la herramienta «Dynamics 365 Business Central MCP Server» en Copilot Studio; configurar el servidor MCP (página de configuraciones, modo dinámico de herramientas, herramientas de consulta de datos); publicar API propias como herramientas; clientes que no son de Microsoft con registro de aplicación en Entra; publicar en Teams.</p>
+    <p class="capitulo-construye"><span class="ficha-etiqueta">Construyes</span> Un asistente de consulta en Copilot Studio que responde sobre CRONUS a través del MCP, solo con herramientas de consulta, publicado en Teams para el equipo de ventas; el mismo asistente desde un cliente externo, para comparar.</p>
+    <p class="capitulo-meta"><span class="chip chip-nivel chip-nivel-medio">Medio</span> <span class="chip chip-pendiente">pendiente</span> <span class="capitulo-previsto">junio de 2027</span></p>
+  </div>
+</article>
+<article class="capitulo">
+  <div class="capitulo-numero">9</div>
+  <div class="capitulo-cuerpo">
+    <h4 class="capitulo-titulo"><a href="09-orquestar-agent-framework-y-logic-apps.html">Orquestar varios agentes: Agent Framework y Logic Apps</a></h4>
+    <p class="capitulo-objetivo">Patrones de orquestación (secuencial, concurrente, grupo, traspaso, Magentic) y cuándo basta un solo agente; Agent Framework 1.0 en Python y .NET: flujos como grafos, puntos de control, humano en el bucle; el bucle de agente de Logic Apps como versión sin código; coste en tokens; trazas con OpenTelemetry.</p>
+    <p class="capitulo-construye"><span class="ficha-etiqueta">Construyes</span> Técnico: un flujo en Python con Agent Framework (un agente «lector de pedidos», un agente «comprobador de crédito» y un paso validador determinista, que no es un modelo, que aprueba o escala a una persona) sobre el MCP de Business Central.</p>
+    <p class="capitulo-meta"><span class="chip chip-nivel chip-nivel-avanzado">Avanzado</span> <span class="chip chip-pendiente">pendiente</span> <span class="capitulo-previsto">julio de 2027</span></p>
+  </div>
+</article>
+<article class="capitulo">
+  <div class="capitulo-numero">10</div>
+  <div class="capitulo-cuerpo">
+    <h4 class="capitulo-titulo"><a href="10-microsoft-foundry.html">Microsoft Foundry: alojar, evaluar y observar agentes</a></h4>
+    <p class="capitulo-objetivo">Qué aporta Foundry cuando el agente sale del sandbox: catálogo de modelos y despliegues, agentes alojados construidos con Agent Framework, evaluaciones y trazas desde el portal, y cómo encaja con Entra Agent ID y con el servidor MCP de Business Central; cuándo compensa frente a Copilot Studio o Logic Apps.</p>
+    <p class="capitulo-construye"><span class="ficha-etiqueta">Construyes</span> El flujo del capítulo 9 desplegado como agente alojado en Foundry, con sus evaluaciones y trazas visibles, conectado a CRONUS por MCP solo con herramientas de consulta.</p>
+    <p class="capitulo-meta"><span class="chip chip-nivel chip-nivel-avanzado">Avanzado</span> <span class="chip chip-pendiente">pendiente</span> <span class="capitulo-previsto">agosto de 2027</span></p>
+  </div>
+</article>
+<article class="capitulo">
+  <div class="capitulo-numero">11</div>
+  <div class="capitulo-cuerpo">
+    <h4 class="capitulo-titulo"><a href="11-agentes-y-copilot-en-al.html">Agentes y Copilot dentro de AL</a></h4>
+    <p class="capitulo-objetivo">Qué se puede hacer desde una extensión: capacidades de Copilot con System.AI y PromptDialog; el Agent SDK en AL (IAgentFactory, IAgentMetadata, IAgentTaskExecution; vista previa en sandbox desde 27.4 y en producción desde 28.1); apps preparadas para agentes; las herramientas de IA para desarrollar en AL (servidor MCP de AL en VS Code), es decir, el código generado y revisado como método.</p>
+    <p class="capitulo-construye"><span class="ficha-etiqueta">Construyes</span> Una app mínima preparada para agentes que expone una tarea con permiso propio, generada con ayuda de IA y revisada con una lista de comprobación; el funcional escribe la especificación («qué pedir a tu desarrollador»).</p>
+    <p class="capitulo-meta"><span class="chip chip-nivel chip-nivel-avanzado">Avanzado</span> <span class="chip chip-pendiente">pendiente</span> <span class="capitulo-previsto">septiembre de 2027</span></p>
+  </div>
+</article>
+<article class="capitulo">
+  <div class="capitulo-numero">12</div>
+  <div class="capitulo-cuerpo">
+    <h4 class="capitulo-titulo"><a href="12-protocolos-y-seguridad.html">Protocolos y seguridad: MCP, A2A y lo que puede salir mal</a></h4>
+    <p class="capitulo-objetivo">MCP y A2A; identidad y autorización; inyección de instrucciones en documentos, correos y datos del propio ERP; ataques conocidos a agentes comerciales; la regla de dos; contención y botón de parada; diversidad de modelos; la lista de despliegue responsable.</p>
+    <p class="capitulo-construye"><span class="ficha-etiqueta">Construyes</span> Un modelo de amenazas del agente del capítulo 9 (o del 7): activos, entradas no fiables y controles; y un ataque de demostración en CRONUS: un correo de pedido con instrucciones ocultas, para comprobar si el validador lo frena.</p>
+    <p class="capitulo-meta"><span class="chip chip-nivel chip-nivel-avanzado">Avanzado</span> <span class="chip chip-pendiente">pendiente</span> <span class="capitulo-previsto">octubre de 2027</span></p>
+  </div>
+</article>
+</section>
 
-Apéndices previstos: A, el entorno de pruebas; B, glosario; C, fuentes; D, registro de cambios. Cada versión de Business Central añade una ampliación con lo que cambia.
+<section class="parte" id="parte-iv">
+  <header class="parte-cabecera">
+    <h3 class="parte-titulo">Parte IV · Operar</h3>
+    <p class="parte-descr">Supervisar en una torre de control y llevarlo a producción con un cliente. <span class="parte-rango">Capítulos 13 a 14 · nivel avanzado.</span></p>
+  </header>
+<article class="capitulo">
+  <div class="capitulo-numero">13</div>
+  <div class="capitulo-cuerpo">
+    <h4 class="capitulo-titulo"><a href="13-la-torre-de-control.html">La torre de control</a></h4>
+    <p class="capitulo-objetivo">Qué tiene que ver una persona para confiar sin leerlo todo: trazas, colas de aprobación, costes, errores y paradas; principios de interfaz para agentes y humano en el bucle; la hipótesis de la oficina de agentes por departamentos y de la torre isométrica en 3D, puesta a prueba con usuarios.</p>
+    <p class="capitulo-construye"><span class="ficha-etiqueta">Construyes</span> Un panel sobre las trazas reales de los agentes de los capítulos 7 a 10 (estados, aprobaciones pendientes, coste, botón de pausa), primero plano, con la herramienta que prefiera el lector (Power BI, Excel o Python); la versión isométrica en 3D como escaparate con los mismos datos.</p>
+    <p class="capitulo-meta"><span class="chip chip-nivel chip-nivel-avanzado">Avanzado</span> <span class="chip chip-pendiente">pendiente</span> <span class="capitulo-previsto">noviembre de 2027</span></p>
+  </div>
+</article>
+<article class="capitulo">
+  <div class="capitulo-numero">14</div>
+  <div class="capitulo-cuerpo">
+    <h4 class="capitulo-titulo"><a href="14-produccion-y-adopcion.html">Producción y adopción</a></h4>
+    <p class="capitulo-objetivo">Pasar del sandbox a producción: graduación en el Agent Designer, Agent SDK desde 28.1, licencias y créditos, qué exige AppSource a una app con agentes [no verificado: requisitos de AppSource para apps con agentes], gestión del cambio con el cliente, cómo seguir la hoja de ruta de Microsoft, comunicación de incidentes y las certificaciones del consultor (AI-103, AB-100, AB-620).</p>
+    <p class="capitulo-construye"><span class="ficha-etiqueta">Construyes</span> Un plan de adopción para un cliente ficticio (CRONUS) con la lista de salida a producción: controles, responsables, métricas, plan de parada y comunicación de incidentes; y una propuesta de servicio del consultor.</p>
+    <p class="capitulo-meta"><span class="chip chip-nivel chip-nivel-avanzado">Avanzado</span> <span class="chip chip-pendiente">pendiente</span> <span class="capitulo-previsto">diciembre de 2027</span></p>
+  </div>
+</article>
+</section>
 
-## Versiones y ritmo
+<section class="parte" id="herramientas">
+  <header class="parte-cabecera">
+    <h3 class="parte-titulo">Índice por herramienta</h3>
+    <p class="parte-descr">El libro está ordenado por la tesis, no por producto. Si vienes buscando una herramienta concreta de Microsoft, aquí está dónde se trata cada una.</p>
+  </header>
+<table class="tabla-herramientas">
+<thead><tr><th>Herramienta</th><th>Qué es</th><th>Capítulos</th></tr></thead>
+<tbody>
+<tr><th scope="row">Chat con Copilot</th><td>La conversación con los datos dentro de Business Central.</td><td class="caps"><a href="01-que-es-un-agente.html">1</a>, <a href="03-copilot-en-business-central.html">3</a></td></tr>
+<tr><th scope="row">Capacidades de Copilot</th><td>Análisis de datos, resúmenes, autorrelleno, conciliación bancaria, sugerencias de líneas y de texto, entre otras.</td><td class="caps"><a href="03-copilot-en-business-central.html">3</a></td></tr>
+<tr><th scope="row">Página «Copilot y capacidades de agente»</th><td>Dónde se activa y se gobierna cada capacidad y cada agente.</td><td class="caps"><a href="03-copilot-en-business-central.html">3</a>, <a href="04-los-agentes-que-ya-trae-business-central.html">4</a></td></tr>
+<tr><th scope="row">Sales Order Agent</th><td>El agente de pedidos de venta que trae Business Central.</td><td class="caps"><a href="04-los-agentes-que-ya-trae-business-central.html">4</a>, <a href="06-observar-y-evaluar.html">6</a></td></tr>
+<tr><th scope="row">Payables Agent y Expense Agent</th><td>Los agentes de facturas de proveedor y de gastos.</td><td class="caps"><a href="04-los-agentes-que-ya-trae-business-central.html">4</a></td></tr>
+<tr><th scope="row">Permisos y usuario de agente</th><td>Cómo limita Business Central lo que un agente puede tocar.</td><td class="caps"><a href="05-permisos-identidad-y-auditoria.html">5</a>, <a href="07-agent-designer.html">7</a></td></tr>
+<tr><th scope="row">Microsoft Entra Agent ID</th><td>La identidad del agente en el directorio de la organización.</td><td class="caps"><a href="05-permisos-identidad-y-auditoria.html">5</a>, <a href="12-protocolos-y-seguridad.html">12</a></td></tr>
+<tr><th scope="row">Agent 365</th><td>La capa de gobierno de agentes de Microsoft 365.</td><td class="caps"><a href="05-permisos-identidad-y-auditoria.html">5</a>, <a href="14-produccion-y-adopcion.html">14</a></td></tr>
+<tr><th scope="row">Herramienta de evaluación de AL</th><td>Bancos de pruebas y evaluación de agentes desde AL.</td><td class="caps"><a href="06-observar-y-evaluar.html">6</a></td></tr>
+<tr><th scope="row">Agent Designer (AI development toolkit)</th><td>Diseñar un agente propio sin código, en el sandbox.</td><td class="caps"><a href="07-agent-designer.html">7</a>, <a href="14-produccion-y-adopcion.html">14</a></td></tr>
+<tr><th scope="row">Servidor MCP de Business Central</th><td>La puerta estándar para que agentes de fuera lean y actúen sobre Business Central.</td><td class="caps"><a href="01-que-es-un-agente.html">1</a>, <a href="08-copilot-studio-y-el-servidor-mcp.html">8</a>, <a href="12-protocolos-y-seguridad.html">12</a></td></tr>
+<tr><th scope="row">Copilot Studio</th><td>Agentes sin código conectados a Business Central y publicados en Teams.</td><td class="caps"><a href="08-copilot-studio-y-el-servidor-mcp.html">8</a></td></tr>
+<tr><th scope="row">Logic Apps (bucle de agente)</th><td>Orquestación de agentes sin código en Azure.</td><td class="caps"><a href="09-orquestar-agent-framework-y-logic-apps.html">9</a>, <a href="13-la-torre-de-control.html">13</a></td></tr>
+<tr><th scope="row">Microsoft Agent Framework</th><td>Orquestación con código (Python y .NET): flujos, puntos de control, humano en el bucle.</td><td class="caps"><a href="09-orquestar-agent-framework-y-logic-apps.html">9</a>, <a href="10-microsoft-foundry.html">10</a></td></tr>
+<tr><th scope="row">Microsoft Foundry</th><td>Alojar, evaluar y observar agentes en Azure.</td><td class="caps"><a href="10-microsoft-foundry.html">10</a>, <a href="13-la-torre-de-control.html">13</a></td></tr>
+<tr><th scope="row">AL: System.AI y PromptDialog</th><td>Capacidades de Copilot dentro de una extensión.</td><td class="caps"><a href="11-agentes-y-copilot-en-al.html">11</a></td></tr>
+<tr><th scope="row">AL: Agent SDK y apps preparadas para agentes</th><td>Agentes definidos desde una extensión.</td><td class="caps"><a href="11-agentes-y-copilot-en-al.html">11</a>, <a href="14-produccion-y-adopcion.html">14</a></td></tr>
+<tr><th scope="row">Herramientas de IA para desarrollar en AL</th><td>El servidor MCP de AL en VS Code; código generado y revisado.</td><td class="caps"><a href="11-agentes-y-copilot-en-al.html">11</a></td></tr>
+<tr><th scope="row">MCP y A2A</th><td>Los dos protocolos abiertos y sus riesgos.</td><td class="caps"><a href="08-copilot-studio-y-el-servidor-mcp.html">8</a>, <a href="12-protocolos-y-seguridad.html">12</a></td></tr>
+<tr><th scope="row">Certificaciones AI-103, AB-100 y AB-620</th><td>Las certificaciones del consultor de agentes.</td><td class="caps"><a href="14-produccion-y-adopcion.html">14</a></td></tr>
+</tbody></table>
+</section>
 
-El libro se publica por versiones ligadas a las de Business Central: 2026.2 (1 de diciembre de 2026), 2027.1 (11 de mayo de 2027) y 2027.2 (23 de noviembre de 2027), con revisiones intermedias (2026.2.1, …) cuando cambie algo relevante. Entre versiones, cada capítulo se trabaja durante cuatro semanas: tres ejercicios y una síntesis. Fechas y ritmo pendientes de aprobación.
+<section class="parte" id="apendices">
+  <header class="parte-cabecera">
+    <h3 class="parte-titulo">Apéndices y ampliaciones</h3>
+  </header>
+  <p>Cuatro apéndices gratuitos que se mantienen con cada versión: <strong>A</strong>, preparar el entorno (sandbox, empresa CRONUS ES, registro de aplicación en Entra, Python y VS Code, clientes MCP); <strong>B</strong>, glosario; <strong>C</strong>, fuentes con fecha de consulta; <strong>D</strong>, registro de cambios.</p>
+  <p>Las ampliaciones son capítulos nuevos que se añaden con cada versión de Business Central sin tocar el núcleo: <strong>A1</strong>, compras y gastos a fondo (Payables Agent y Expense Agent); <strong>A2</strong>, agentes de uso de ordenador y cuándo tienen sentido en Business Central; <strong>A3</strong>, casos por departamento (ventas, compras, finanzas y almacén). El orden lo decide la encuesta anual a suscriptores.</p>
+</section>
 
-## Descargas
+<section class="parte" id="versiones">
+  <header class="parte-cabecera">
+    <h3 class="parte-titulo">Versiones y ritmo</h3>
+  </header>
+  <p>El libro se publica por versiones con el nombre de la versión de Business Central sobre la que se verificó el texto: <strong>2026.2</strong> (desde el 1 de diciembre de 2026, sobre Business Central 29), <strong>2027.1</strong> (prevista para mayo de 2027) y <strong>2027.2</strong> (prevista para noviembre de 2027), con revisiones intermedias (2026.2.1, …) cuando cambie algo relevante: una versión mayor de Agent Framework, una vista previa que pasa a producción o una errata.</p>
+  <p>Cada capítulo se trabaja durante cuatro semanas: tres ejercicios y una síntesis. Las fechas de inicio que ves en cada capítulo son orientativas y se ajustan al terminar cada parte.</p>
+</section>
 
-La edición completa en PDF y EPUB (con las soluciones de los ejercicios) será para suscriptores a partir de la primera versión etiquetada. La edición gratuita en PDF y EPUB se publicará en las [versiones del repositorio](https://github.com/JavierCavaGonzalez/base-de-conocimiento/releases). Todavía no hay ninguna.
+<section class="parte" id="descargas">
+  <header class="parte-cabecera">
+    <h3 class="parte-titulo">Descargas</h3>
+  </header>
+  <p>La edición completa en PDF y EPUB, con las soluciones de los ejercicios, será para suscriptores a partir de la primera versión etiquetada. La edición gratuita en PDF y EPUB se publicará en las <a href="https://github.com/JavierCavaGonzalez/base-de-conocimiento/releases">versiones del repositorio</a>. Todavía no hay ninguna.</p>
+</section>
+```

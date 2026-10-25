@@ -1,6 +1,8 @@
 ---
 title: "{{titulo}}"
 capitulo: {{id}}
+parte: "{{parte}}"
+nivel: {{nivel}}
 fuentes: []
 estado: borrador
 fecha-revision: {{fecha}}

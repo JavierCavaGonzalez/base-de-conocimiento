@@ -1,0 +1,52 @@
+---
+title: "14. Producción y adopción"
+capitulo: 14-produccion-y-adopcion
+parte: "IV"
+nivel: avanzado
+fuentes: []
+estado: pendiente
+fecha-revision: 2026-10-25
+ola-bc: 2026w2
+---
+
+```{=html}
+<div class="ficha-capitulo">
+  <div><span class="ficha-etiqueta">Parte</span> IV · Operar</div>
+  <div><span class="ficha-etiqueta">Nivel</span> Avanzado</div>
+  <div><span class="ficha-etiqueta">Estado</span> <span class="chip chip-pendiente">pendiente</span></div>
+  <div><span class="ficha-etiqueta">Previsto</span> diciembre de 2027</div>
+</div>
+```
+
+::: {.callout-note title="Capítulo pendiente de escribir"}
+Este capítulo se escribe a partir de diciembre de 2027, después de estudiar y probar sus fuentes en el sandbox. Lo que ves es su plan: qué aprenderás, qué construirás y con qué herramientas. El plan puede cambiar cuando llegue su turno. Mientras tanto, puedes seguir el [diario](../diario/index.qmd).
+:::
+
+## Qué vas a aprender
+
+Pasar del sandbox a producción: graduación en el Agent Designer, Agent SDK desde 28.1, licencias y créditos, qué exige AppSource a una app con agentes [no verificado: requisitos de AppSource para apps con agentes], gestión del cambio con el cliente, cómo seguir la hoja de ruta de Microsoft, comunicación de incidentes y las certificaciones del consultor (AI-103, AB-100, AB-620).
+
+## Qué construirás en CRONUS ES
+
+Un plan de adopción para un cliente ficticio (CRONUS) con la lista de salida a producción: controles, responsables, métricas, plan de parada y comunicación de incidentes; y una propuesta de servicio del consultor.
+
+## Herramientas de Microsoft que aparecen
+
+- Agent Designer (graduación)
+- Agent SDK en AL
+- Agent 365
+- Licencias y créditos de Copilot
+- AppSource
+- Certificaciones AI-103, AB-100 y AB-620
+
+## Ejercicios previstos
+
+Tres ejercicios semanales y una síntesis, por suscripción (el enunciado siempre es gratis):
+
+1. Lista de salida a producción con la matriz y los controles.
+2. Plan de incidentes: qué pasa cuando el agente se equivoca con dinero.
+3. Tu propuesta de servicio: qué vendes a un cliente al terminar el libro.
+
+## Fuentes previstas
+
+Microsoft Learn: Agent Designer, Agent SDK, «What's new in 29.0», «Agent 365 overview», certificaciones AI-103 y AB-100; Nadella 2026 (comunicación de incidentes); Dibia 2025 (cap. 13).

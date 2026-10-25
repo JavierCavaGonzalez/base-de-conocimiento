@@ -1,0 +1,50 @@
+---
+title: "8. Copilot Studio y el servidor MCP de Business Central"
+capitulo: 08-copilot-studio-y-el-servidor-mcp
+parte: "III"
+nivel: medio
+fuentes: []
+estado: pendiente
+fecha-revision: 2026-10-25
+ola-bc: 2026w2
+---
+
+```{=html}
+<div class="ficha-capitulo">
+  <div><span class="ficha-etiqueta">Parte</span> III · Construir</div>
+  <div><span class="ficha-etiqueta">Nivel</span> Medio</div>
+  <div><span class="ficha-etiqueta">Estado</span> <span class="chip chip-pendiente">pendiente</span></div>
+  <div><span class="ficha-etiqueta">Previsto</span> junio de 2027</div>
+</div>
+```
+
+::: {.callout-note title="Capítulo pendiente de escribir"}
+Este capítulo se escribe a partir de junio de 2027, después de estudiar y probar sus fuentes en el sandbox. Lo que ves es su plan: qué aprenderás, qué construirás y con qué herramientas. El plan puede cambiar cuando llegue su turno. Mientras tanto, puedes seguir el [diario](../diario/index.qmd).
+:::
+
+## Qué vas a aprender
+
+Las dos vías de entrada desde fuera: el conector de Business Central y la herramienta «Dynamics 365 Business Central MCP Server» en Copilot Studio; configurar el servidor MCP (página de configuraciones, modo dinámico de herramientas, herramientas de consulta de datos); publicar API propias como herramientas; clientes que no son de Microsoft con registro de aplicación en Entra; publicar en Teams.
+
+## Qué construirás en CRONUS ES
+
+Un asistente de consulta en Copilot Studio que responde sobre CRONUS a través del MCP, solo con herramientas de consulta, publicado en Teams para el equipo de ventas; el mismo asistente desde un cliente externo, para comparar.
+
+## Herramientas de Microsoft que aparecen
+
+- Copilot Studio
+- Servidor MCP de Business Central
+- Conector de Business Central
+- Microsoft Teams
+
+## Ejercicios previstos
+
+Tres ejercicios semanales y una síntesis, por suscripción (el enunciado siempre es gratis):
+
+1. Configurar el MCP con las herramientas mínimas y probarlo desde VS Code o un cliente.
+2. Asistente en Copilot Studio publicado en Teams (sandbox).
+3. Pedirle que cree un pedido: qué pasa, si se permite y con qué aprobación.
+
+## Fuentes previstas
+
+Microsoft Learn: «Configure the MCP server», «Use the MCP server in VS Code», «Use the MCP server with non-Microsoft hosts», «Create an agent in Copilot Studio»; novedades de la versión 29.0; Packt 2026 (caps. 2 y 7).

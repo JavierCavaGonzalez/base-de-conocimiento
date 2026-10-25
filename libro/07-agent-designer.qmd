@@ -1,0 +1,49 @@
+---
+title: "7. Diseñar un agente sin código: el Agent Designer"
+capitulo: 07-agent-designer
+parte: "III"
+nivel: medio
+fuentes: []
+estado: pendiente
+fecha-revision: 2026-10-25
+ola-bc: 2026w2
+---
+
+```{=html}
+<div class="ficha-capitulo">
+  <div><span class="ficha-etiqueta">Parte</span> III · Construir</div>
+  <div><span class="ficha-etiqueta">Nivel</span> Medio</div>
+  <div><span class="ficha-etiqueta">Estado</span> <span class="chip chip-pendiente">pendiente</span></div>
+  <div><span class="ficha-etiqueta">Previsto</span> mayo de 2027</div>
+</div>
+```
+
+::: {.callout-note title="Capítulo pendiente de escribir"}
+Este capítulo se escribe a partir de mayo de 2027, después de estudiar y probar sus fuentes en el sandbox. Lo que ves es su plan: qué aprenderás, qué construirás y con qué herramientas. El plan puede cambiar cuando llegue su turno. Mientras tanto, puedes seguir el [diario](../diario/index.qmd).
+:::
+
+## Qué vas a aprender
+
+El ciclo crear, configurar, activar, iterar, graduar y limpiar del AI development toolkit; instrucciones, herramientas (páginas) y permisos; la plantilla de validación de ventas y el patio de pruebas; sus límites hoy (vista previa, solo sandbox).
+
+## Qué construirás en CRONUS ES
+
+Un agente de validación de pedidos para CRONUS que propone y nunca registra, con la matriz del capítulo 2 y los permisos del capítulo 5, evaluado con el banco del capítulo 6.
+
+## Herramientas de Microsoft que aparecen
+
+- Agent Designer (AI development toolkit)
+- Patio de pruebas (task playground)
+- Plantilla de validación de ventas
+
+## Ejercicios previstos
+
+Tres ejercicios semanales y una síntesis, por suscripción (el enunciado siempre es gratis):
+
+1. Crear el agente desde la plantilla y recortarle decisiones.
+2. Iterar en el patio de pruebas sobre diez casos del banco.
+3. Ficha de graduación: qué le falta para producción.
+
+## Fuentes previstas
+
+Microsoft Learn: «AI development toolkit overview», «Create an agent», «Instructions», «Permissions», «Sales validation template», «Task playground», «Transparency note»; Packt 2026 (cap. 6).

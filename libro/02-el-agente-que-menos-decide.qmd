@@ -1,0 +1,48 @@
+---
+title: "2. La tesis: el agente que menos decide"
+capitulo: 02-el-agente-que-menos-decide
+parte: "I"
+nivel: desde-cero
+fuentes: []
+estado: pendiente
+fecha-revision: 2026-10-25
+ola-bc: 2026w2
+---
+
+```{=html}
+<div class="ficha-capitulo">
+  <div><span class="ficha-etiqueta">Parte</span> I · Entender</div>
+  <div><span class="ficha-etiqueta">Nivel</span> Desde cero</div>
+  <div><span class="ficha-etiqueta">Estado</span> <span class="chip chip-pendiente">pendiente</span></div>
+  <div><span class="ficha-etiqueta">Previsto</span> diciembre de 2026</div>
+</div>
+```
+
+::: {.callout-note title="Capítulo pendiente de escribir"}
+Este capítulo se escribe a partir de diciembre de 2026, después de estudiar y probar sus fuentes en el sandbox. Lo que ves es su plan: qué aprenderás, qué construirás y con qué herramientas. El plan puede cambiar cuando llegue su turno. Mientras tanto, puedes seguir el [diario](../diario/index.qmd).
+:::
+
+## Qué vas a aprender
+
+Explicar la tesis del libro y traducir a un ERP los siete principios de Nadella sobre tratar los modelos de IA como riesgo interno; separar inteligencia (el modelo), arnés (la orquestación) y espacio de acción (lo que puede tocar); distinguir un flujo con control explícito de un agente autónomo.
+
+## Qué construirás en CRONUS ES
+
+La «matriz de decisiones» de un proceso de CRONUS, el pedido de venta de principio a fin: en cada paso, quién decide (persona, regla o agente), qué evidencia queda y cómo se para. Es la herramienta que usa el resto del libro.
+
+## Herramientas de Microsoft que aparecen
+
+- Matriz de decisiones (herramienta propia del libro)
+- Permisos del agente en Business Central
+
+## Ejercicios previstos
+
+Tres ejercicios semanales y una síntesis, por suscripción (el enunciado siempre es gratis):
+
+1. La matriz de decisiones del pedido de venta, con la plantilla.
+2. Aplicar la regla de dos de Meta a tres agentes hipotéticos y decidir cuál pasa.
+3. Reescribir las instrucciones de un agente quitándole decisiones y comparar antes y después.
+
+## Fuentes previstas
+
+Nadella 2026 («Models as Insider Risks»); Dibia 2025 (caps. 2 y 13); Meta 2025 («Agents Rule of Two»); Lynch et al. 2025 («Agentic Misalignment»); Cognition 2025 («Don't Build Multi-Agents»); Microsoft Learn: permisos del agente.

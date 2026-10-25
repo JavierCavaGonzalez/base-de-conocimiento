@@ -1,0 +1,50 @@
+---
+title: "5. Permisos, identidad y auditoría del agente"
+capitulo: 05-permisos-identidad-y-auditoria
+parte: "II"
+nivel: basico
+fuentes: []
+estado: pendiente
+fecha-revision: 2026-10-25
+ola-bc: 2026w2
+---
+
+```{=html}
+<div class="ficha-capitulo">
+  <div><span class="ficha-etiqueta">Parte</span> II · Controlar</div>
+  <div><span class="ficha-etiqueta">Nivel</span> Básico</div>
+  <div><span class="ficha-etiqueta">Estado</span> <span class="chip chip-pendiente">pendiente</span></div>
+  <div><span class="ficha-etiqueta">Previsto</span> marzo de 2027</div>
+</div>
+```
+
+::: {.callout-note title="Capítulo pendiente de escribir"}
+Este capítulo se escribe a partir de marzo de 2027, después de estudiar y probar sus fuentes en el sandbox. Lo que ves es su plan: qué aprenderás, qué construirás y con qué herramientas. El plan puede cambiar cuando llegue su turno. Mientras tanto, puedes seguir el [diario](../diario/index.qmd).
+:::
+
+## Qué vas a aprender
+
+Cómo limita Business Central a un agente: conjuntos de permisos del agente y su intersección con los del usuario que lo configura, usuario de agente y licencia; identidad del agente en Microsoft Entra (Agent ID) y Agent 365 como capa de gobierno de la organización; qué rastro queda (lista de tareas del agente, registro de cambios, telemetría).
+
+## Qué construirás en CRONUS ES
+
+Un conjunto de permisos mínimo para el agente y la prueba de que, al quitarle un permiso, se detiene y lo deja escrito; una ficha de identidad del agente para el administrador (quién lo creó, qué puede, cómo se apaga).
+
+## Herramientas de Microsoft que aparecen
+
+- Permisos y usuario de agente
+- Microsoft Entra Agent ID
+- Agent 365
+- Registro de cambios y telemetría
+
+## Ejercicios previstos
+
+Tres ejercicios semanales y una síntesis, por suscripción (el enunciado siempre es gratis):
+
+1. Diseñar y asignar el permiso mínimo y romperlo a propósito.
+2. Activar el registro de cambios sobre las tablas que toca el agente y leer el rastro de una tarea completa.
+3. Ficha de identidad del agente siguiendo Entra Agent ID.
+
+## Fuentes previstas
+
+Microsoft Learn: permisos del agente, «What is Microsoft Entra Agent ID», «Agent 365 overview»; Nadella 2026 (controles independientes, auditabilidad, observar todo); Dibia 2025 (cap. 13).

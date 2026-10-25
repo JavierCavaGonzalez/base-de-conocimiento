@@ -1,0 +1,51 @@
+---
+title: "11. Agentes y Copilot dentro de AL"
+capitulo: 11-agentes-y-copilot-en-al
+parte: "III"
+nivel: avanzado
+fuentes: []
+estado: pendiente
+fecha-revision: 2026-10-25
+ola-bc: 2026w2
+---
+
+```{=html}
+<div class="ficha-capitulo">
+  <div><span class="ficha-etiqueta">Parte</span> III · Construir</div>
+  <div><span class="ficha-etiqueta">Nivel</span> Avanzado</div>
+  <div><span class="ficha-etiqueta">Estado</span> <span class="chip chip-pendiente">pendiente</span></div>
+  <div><span class="ficha-etiqueta">Previsto</span> septiembre de 2027</div>
+</div>
+```
+
+::: {.callout-note title="Capítulo pendiente de escribir"}
+Este capítulo se escribe a partir de septiembre de 2027, después de estudiar y probar sus fuentes en el sandbox. Lo que ves es su plan: qué aprenderás, qué construirás y con qué herramientas. El plan puede cambiar cuando llegue su turno. Mientras tanto, puedes seguir el [diario](../diario/index.qmd).
+:::
+
+<p class="itinerario">Laboratorio técnico; el consultor funcional escribe la especificación.</p>
+
+## Qué vas a aprender
+
+Qué se puede hacer desde una extensión: capacidades de Copilot con System.AI y PromptDialog; el Agent SDK en AL (IAgentFactory, IAgentMetadata, IAgentTaskExecution; vista previa en sandbox desde 27.4 y en producción desde 28.1); apps preparadas para agentes; las herramientas de IA para desarrollar en AL (servidor MCP de AL en VS Code), es decir, el código generado y revisado como método.
+
+## Qué construirás en CRONUS ES
+
+Una app mínima preparada para agentes que expone una tarea con permiso propio, generada con ayuda de IA y revisada con una lista de comprobación; el funcional escribe la especificación («qué pedir a tu desarrollador»).
+
+## Herramientas de Microsoft que aparecen
+
+- AL: System.AI y PromptDialog
+- AL: Agent SDK y apps preparadas para agentes
+- Herramientas de IA para desarrollar en AL (servidor MCP de AL)
+
+## Ejercicios previstos
+
+Tres ejercicios semanales y una síntesis, por suscripción (el enunciado siempre es gratis):
+
+1. Funcional: la especificación de la tarea del agente con la matriz.
+2. Técnico: generar la app con el Agent SDK y pasar sus pruebas.
+3. Revisión cruzada: el funcional valida la app contra su especificación.
+
+## Fuentes previstas
+
+Microsoft Learn: Agent SDK en AL («Overview», «Define and register», «Tasks», «Configuration»), «Developer tools for Copilot», «AL agent tools» y «AL MCP server»; Packt 2026 (caps. 3 y 6).

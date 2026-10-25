@@ -1,0 +1,50 @@
+---
+title: "4. Los agentes que ya trae Business Central"
+capitulo: 04-los-agentes-que-ya-trae-business-central
+parte: "I"
+nivel: basico
+fuentes: []
+estado: pendiente
+fecha-revision: 2026-10-25
+ola-bc: 2026w2
+---
+
+```{=html}
+<div class="ficha-capitulo">
+  <div><span class="ficha-etiqueta">Parte</span> I · Entender</div>
+  <div><span class="ficha-etiqueta">Nivel</span> Básico</div>
+  <div><span class="ficha-etiqueta">Estado</span> <span class="chip chip-pendiente">pendiente</span></div>
+  <div><span class="ficha-etiqueta">Previsto</span> febrero de 2027</div>
+</div>
+```
+
+::: {.callout-note title="Capítulo pendiente de escribir"}
+Este capítulo se escribe a partir de febrero de 2027, después de estudiar y probar sus fuentes en el sandbox. Lo que ves es su plan: qué aprenderás, qué construirás y con qué herramientas. El plan puede cambiar cuando llegue su turno. Mientras tanto, puedes seguir el [diario](../diario/index.qmd).
+:::
+
+## Qué vas a aprender
+
+Conocer el Sales Order Agent, el Payables Agent y el Expense Agent: qué proponen, qué deciden, dónde revisa la persona, qué consumen (créditos de Copilot) y cómo se gobiernan. Disponibilidad de cada agente en un sandbox español: pendiente de comprobar; si alguno no está, el ejercicio usa la documentación y capturas propias.
+
+## Qué construirás en CRONUS ES
+
+Activar el Sales Order Agent en el sandbox, recibir un pedido por correo de un cliente de CRONUS, seguir la tarea en su lista, revisar y registrar; rellenar la matriz del capítulo 2 con lo observado.
+
+## Herramientas de Microsoft que aparecen
+
+- Sales Order Agent
+- Payables Agent
+- Expense Agent
+- Lista de tareas del agente
+
+## Ejercicios previstos
+
+Tres ejercicios semanales y una síntesis, por suscripción (el enunciado siempre es gratis):
+
+1. Activar y configurar el Sales Order Agent y procesar tres pedidos: uno correcto, uno con un artículo inexistente y uno ambiguo.
+2. Payables Agent con tres facturas de proveedor en PDF: qué hace y qué deja a la persona.
+3. Tabla comparativa de los tres agentes nativos sobre la matriz de decisiones, con el coste observado en créditos.
+
+## Fuentes previstas
+
+Microsoft Learn: «Sales Order Agent», «Payables Agent», «Expense Agent», «What's new in 29.0»; Packt 2026 (cap. 5).

@@ -38,7 +38,7 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--privado", default="../estudio-privado")
     ap.add_argument("--salida", default="_libro")
     ap.add_argument("--incluir-borradores", action="store_true")
-    ap.add_argument("--titulo", default="Las llaves del ERP")
+    ap.add_argument("--titulo", default="IA y agentes en Business Central")
     ap.add_argument("--autor", default="Javier Cava González")
     args = ap.parse_args(argv)
 
@@ -66,6 +66,9 @@ def main(argv: list[str]) -> int:
         origen = RAIZ / rel
         if not origen.exists():
             print(f"AVISO: no existe {rel}; se omite")
+            continue
+        if str(cabecera(origen).get("estado", "")) == "pendiente":
+            print(f"Omitido (pendiente de escribir): {rel}")
             continue
         shutil.copy2(origen, salida / "libro" / origen.name)
     for extra in ("img", "capturas"):
@@ -113,9 +116,9 @@ def main(argv: list[str]) -> int:
         "lang": "es",
         "book": {
             "title": args.titulo,
-            "subtitle": "Inteligencia artificial y agentes en Business Central" + (" · edición completa" if args.perfil == "completo" else ""),
+            "subtitle": "¿Le darías las llaves del ERP a un agente?" + (" · edición completa" if args.perfil == "completo" else ""),
             "author": args.autor,
-            "chapters": ["index.qmd"] + [f"libro/{Path(c).name}" for c in capitulos if (RAIZ / c).exists()],
+            "chapters": ["index.qmd"] + [f"libro/{Path(c).name}" for c in capitulos if (salida / "libro" / Path(c).name).exists()],
             "appendices": [f"ejercicios/{e.name}" for e in ejercicios],
         },
         "format": {
