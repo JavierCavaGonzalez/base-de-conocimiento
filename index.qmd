@@ -1,6 +1,5 @@
 ---
 title: "IA y agentes en Business Central"
-pagetitle: "IA y agentes en Business Central · Javier Cava"
 description: "Libro vivo, gratis y en abierto, sobre inteligencia artificial y agentes en Microsoft Dynamics 365 Business Central."
 title-block-style: none
 page-layout: full
